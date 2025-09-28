@@ -34,3 +34,38 @@ Input: tribonacci_sequence([123, 456, 789], 8) => Output: [123, 456, 789, 1368, 
 
 <br />
 
+# 2025.09.02 Challenge - RGB to Hex
+
+My solution -> *[2025_09_02_rgb_to_hex](2025_09_02_rgb_to_hex.py)*
+
+## **_Task condition:_**
+
+Given a CSS `rgb(r, g, b)` color string, return its hexadecimal equivalent.
+
+Here are some example outputs for a given input:
+
+| Input                   | Output      |
+| :---------------------- | :---------- |
+| "rgb(255, 255, 255)"  | "#ffffff" |
+| "rgb(1, 2, 3)"        | "#010203" |
+
+### **_Examples_**
+
+```
+Input: rgb_to_hex("rgb(255, 255, 255)") => Output: "#ffffff"
+
+Input: rgb_to_hex("rgb(1, 11, 111)") => Output: "#010b6f"
+
+Input: rgb_to_hex("rgb(173, 216, 230)") => Output: "#add8e6"
+
+Input: rgb_to_hex("rgb(79, 123, 201)") => Output: "#4f7bc9"
+```
+
+**_NOTES:_**
+
+- Make any letters lowercase.
+- Return a `#` followed by six characters. Don't use any shorthand values.
+
+#
+
+<br />
