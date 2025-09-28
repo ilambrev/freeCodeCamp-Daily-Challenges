@@ -69,3 +69,40 @@ Input: rgb_to_hex("rgb(79, 123, 201)") => Output: "#4f7bc9"
 #
 
 <br />
+
+# 2025.09.03 Challenge - Pangram
+
+My solution -> *[2025_09_03_pangram](2025_09_03_pangram.py)*
+
+## **_Task condition:_**
+
+Given a word or sentence and a string of lowercase letters, determine if the word or sentence uses all the letters from the given set at least once and no other letters.
+
+### **_Examples_**
+
+```
+Input: is_pangram("hello", "helo") => Output: True
+
+Input: is_pangram("hello", "hel") => Output: False
+
+Input: is_pangram("hello", "helow") => Output: False
+
+Input: is_pangram("hello world", "helowrd") => Output: True
+
+Input: is_pangram("Hello World!", "helowrd") => Output: True
+
+Input: is_pangram("Hello World!", "heliowrd") => Output: False
+
+Input: is_pangram("freeCodeCamp", "frcdmp") => Output: False
+
+Input: is_pangram("The quick brown fox jumps over the lazy dog.", "abcdefghijklmnopqrstuvwxyz") => Output: True
+```
+
+**_NOTES:_**
+
+- Ignore non-alphabetical characters in the word or sentence.
+- Ignore letter casing in the word or sentence.
+
+#
+
+<br />
