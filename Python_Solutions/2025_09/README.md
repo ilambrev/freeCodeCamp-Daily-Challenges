@@ -106,3 +106,34 @@ Input: is_pangram("The quick brown fox jumps over the lazy dog.", "abcdefghijklm
 #
 
 <br />
+
+# 2025.09.04 Challenge - Vowel Repeater
+
+My solution -> *[2025_09_04_vowel_repeater](2025_09_04_vowel_repeater.py)*
+
+## **_Task condition:_**
+
+Given a string, return a new version of the string where each vowel is duplicated one more time than the previous vowel you encountered. For instance, the first vowel in the sentence should remain unchanged. The second vowel should appear twice in a row. The third vowel should appear three times in a row, and so on.
+
+### **_Examples_**
+
+```
+Input: repeat_vowels("hello world") => Output: "helloo wooorld"
+
+Input: repeat_vowels("freeCodeCamp") => Output: "freeeCooodeeeeCaaaaamp"
+
+Input: repeat_vowels("AEIOU") => Output: "AEeIiiOoooUuuuu"
+
+Input: repeat_vowels("I like eating ice cream in Iceland") => Output: "I liikeee eeeeaaaaatiiiiiing iiiiiiiceeeeeeee creeeeeeeeeaaaaaaaaaam iiiiiiiiiiin Iiiiiiiiiiiiceeeeeeeeeeeeelaaaaaaaaaaaaaand"
+```
+
+**_NOTES:_**
+
+- The letters `a`, `e`, `i`, `o`, and `u`, in either uppercase or lowercase, are considered vowels.
+- The original vowel should keeps its case.
+- Repeated vowels should be lowercase.
+- All non-vowel characters should keep their original case.
+
+#
+
+<br />
