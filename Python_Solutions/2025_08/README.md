@@ -128,3 +128,33 @@ Input: fibonacci_sequence([123456789, 987654321], 5) => Output: [123456789, 9876
 #
 
 <br />
+
+# 2025.08.14 Challenge - S  P  A  C  E  J  A  M
+
+My solution -> *[2025_08_14_spacejam](2025_08_14_spacejam.py)*
+
+## **_Task condition:_**
+
+Given a string, remove all spaces from the string, insert two spaces between every character, convert all alphabetical letters to uppercase, and return the result.
+
+### **_Examples_**
+
+```
+Input: space_jam("freeCodeCamp") => Output: "F  R  E  E  C  O  D  E  C  A  M  P"
+
+Input: space_jam("   free   Code   Camp   ") => Output: "F  R  E  E  C  O  D  E  C  A  M  P"
+
+Input: space_jam("Hello World?!") => Output: "H  E  L  L  O  W  O  R  L  D  ?  !"
+
+Input: space_jam("C@t$ & D0g$") => Output: "C  @  T  $  &  D  0  G  $"
+
+Input: space_jam("allyourbase") => Output: "A  L  L  Y  O  U  R  B  A  S  E"
+```
+
+**_NOTES:_**
+
+- Non-alphabetical characters should remain unchanged (except for spaces).
+
+#
+
+<br />
