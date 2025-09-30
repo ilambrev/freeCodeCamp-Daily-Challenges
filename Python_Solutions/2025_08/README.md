@@ -158,3 +158,31 @@ Input: space_jam("allyourbase") => Output: "A  L  L  Y  O  U  R  B  A  S  E"
 #
 
 <br />
+
+# 2025.08.15 Challenge - Jbelmud Text
+
+My solution -> *[2025_08_15_jbelmud_text](2025_08_15_jbelmud_text.py)*
+
+## **_Task condition:_**
+
+Given a string, return a jumbled version of that string where each word is transformed using the following constraints:
+
+- The first and last letters of the words remain in place.
+- All letters between the first and last letter are sorted alphabetically.
+- The input strings will contain no punctuation, and will be entirely lowercase.
+
+### **_Examples_**
+
+```
+Input: jbelmu("hello world") => Output: "hello wlord"
+
+Input: jbelmu("i love jumbled text") => Output: "i love jbelmud text"
+
+Input: jbelmu("freecodecamp is my favorite place to learn to code") => Output: "faccdeeemorp is my faiortve pacle to laern to cdoe"
+
+Input: jbelmu("the quick brown fox jumps over the lazy dog") => Output: "the qciuk borwn fox jmpus oevr the lazy dog"
+```
+
+#
+
+<br />
