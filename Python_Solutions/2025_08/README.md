@@ -186,3 +186,35 @@ Input: jbelmu("the quick brown fox jumps over the lazy dog") => Output: "the qci
 #
 
 <br />
+
+# 2025.08.16 Challenge - Anagram Checker
+
+My solution -> *[2025_08_16_anagram_checker](2025_08_16_anagram_checker.py)*
+
+## **_Task condition:_**
+
+Given two strings, determine if they are anagrams of each other (contain the same characters in any order).
+
+### **_Examples_**
+
+```
+Input: are_anagrams("listen", "silent") => Output: True
+
+Input: are_anagrams("School master", "The classroom") => Output: True
+
+Input: are_anagrams("A gentleman", "Elegant man") => Output: True
+
+Input: are_anagrams("Hello", "World") => Output: False
+
+Input: are_anagrams("apple", "banana") => Output: False
+
+Input: are_anagrams("cat", "dog") => Output: False
+```
+
+**_NOTES:_**
+
+- Ignore casing and white space.
+
+#
+
+<br />
