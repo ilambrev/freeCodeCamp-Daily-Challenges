@@ -171,3 +171,37 @@ Input: is_valid_ipv4("192168145213") => Output: False
 #
 
 <br />
+
+# 2025.09.06 Challenge - Matrix Rotate
+
+My solution -> *[2025_09_06_matrix_rotate](2025_09_06_matrix_rotate.py)*
+
+## **_Task condition:_**
+
+Given a matrix (an array of arrays), rotate the matrix 90 degrees clockwise and return it. For instance, given `[[1, 2], [3, 4]]`, which looks like this:
+
+| 1  2 |
+|------|
+| 3  4 |
+
+You should return `[[3, 1], [4, 2]]`, which looks like this:
+
+| 3  1 |
+|----- |
+| 4  2 |
+
+### **_Examples_**
+
+```
+Input: rotate([[1]]) => Output: [[1]]
+
+Input: rotate([[1, 2], [3, 4]]) => Output: [[3, 1], [4, 2]]
+
+Input: rotate([[1, 2, 3], [4, 5, 6], [7, 8, 9]]) => Output: [[7, 4, 1], [8, 5, 2], [9, 6, 3]]
+
+Input: rotate([[0, 1, 0], [1, 0, 1], [0, 0, 0]]) => Output: [[0, 1, 0], [0, 0, 1], [0, 1, 0]]
+```
+
+#
+
+<br />
