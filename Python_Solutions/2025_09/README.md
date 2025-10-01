@@ -180,15 +180,15 @@ My solution -> *[2025_09_06_matrix_rotate](2025_09_06_matrix_rotate.py)*
 
 Given a matrix (an array of arrays), rotate the matrix 90 degrees clockwise and return it. For instance, given `[[1, 2], [3, 4]]`, which looks like this:
 
-| 1  2 |
-|------|
-| 3  4 |
+| 1 | 2 |
+|---|---|
+| 3 | 4 |
 
 You should return `[[3, 1], [4, 2]]`, which looks like this:
 
-| 3  1 |
-|----- |
-| 4  2 |
+| 3 | 1 |
+|---|---|
+| 4 | 2 |
 
 ### **_Examples_**
 
@@ -201,6 +201,52 @@ Input: rotate([[1, 2, 3], [4, 5, 6], [7, 8, 9]]) => Output: [[7, 4, 1], [8, 5, 2
 
 Input: rotate([[0, 1, 0], [1, 0, 1], [0, 0, 0]]) => Output: [[0, 1, 0], [0, 0, 1], [0, 1, 0]]
 ```
+
+#
+
+<br />
+
+# 2025.09.07 Challenge - Roman Numeral Parser
+
+My solution -> *[2025_09_07_roman_numeral_parser](2025_09_07_roman_numeral_parser.py)*
+
+## **_Task condition:_**
+
+Given a string representing a Roman numeral, return its integer value.
+
+Roman numerals consist of the following symbols and values:
+
+| Symbol  | Value   |
+| :-----: | :-----: |
+| I       | 1       |
+| V       | 5       |
+| X       | 10      |
+| L       | 50      |
+| C       | 100     |
+| D       | 500     |
+| M       | 1000    |
+
+### **_Examples_**
+
+```
+Input: parse_roman_numeral("III") => Output: 3
+
+Input: parse_roman_numeral("IV") => Output: 4
+
+Input: parse_roman_numeral("XXVI") => Output: 26
+
+Input: parse_roman_numeral("XCIX") => Output: 99
+
+Input: parse_roman_numeral("CDLX") => Output: 460
+
+Input: parse_roman_numeral("DIV") => Output: 504
+
+Input: parse_roman_numeral("MMXXV") => Output: 2025
+```
+
+**_NOTES:_**
+
+- Numerals are read left to right. If a smaller numeral appears before a larger one, the value is subtracted. Otherwise, values are added.
 
 #
 
