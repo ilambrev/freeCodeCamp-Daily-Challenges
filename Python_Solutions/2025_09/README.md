@@ -137,3 +137,37 @@ Input: repeat_vowels("I like eating ice cream in Iceland") => Output: "I liikeee
 #
 
 <br />
+
+# 2025.09.05 Challenge - IPv4 Validator
+
+My solution -> *[2025_09_05_ipv4_validator](2025_09_05_ipv4_validator.py)*
+
+## **_Task condition:_**
+
+Given a string, determine if it is a valid IPv4 Address. A valid IPv4 address consists of four integer numbers separated by dots (`.`). Each number must satisfy the following conditions:
+
+- It is between `0` and `255` inclusive.
+- It does not have leading zeros (e.g. `0` is allowed, `01` is not).
+- Only numeric characters are allowed.
+
+### **_Examples_**
+
+```
+Input: is_valid_ipv4("192.168.1.1") => Output: True
+
+Input: is_valid_ipv4("0.0.0.0") => Output: True
+
+Input: is_valid_ipv4("255.01.50.111") => Output: False
+
+Input: is_valid_ipv4("255.00.50.111") => Output: False
+
+Input: is_valid_ipv4("256.101.50.115") => Output: False
+
+Input: is_valid_ipv4("192.168.101.") => Output: False
+
+Input: is_valid_ipv4("192168145213") => Output: False
+```
+
+#
+
+<br />
