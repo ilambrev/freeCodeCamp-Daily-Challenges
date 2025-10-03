@@ -251,3 +251,38 @@ Input: parse_roman_numeral("MMXXV") => Output: 2025
 #
 
 <br />
+
+# 2025.09.08 Challenge - Acronym Builder
+
+My solution -> *[2025_09_08_acronym_builder](2025_09_08_acronym_builder.py)*
+
+## **_Task condition:_**
+
+Given a string containing one or more words, return an acronym of the words using the following constraints:
+
+- The acronym should consist of the first letter of each word capitalized, unless otherwise noted.
+- The acronym should ignore the first letter of these words unless they are the first word of the given string: `a`, `for`, `an`, `and`, `by`, and `of`.
+- The acronym letters should be returned in the order they are given.
+- The acronym should not contain any spaces.
+
+### **_Examples_**
+
+```
+Input: build_acronym("Search Engine Optimization") => Output: "SEO"
+
+Input: build_acronym("Frequently Asked Questions") => Output: "FAQ"
+
+Input: build_acronym("National Aeronautics and Space Administration") => Output: "NASA"
+
+Input: build_acronym("Federal Bureau of Investigation") => Output: "FBI"
+
+Input: build_acronym("For your information") => Output: "FYI"
+
+Input: build_acronym("By the way") => Output: "BTW"
+
+Input: build_acronym("An unstoppable herd of waddling penguins overtakes the icy mountains and sings happily") => Output: "AUHWPOTIMSH"
+```
+
+#
+
+<br />
