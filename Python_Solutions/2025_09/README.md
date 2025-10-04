@@ -286,3 +286,37 @@ Input: build_acronym("An unstoppable herd of waddling penguins overtakes the icy
 #
 
 <br />
+
+# 2025.09.09 Challenge - Unique Characters
+
+My solution -> *[2025_09_09_unique_characters](2025_09_09_unique_characters.py)*
+
+## **_Task condition:_**
+
+Given a string, determine if all the characters in the string are unique.
+
+### **_Examples_**
+
+```
+Input: all_unique("abc") => Output: True
+
+Input: all_unique("aA") => Output: True
+
+Input: all_unique("QwErTy123!@") => Output: True
+
+Input: all_unique("~!@#$%^&*()_+") => Output: True
+
+Input: all_unique("hello") => Output: False
+
+Input: all_unique("freeCodeCamp") => Output: False
+
+Input: all_unique("!@#*$%^&*()aA") => Output: False
+```
+
+**_NOTES:_**
+
+- Uppercase and lowercase letters should be considered different characters.
+
+#
+
+<br />
