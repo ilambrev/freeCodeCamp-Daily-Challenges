@@ -320,3 +320,33 @@ Input: all_unique("!@#*$%^&*()aA") => Output: False
 #
 
 <br />
+
+# 2025.09.10 Challenge - Array Diff
+
+My solution -> *[2025_09_10_array_diff](2025_09_10_array_diff.py)*
+
+## **_Task condition:_**
+
+Given two arrays with strings values, return a new array containing all the values that appear in only one of the arrays.
+
+### **_Examples_**
+
+```
+Input: array_diff(["apple", "banana"], ["apple", "banana", "cherry"]) => Output: ["cherry"]
+
+Input: array_diff(["apple", "banana", "cherry"], ["apple", "banana"]) => Output: ["cherry"]
+
+Input: array_diff(["one", "two", "three", "four", "six"], ["one", "three", "eight"]) => Output: ["eight", "four", "six", "two"]
+
+Input: array_diff(["two", "four", "five", "eight"], ["one", "two", "three", "four", "seven", "eight"]) => Output: ["five", "one", "seven", "three"]
+
+Input: array_diff(["I", "like", "freeCodeCamp"], ["I", "like", "rocks"]) => Output: ["freeCodeCamp", "rocks"]
+```
+
+**_NOTES:_**
+
+- The returned array should be sorted in alphabetical order.
+
+#
+
+<br />
