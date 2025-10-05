@@ -218,3 +218,31 @@ Input: are_anagrams("cat", "dog") => Output: False
 #
 
 <br />
+
+# 2025.08.17 Challenge - Targeted Sum
+
+My solution -> *[2025_08_17_targeted_sum](2025_08_17_targeted_sum.py)*
+
+## **_Task condition:_**
+
+Given an array of numbers and an integer target, find two unique numbers in the array that add up to the target value. Return an array with the indices of those two numbers, or `"Target not found"` if no two numbers sum up to the target.
+
+### **_Examples_**
+
+```
+Input: find_target([2, 7, 11, 15], 9) => Output: [0, 1]
+
+Input: find_target([3, 2, 4, 5], 6) => Output: [1, 2]
+
+Input: find_target([1, 3, 5, 6, 7, 8], 15) => Output: [4, 5]
+
+Input: find_target([1, 3, 5, 7], 14) => Output: "Target not found"
+```
+
+**_NOTES:_**
+
+- The returned array should have the indices in ascending order.
+
+#
+
+<br />
