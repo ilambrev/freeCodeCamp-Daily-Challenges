@@ -350,3 +350,32 @@ Input: array_diff(["I", "like", "freeCodeCamp"], ["I", "like", "rocks"]) => Outp
 #
 
 <br />
+
+# 2025.09.11 Challenge - Reverse Sentence
+
+My solution -> *[2025_09_11_reverse_sentence](2025_09_11_reverse_sentence.py)*
+
+## **_Task condition:_**
+
+Given a string of words, return a new string with the words in reverse order. For example, the first word should be at the end of the returned string, and the last word should be at the beginning of the returned string.
+
+### **_Examples_**
+
+```
+Input: reverse_sentence("world hello") => Output: "hello world"
+
+Input: reverse_sentence("push commit git") => Output: "git commit push"
+
+Input: reverse_sentence("npm  install   apt    sudo") => Output: "sudo apt install npm"
+
+Input: reverse_sentence("import    default   function  export") => Output: "export function default import"
+```
+
+**_NOTES:_**
+
+- In the given string, words can be separated by one or more spaces.
+- The returned string should only have one space between words.
+
+#
+
+<br />
