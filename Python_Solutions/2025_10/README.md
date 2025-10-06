@@ -189,3 +189,38 @@ Input: has_exoplanet("ZXXWYZXYWYXZEGZXWYZXYGEE") => Output: True
 #
 
 <br />
+
+# 2025.10.06 Challenge - Space Week Day 3: Phone Home
+
+My solution -> *[2025_10_06_space_week_day_3_phone_home](2025_10_06_space_week_day_3_phone_home.py)*
+
+## **_Task condition:_**
+
+For day three of Space Week, you are given an array of numbers representing distances (in kilometers) between yourself, satellites, and your home planet in a communication route. Determine how long it will take a message sent through the route to reach its destination planet using the following constraints:
+
+- The first value in the array is the distance from your location to the first satellite.
+- Each subsequent value, except for the last, is the distance to the next satellite.
+- The last value in the array is the distance from the previous satellite to your home planet.
+- The message travels at `300,000 km/s`.
+- Each satellite the message `passes through` adds a `0.5` second transmission delay.
+- Return a number rounded to `4` decimal places, with trailing zeros removed.
+
+### **_Examples_**
+
+```
+Input: send_message([300000, 300000]) => Output: 2.5
+
+Input: send_message([384400, 384400]) => Output: 3.0627
+
+Input: send_message([54600000, 54600000]) => Output: 364.5
+
+Input: send_message([1000000, 500000000, 1000000]) => Output: 1674.3333
+
+Input: send_message([10000, 21339, 50000, 31243, 10000]) => Output: 2.4086
+
+Input: send_message([802101, 725994, 112808, 3625770, 481239]) => Output: 21.1597
+```
+
+#
+
+<br />
