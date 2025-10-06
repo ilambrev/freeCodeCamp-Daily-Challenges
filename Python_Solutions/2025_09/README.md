@@ -413,3 +413,37 @@ Input: too_much_screen_time([3, 9, 4, 8, 5, 7, 6]) => Output: True
 #
 
 <br />
+
+# 2025.09.13 Challenge - Missing Numbers
+
+My solution -> *[2025_09_13_missing_numbers](2025_09_13_missing_numbers.py)*
+
+## **_Task condition:_**
+
+Given an array of integers from `1` to `n`, inclusive, return an array of all the missing integers between `1` and `n` (where `n` is the largest number in the given array).
+
+### **_Examples_**
+
+```
+Input: find_missing_numbers([1, 3, 5]) => Output: [2, 4]
+
+Input: find_missing_numbers([1, 2, 3, 4, 5]) => Output: []
+
+Input: find_missing_numbers([1, 10]) => Output: [2, 3, 4, 5, 6, 7, 8, 9]
+
+Input: find_missing_numbers([10, 1, 10, 1, 10, 1]) => Output: [2, 3, 4, 5, 6, 7, 8, 9]
+
+Input: find_missing_numbers([3, 1, 4, 1, 5, 9]) => Output: [2, 6, 7, 8]
+
+Input: find_missing_numbers([1, 2, 3, 4, 5, 7, 8, 9, 10, 12, 6, 8, 9, 3, 2, 10, 7, 4]) => Output: [11]
+```
+
+**_NOTES:_**
+
+- The given array may be unsorted and may contain duplicates.
+- The returned array should be in ascending order.
+- If no integers are missing, return an empty array.
+
+#
+
+<br />
