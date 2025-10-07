@@ -246,3 +246,29 @@ Input: find_target([1, 3, 5, 7], 14) => Output: "Target not found"
 #
 
 <br />
+
+# 2025.08.18 Challenge - Factorializer
+
+My solution -> *[2025_08_18_factorializer](2025_08_18_factorializer.py)*
+
+## **_Task condition:_**
+
+Given an integer from zero to `20`, return the factorial of that number. The factorial of a number is the product of all the numbers between `1` and the given number.
+
+### **_Examples_**
+
+```
+Input: factorial(0) => Output: 1
+
+Input: factorial(5) => Output: 120
+
+Input: factorial(20) => Output: 2432902008176640000
+```
+
+**_NOTES:_**
+
+- The factorial of zero is 1.
+
+#
+
+<br />
