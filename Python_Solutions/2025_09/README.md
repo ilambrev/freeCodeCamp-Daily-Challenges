@@ -447,3 +447,33 @@ Input: find_missing_numbers([1, 2, 3, 4, 5, 7, 8, 9, 10, 12, 6, 8, 9, 3, 2, 10, 
 #
 
 <br />
+
+# 2025.09.14 Challenge - Word Frequency
+
+My solution -> *[2025_09_14_word_frequency](2025_09_14_word_frequency.py)*
+
+## **_Task condition:_**
+
+Given a paragraph, return an array of the three most frequently occurring words.
+
+### **_Examples_**
+
+```
+Input: get_words("Coding in Python is fun because coding Python allows for coding in Python easily while coding") => Output: ["coding", "python", "in"]
+
+Input: get_words("I like coding. I like testing. I love debugging!") => Output: ["i", "like", "coding"]
+
+Input: get_words("Debug, test, deploy. Debug, debug, test, deploy. Debug, test, test, deploy!") => Output: ["debug", "test", "deploy"]
+```
+
+**_NOTES:_**
+
+- Words in the paragraph will be separated by spaces.
+- Ignore case in the given paragraph. For example, treat `Hello` and `hello` as the same word.
+- Ignore punctuation in the given paragraph. Punctuation consists of commas (`,`), periods (`.`), and exclamation points (`!`).
+- The returned array should have all lowercase words.
+- The returned array should be in descending order with the most frequently occurring word first.
+
+#
+
+<br />
