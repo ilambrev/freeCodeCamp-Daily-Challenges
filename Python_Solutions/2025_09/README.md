@@ -509,3 +509,32 @@ Input: adjust_thermostat(0.0, 0.0) => Output: "hold"
 #
 
 <br />
+
+# 2025.09.16 Challenge - Sentence Capitalizer
+
+My solution -> *[2025_09_16_sentence_capitalizer](2025_09_16_sentence_capitalizer.py)*
+
+## **_Task condition:_**
+
+Given a paragraph, return a new paragraph where the first letter of each sentence is capitalized.
+
+- All other characters should be preserved.
+- Sentences can end with a period (`.`), one or more question marks (`?`), or one or more exclamation points (`!`).
+
+### **_Examples_**
+
+```
+Input: capitalize("this is a simple sentence.") => Output: "This is a simple sentence."
+
+Input: capitalize("hello world. how are you?") => Output: "Hello world. How are you?"
+
+Input: capitalize("i did today's coding challenge... it was fun!!") => Output: "I did today's coding challenge... It was fun!!"
+
+Input: capitalize("crazy!!!strange???unconventional...sentences.") => Output: "Crazy!!!Strange???Unconventional...Sentences."
+
+Input: capitalize("there's a space before this period . why is there a space before that period ?") => Output: "There's a space before this period . Why is there a space before that period ?"
+```
+
+#
+
+<br />
