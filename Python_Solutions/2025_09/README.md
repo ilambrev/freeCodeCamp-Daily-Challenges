@@ -564,8 +564,42 @@ Input: generate_slug(" hello-world ") => Output: "helloworld"
 
 Input: generate_slug("hello  world") => Output: "hello%20world"
 
-Input:  generate_slug("  ?H^3-1*1]0! W[0%R#1]D  ") => Output: "h3110%20w0r1d"
+Input: generate_slug("  ?H^3-1*1]0! W[0%R#1]D  ") => Output: "h3110%20w0r1d"
 ```
+
+#
+
+<br />
+
+# 2025.09.18 Challenge - Fill The Tank
+
+My solution -> *[2025_09_18_fill_the_tank](2025_09_18_fill_the_tank.py)*
+
+## **_Task condition:_**
+
+Given the size of a fuel tank, the current fuel level, and the price per gallon, return the cost to fill the tank all the way.
+
+- `tankSize` is the total capacity of the tank in gallons.
+- `fuelLevel` is the current amount of fuel in the tank in gallons.
+- `pricePerGallon` is the cost of one gallon of fuel.
+
+### **_Examples_**
+
+```
+Input: cost_to_fill(20, 0, 4.00) => Output: "$80.00"
+
+Input: cost_to_fill(15, 10, 3.50) => Output: "$17.50"
+
+Input: cost_to_fill(18, 9, 3.25) => Output: "$29.25"
+
+Input: cost_to_fill(12, 12, 4.99) => Output: "$0.00"
+
+Input: cost_to_fill(15, 9.5, 3.98) => Output: "$21.89"
+```
+
+**_NOTES:_**
+
+- The returned value should be rounded to two decimal places in the format: "$d.dd".
 
 #
 
