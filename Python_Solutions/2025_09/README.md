@@ -538,3 +538,35 @@ Input: capitalize("there's a space before this period . why is there a space bef
 #
 
 <br />
+
+# 2025.09.17 Challenge - Slug Generator
+
+My solution -> *[2025_09_17_slug_generator](2025_09_17_slug_generator.py)*
+
+## **_Task condition:_**
+
+Given a string, return a URL-friendly version of the string using the following constraints:
+
+- All letters should be lowercase.
+- All characters that are not letters, numbers, or spaces should be removed.
+- All spaces should be replaced with the URL-encoded space code `%20`.
+- Consecutive spaces should be replaced with a single `%20`.
+- The returned string should not have leading or trailing `%20`.
+
+### **_Examples_**
+
+```
+Input: generate_slug("helloWorld") => Output: "helloworld"
+
+Input: generate_slug("hello world!") => Output: "hello%20world"
+
+Input: generate_slug(" hello-world ") => Output: "helloworld"
+
+Input: generate_slug("hello  world") => Output: "hello%20world"
+
+Input:  generate_slug("  ?H^3-1*1]0! W[0%R#1]D  ") => Output: "h3110%20w0r1d"
+```
+
+#
+
+<br />
