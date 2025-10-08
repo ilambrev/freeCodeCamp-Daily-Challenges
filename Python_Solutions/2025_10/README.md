@@ -267,3 +267,43 @@ Input: find_landing_spot([[9, 6, 0, 8], [7, 1, 1, 0], [3, 0, 3, 9], [8, 6, 0, 9]
 #
 
 <br />
+
+# 2025.10.08 Challenge - Space Week Day 5: Goldilocks Zone
+
+My solution -> *[2025_10_08_space_week_day_5_goldilocks_zone](2025_10_08_space_week_day_5_goldilocks_zone.py)*
+
+## **_Task condition:_**
+
+For the fifth day of Space Week, you will calculate the `"Goldilocks Zone"` of a star - the region around a star where conditions are "just right" for liquid water to exist.
+
+Given the mass of a star, return an array with the start and end distances of its Goldilocks Zone in Astronomical Units.
+
+To calculate the Goldilocks Zone:
+
+- Find the luminosity of the star by raising its mass to the power of `3.5`.
+- The start of the zone is `0.95` times the square root of its luminosity.
+- The end of the zone is `1.37` times the square root of its luminosity.
+
+For example, given `1` as a mass, return `[0.95, 1.37]`.
+
+### **_Examples_**
+
+```
+Input: goldilocks_zone(1) => Output: [0.95, 1.37]
+
+Input: goldilocks_zone(0.5) => Output: [0.28, 0.41]
+
+Input: goldilocks_zone(6) => Output: [21.85, 31.51]
+
+Input: goldilocks_zone(3.7) => Output: [9.38, 13.52]
+
+Input: goldilocks_zone(20) => Output: [179.69, 259.13]
+```
+
+**_NOTES:_**
+
+- Return the distances rounded to two decimal places.
+
+#
+
+<br />
