@@ -307,3 +307,44 @@ Input: goldilocks_zone(20) => Output: [179.69, 259.13]
 #
 
 <br />
+
+# 2025.10.09 Challenge - Space Week Day 6: Moon Phase
+
+My solution -> *[2025_10_09_space_week_day_6_moon_phase](2025_10_09_space_week_day_6_moon_phase.py)*
+
+## **_Task condition:_**
+
+For day six of Space Week, you will be given a date in the format `"YYYY-MM-DD"` and need to determine the phase of the moon for that day using the following rules:
+
+Use a simplified lunar cycle of `28` days, divided into four equal phases:
+
+- `"New"`: days 1 - 7
+- `"Waxing"`: days 8 - 14
+- `"Full"`: days 15 - 21
+- `"Waning"`: days 22 - 28
+
+After day `28`, the cycle repeats with day `1`, a new moon.
+
+### **_Examples_**
+
+```
+Input: moon_phase("2000-01-12") => Output: "New"
+
+Input: moon_phase("2000-01-13") => Output: "Waxing"
+
+Input: moon_phase("2014-10-15") => Output: "Full"
+
+Input: moon_phase("2012-10-21") => Output: "Waning"
+
+Input: moon_phase("2022-12-14") => Output: "New"
+```
+
+**_NOTES:_**
+
+- Use `"2000-01-06"` as a reference new moon (day `1` of the cycle) to determine the phase of the given day.
+- You will not be given any dates before the reference date.
+- Return the correct phase as a string.
+
+#
+
+<br />
