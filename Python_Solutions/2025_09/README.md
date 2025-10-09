@@ -604,3 +604,32 @@ Input: cost_to_fill(15, 9.5, 3.98) => Output: "$21.89"
 #
 
 <br />
+
+# 2025.09.19 Challenge - Photo Storage
+
+My solution -> *[2025_09_19_photo_storage](2025_09_19_photo_storage.py)*
+
+## **_Task condition:_**
+
+Given a photo size in megabytes (`MB`), and hard drive capacity in gigabytes (`GB`), return the number of photos the hard drive can store using the following constraints:
+
+- `1` gigabyte equals `1000` megabytes.
+- Return the number of whole photos the drive can store.
+
+### **_Examples_**
+
+```
+Input: number_of_photos(1, 1) => Output: 1000
+
+Input: number_of_photos(2, 1) => Output: 500
+
+Input: number_of_photos(4, 256) => Output: 64000
+
+Input: number_of_photos(3.5, 750) => Output: 214285
+
+Input: number_of_photos(3.5, 5.5) => Output: 1571
+```
+
+#
+
+<br />
