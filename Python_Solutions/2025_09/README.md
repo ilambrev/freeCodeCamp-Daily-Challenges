@@ -633,3 +633,44 @@ Input: number_of_photos(3.5, 5.5) => Output: 1571
 #
 
 <br />
+
+# 2025.09.20 Challenge - File Storage
+
+My solution -> *[2025_09_20_file_storage](2025_09_20_file_storage.py)*
+
+## **_Task condition:_**
+
+Given a file size, a unit for the file size, and hard drive capacity in gigabytes (`GB`), return the number of files the hard drive can store using the following constraints:
+
+- The unit for the file size can be bytes (`"B"`), kilobytes (`"KB"`), or megabytes (`"MB"`).
+- Return the number of whole files the drive can fit.
+- Use the following conversions:
+
+| Unit          | Equivalent |
+| :-----------: | :--------: |
+| 1 B           | 1 B        |
+| 1 KB          | 1000 B     |
+| 1 MB          | 1000 KB    |
+| 1 GB          | 1000 MB    |
+
+For example, given `500`, `"KB"`, and `1` as arguments, determine how many `500 KB` files can fit on a `1 GB` hard drive.
+
+### **_Examples_**
+
+```
+Input: number_of_files(500, "KB", 1) => Output: 2000
+
+Input: number_of_files(50000, "B", 1) => Output: 20000
+
+Input: number_of_files(5, "MB", 1) => Output: 200
+
+Input: number_of_files(4096, "B", 1.5) => Output: 366210
+
+Input: number_of_files(220.5, "KB", 100) => Output: 453514
+
+Input: number_of_files(4.5, "MB", 750) => Output: 166666
+```
+
+#
+
+<br />
