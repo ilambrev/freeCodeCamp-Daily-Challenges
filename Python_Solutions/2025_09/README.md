@@ -717,3 +717,37 @@ Input: number_of_videos(1.5, "GB", 2.2, "TB") => Output: 1466
 #
 
 <br />
+
+# 2025.09.22 Challenge - Digits vs Letters
+
+My solution -> *[2025_09_22_digits_vs_letters](2025_09_22_digits_vs_letters.py)*
+
+## **_Task condition:_**
+
+Given a string, return `"digits"` if the string has more digits than letters, `"letters"` if it has more letters than digits, and `"tie"` if it has the same amount of digits and letters.
+
+### **_Examples_**
+
+```
+Input: digits_or_letters("abc123") => Output: "tie"
+
+Input: digits_or_letters("a1b2c3d") => Output: "letters"
+
+Input: digits_or_letters("1a2b3c4") => Output: "digits"
+
+Input: digits_or_letters("abc123!@#DEF") => Output: "letters"
+
+Input: digits_or_letters("H3110 W0R1D") => Output: "digits"
+
+Input: digits_or_letters("P455W0RD") => Output: "tie"
+```
+
+**_NOTES:_**
+
+- Digits consist of `0-9`.
+- Letters consist of `a-z` in upper or lower case.
+- Ignore any other characters.
+
+#
+
+<br />
