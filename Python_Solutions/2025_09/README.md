@@ -677,7 +677,7 @@ Input: number_of_files(4.5, "MB", 750) => Output: 166666
 
 # 2025.09.21 Challenge - Video Storage
 
-My solution -> *[2025_09_21_video_storage_old](2025_09_21_video_storage_old.py)*
+My solution -> *[2025_09_21_video_storage](2025_09_21_video_storage.py)*
 
 ## **_Task condition:_**
 
