@@ -751,3 +751,39 @@ Input: digits_or_letters("P455W0RD") => Output: "tie"
 #
 
 <br />
+
+# 2025.09.23 Challenge - String Mirror
+
+My solution -> *[2025_09_23_string_mirror](2025_09_23_string_mirror.py)*
+
+## **_Task condition:_**
+
+Given two strings, determine if the second string is a mirror of the first.
+
+### **_Examples_**
+
+```
+Input: is_mirror("helloworld", "helloworld") => Output: False
+
+Input: is_mirror("Hello World", "dlroW olleH") => Output: True
+
+Input: is_mirror("RaceCar", "raCecaR") => Output: True
+
+Input: is_mirror("RaceCar", "RaceCar") => Output: False
+
+Input: is_mirror("Mirror", "rorrim") => Output: False
+
+Input: is_mirror("Hello World", "dlroW-olleH") => Output: True
+
+Input: is_mirror("Hello World", "!dlroW !olleH") => Output: True
+```
+
+**_NOTES:_**
+
+- A string is considered a mirror if it contains the same letters in reverse order.
+- Treat uppercase and lowercase letters as distinct.
+- Ignore all non-alphabetical characters.
+
+#
+
+<br />
