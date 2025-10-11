@@ -787,3 +787,39 @@ Input: is_mirror("Hello World", "!dlroW !olleH") => Output: True
 #
 
 <br />
+
+# 2025.09.24 Challenge - Perfect Square
+
+My solution -> *[2025_09_24_perfect_square](2025_09_24_perfect_square.py)*
+
+## **_Task condition:_**
+
+Given an integer, determine if it is a perfect square.
+
+### **_Examples_**
+
+```
+Input: is_perfect_square(9) => Output: True
+
+Input: is_perfect_square(49) => Output: True
+
+Input: is_perfect_square(1) => Output: True
+
+Input: is_perfect_square(2) => Output: False
+
+Input: is_perfect_square(99) => Output: False
+
+Input: is_perfect_square(-9) => Output: False
+
+Input: is_perfect_square(0) => Output: True
+
+Input: is_perfect_square(25281) => Output: True
+```
+
+**_NOTES:_**
+
+- A number is a perfect square if you can multiply an integer by itself to achieve the number. For example, `9` is a perfect square because you can multiply `3` by itself to get it.
+
+#
+
+<br />
