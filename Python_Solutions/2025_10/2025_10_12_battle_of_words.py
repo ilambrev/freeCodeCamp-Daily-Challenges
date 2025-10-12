@@ -7,9 +7,14 @@ def battle(our_team, opponent):
     our_wins = 0
     opponent_wins = 0
 
+    def calculate_letter_value(letter):
+        letter_value = ascii_letters.index(letter) + 1
+
+        return letter_value if letter_value < 27 else (letter_value - 26) * 2
+
     for i in range(len(our_team_words)):
-        our_word_value = sum([ascii_letters.index(letter) + 1 for letter in our_team_words[i]])
-        opponent_word_value = sum([ascii_letters.index(letter) + 1 for letter in opponent_words[i]])
+        our_word_value = sum([calculate_letter_value(letter) for letter in our_team_words[i]])
+        opponent_word_value = sum([calculate_letter_value(letter) for letter in opponent_words[i]])
 
         if our_word_value > opponent_word_value:
             our_wins += 1
