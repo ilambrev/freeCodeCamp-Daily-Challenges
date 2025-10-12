@@ -823,3 +823,29 @@ Input: is_perfect_square(25281) => Output: True
 #
 
 <br />
+
+# 2025.09.25 Challenge - 2nd Largest
+
+My solution -> *[2025_09_25_2nd_largest](2025_09_25_2nd_largest.py)*
+
+## **_Task condition:_**
+
+Given an array, return the second largest distinct number.
+
+### **_Examples_**
+
+```
+Input: second_largest([1, 2, 3, 4]) => Output: 3
+
+Input: second_largest([20, 139, 94, 67, 31]) => Output: 94
+
+Input: second_largest([2, 3, 4, 6, 6]) => Output: 4
+
+Input: second_largest([10, -17, 55.5, 44, 91, 0]) => Output: 55.5
+
+Input: second_largest([1, 0, -1, 0, 1, 0, -1, 1, 0]) => Output: 0
+```
+
+#
+
+<br />
