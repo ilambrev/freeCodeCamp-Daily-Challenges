@@ -435,3 +435,44 @@ Input: hex_to_decimal("A3F") => Output: 2623
 #
 
 <br />
+
+# 2025.10.12 Challenge - Battle Of Words
+
+My solution -> *[2025_10_12_battle_of_words](2025_10_12_battle_of_words.py)*
+
+## **_Task condition:_**
+
+Given two sentences representing your team and an opposing team, where each word from your team battles the corresponding word from the opposing team, determine which team wins using the following rules:
+
+- The given sentences will always contain the same number of words.
+- Words are separated by a single space and will only contain letters.
+- The value of each word is the sum of its letters.
+- Letters `a` to `z` correspond to the values `1` through `26`. For example, `a` is `1`, and `z` is `26`.
+- A capital letter doubles the value of the letter. For example, `A` is `2`, and `Z` is `52`.
+- Words battle in order: the first word of your team battles the first word of the opposing team, and so on.
+- A word wins if its value is greater than the opposing word's value.
+- The team with more winning words is the winner.
+
+Return `"We win"` if your team is the winner, `"We lose"` if your team loses, and `"Draw"` if both teams have the same number of wins.
+
+### **_Examples_**
+
+```
+Input: battle("hello world", "hello word") => Output: "We win"
+
+Input: battle("Hello world", "hello world") => Output: "We win"
+
+Input: battle("lorem ipsum", "kitty ipsum") => Output: "We lose"
+
+Input: battle("hello world", "world hello") => Output: "Draw"
+
+Input: battle("git checkout", "git switch") => Output: "We win"
+
+Input: battle("Cheeseburger with fries", "Cheeseburger with Fries") => Output: "We lose"
+
+Input: battle("We must never surrender", "Our team must win") => Output: "Draw"
+```
+
+#
+
+<br />
