@@ -476,3 +476,31 @@ Input: battle("We must never surrender", "Our team must win") => Output: "Draw"
 #
 
 <br />
+
+# 2025.10.13 Challenge - 24 To 12
+
+My solution -> *[2025_10_13_24_to_12](2025_10_13_24_to_12.py)*
+
+## **_Task condition:_**
+
+Given a string representing a time of the day in the `24-hour` format of `"HHMM"`, return the time in its equivalent `12-hour` format of `"H:MM AM"` or `"H:MM PM"`.
+
+- The given input will always be a four-digit string in `24-hour` time format, from `"0000"` to `"2359"`.
+
+### **_Examples_**
+
+```
+Input: to_12("1124") => Output: "11:24 AM"
+
+Input: to_12("0900") => Output: "9:00 AM"
+
+Input: to_12("1455") => Output: "2:55 PM"
+
+Input: to_12("2346") => Output: "11:46 PM"
+
+Input: to_12("0030") => Output: "12:30 AM"
+```
+
+#
+
+<br />
