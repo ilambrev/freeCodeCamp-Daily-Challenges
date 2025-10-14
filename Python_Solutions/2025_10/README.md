@@ -504,3 +504,33 @@ Input: to_12("0030") => Output: "12:30 AM"
 #
 
 <br />
+
+# 2025.10.14 Challenge - String Count
+
+My solution -> *[2025_10_14_string_count](2025_10_14_string_count.py)*
+
+## **_Task condition:_**
+
+Given two strings, determine how many times the second string appears in the first.
+
+### **_Examples_**
+
+```
+Input: count('abcdefg', 'def') => Output: 1
+
+Input: count('hello', 'world') => Output: 0
+
+Input: count('mississippi', 'iss') => Output: 2
+
+Input: count('she sells seashells by the seashore', 'sh') => Output: 3
+
+Input: count('101010101010101010101', '101') => Output: 10
+```
+
+**_NOTES:_**
+
+- The pattern string can overlap in the first string. For example, `"aaa"` contains `"aa"` twice. The first two `a`'s and the second two.
+
+#
+
+<br />
