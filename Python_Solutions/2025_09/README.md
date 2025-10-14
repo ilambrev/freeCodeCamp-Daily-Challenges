@@ -974,3 +974,23 @@ Input: get_longest_word("This sentence has multiple long words.") => Output: "se
 #
 
 <br />
+
+# 2025.09.30 Challenge - Phone Number Formatter
+
+My solution -> *[2025_09_30_phone_number_formatter](2025_09_30_phone_number_formatter.py)*
+
+## **_Task condition:_**
+
+Given a string of ten digits, return the string as a phone number in this format: `"+D (DDD) DDD-DDDD"`.
+
+### **_Examples_**
+
+```
+Input: format_number("05552340182") => Output: "+0 (555) 234-0182"
+
+Input: format_number("15554354792") => Output: "+1 (555) 435-4792"
+```
+
+#
+
+<br />
