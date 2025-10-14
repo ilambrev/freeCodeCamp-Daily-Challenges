@@ -922,3 +922,28 @@ Input: is_spam("+00 (555) 234-0182") => Output: False
 #
 
 <br />
+
+# 2025.09.28 Challenge - CSV Header Parser
+
+My solution -> *[2025_09_28_csv_header_parser](2025_09_28_csv_header_parser.py)*
+
+## **_Task condition:_**
+
+Given the first line of a comma-separated values (`CSV`) file, return an array containing the headings.
+
+- The first line of a `CSV` file contains headings separated by commas.
+- Remove any leading or trailing whitespace from each heading.
+
+### **_Examples_**
+
+```
+Input: get_headings("name,age,city") => Output: ["name", "age", "city"]
+
+Input: get_headings("first name,last name,phone") => Output: ["first name", "last name", "phone"]
+
+Input: get_headings("username , email , signup date ") => Output: ["username", "email", "signup date"]
+```
+
+#
+
+<br />
