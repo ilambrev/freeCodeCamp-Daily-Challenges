@@ -947,3 +947,30 @@ Input: get_headings("username , email , signup date ") => Output: ["username", "
 #
 
 <br />
+
+# 2025.09.29 Challenge - Longest Word
+
+My solution -> *[2025_09_29_longest_word](2025_09_29_longest_word.py)*
+
+## **_Task condition:_**
+
+Given a sentence, return the longest word in the sentence.
+
+### **_Examples_**
+
+```
+Input: get_longest_word("coding is fun") => Output: "coding"
+
+Input: get_longest_word("Coding challenges are fun and educational.") => Output: "educational"
+
+Input: get_longest_word("This sentence has multiple long words.") => Output: "sentence"
+```
+
+**_NOTES:_**
+
+- Ignore periods (`.`) when determining word length.
+- If multiple words are ties for the longest, return the first one that occurs.
+
+#
+
+<br />
