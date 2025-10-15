@@ -272,3 +272,29 @@ Input: factorial(20) => Output: 2432902008176640000
 #
 
 <br />
+
+# 2025.08.19 Challenge - Sum Of Squares
+
+My solution -> *[2025_08_19_sum_of_squares](2025_08_19_sum_of_squares.py)*
+
+## **_Task condition:_**
+
+Given a positive integer up to `1,000`, return the sum of all the integers squared from 1 up to the number.
+
+### **_Examples_**
+
+```
+Input: sum_of_squares(5) => Output: 55
+
+Input: sum_of_squares(10) => Output: 385
+
+Input: sum_of_squares(25) => Output: 5525
+
+Input: sum_of_squares(500) => Output: 41791750
+
+Input: sum_of_squares(1000) => Output: 333833500
+```
+
+#
+
+<br />
