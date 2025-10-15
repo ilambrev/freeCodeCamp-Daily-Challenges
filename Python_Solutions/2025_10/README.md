@@ -534,3 +534,33 @@ Input: count('101010101010101010101', '101') => Output: 10
 #
 
 <br />
+
+# 2025.10.15 Challenge - HTML Tag Stripper
+
+My solution -> *[2025_10_15_html_tag_stripper](2025_10_15_html_tag_stripper.py)*
+
+## **_Task condition:_**
+
+Given a string of `HTML` code, remove the tags and return the plain text content.
+
+- The input string will contain only valid `HTML`.
+- `HTML` tags may be nested.
+- Remove the tags and any attributes.
+
+For example, `'<a href="#">Click here</a>'` should return `"Click here"`.
+
+### **_Examples_**
+
+```
+Input: strip_tags('<a href="#">Click here</a>') => Output: "Click here"
+
+Input: strip_tags('<p class="center">Hello <b>World</b>!</p>') => Output: "Hello World!"
+
+Input: strip_tags('<img src="cat.jpg" alt="Cat">') => Output: ""
+
+Input: strip_tags('<main id="main"><section class="section">section</section><section class="section">section</section></main>') => Output: "sectionsection"
+```
+
+#
+
+<br />
