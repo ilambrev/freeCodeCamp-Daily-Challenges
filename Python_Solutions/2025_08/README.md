@@ -298,3 +298,29 @@ Input: sum_of_squares(1000) => Output: 333833500
 #
 
 <br />
+
+# 2025.08.20 Challenge - 3 Strikes
+
+My solution -> *[2025_08_20_3_strikes](2025_08_20_3_strikes.py)*
+
+## **_Task condition:_**
+
+Given an integer between `1` and `10,000`, return a count of how many numbers from `1` up to that integer whose square contains at least one digit `3`.
+
+### **_Examples_**
+
+```
+Input: squares_with_three(1) => Output: 0
+
+Input: squares_with_three(10) => Output: 1
+
+Input: squares_with_three(100) => Output: 19
+
+Input: squares_with_three(1000) => Output: 326
+
+Input: squares_with_three(10000) => Output: 4531
+```
+
+#
+
+<br />
