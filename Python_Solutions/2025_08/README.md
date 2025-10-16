@@ -352,3 +352,34 @@ Input: mile_pace(26.2, "120:35") => Output: "04:36"
 #
 
 <br />
+
+# 2025.08.22 Challenge - Message Decoder
+
+My solution -> *[2025_08_22_message_decoder](2025_08_22_message_decoder.py)*
+
+## **_Task condition:_**
+
+Given a secret message string, and an integer representing the number of letters that were used to shift the message to encode it, return the decoded string.
+
+### **_Examples_**
+
+```
+Input: decode("Xlmw mw e wigvix qiwweki.", 4) => Output: "This is a secret message."
+
+Input: decode("Byffi Qilfx!", 20) => Output: "Hello World!"
+
+Input: decode("Zqd xnt njzx?", -1) => Output: "Are you okay?"
+
+Input: decode("oannLxmnLjvy", 9) => Output: "freeCodeCamp"
+```
+
+**_NOTES:_**
+
+- A positive number means the message was shifted forward in the alphabet.
+- A negative number means the message was shifted backward in the alphabet.
+- Case matters, decoded characters should retain the case of their encoded counterparts.
+- Non-alphabetical characters should not get decoded.
+
+#
+
+<br />
