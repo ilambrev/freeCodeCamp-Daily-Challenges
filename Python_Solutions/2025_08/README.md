@@ -324,3 +324,31 @@ Input: squares_with_three(10000) => Output: 4531
 #
 
 <br />
+
+# 2025.08.21 Challenge - Mile Pace
+
+My solution -> *[2025_08_21_mile_pace](2025_08_21_mile_pace.py)*
+
+## **_Task condition:_**
+
+Given a number of miles ran, and a time in `"MM:SS"` (minutes:seconds) it took to run those miles, return a string for the average time it took to run each mile in the format `"MM:SS"`.
+
+### **_Examples_**
+
+```
+Input: mile_pace(3, "24:00") => Output: "08:00"
+
+Input: mile_pace(1, "06:45") => Output: "06:45"
+
+Input: mile_pace(2, "07:00") => Output: "03:30"
+
+Input: mile_pace(26.2, "120:35") => Output: "04:36"
+```
+
+**_NOTES:_**
+
+- Add leading zeros when needed.
+
+#
+
+<br />
