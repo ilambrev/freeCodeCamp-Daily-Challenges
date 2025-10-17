@@ -383,3 +383,43 @@ Input: decode("oannLxmnLjvy", 9) => Output: "freeCodeCamp"
 #
 
 <br />
+
+# 2025.08.23 Challenge - Unnatural Prime
+
+My solution -> *[2025_08_23_unnatural_prime](2025_08_23_unnatural_prime.py)*
+
+## **_Task condition:_**
+
+Given an integer, determine if that number is a prime number or a negative prime number.
+
+### **_Examples_**
+
+```
+Input: is_unnatural_prime(1) => Output: False
+
+Input: is_unnatural_prime(-1) => Output: False
+
+Input: is_unnatural_prime(19) => Output: True
+
+Input: is_unnatural_prime(-23) => Output: True
+
+Input: is_unnatural_prime(0) => Output: False
+
+Input: is_unnatural_prime(97) => Output: True
+
+Input: is_unnatural_prime(-61) => Output: True
+
+Input: is_unnatural_prime(99) => Output: False
+
+Input: is_unnatural_prime(-44) => Output: False
+```
+
+**_NOTES:_**
+
+- A prime number is a positive integer greater than `1` that is only divisible by `1` and `itself`.
+- A negative prime number is the negative version of a positive prime number.
+- `1` and `0` are not considered prime numbers.
+
+#
+
+<br />
