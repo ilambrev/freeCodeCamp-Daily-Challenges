@@ -607,3 +607,33 @@ Input: validate("git@commit@push.io") => Output: False
 #
 
 <br />
+
+# 2025.10.17 Challenge - Credit Card Masker
+
+My solution -> *[2025_10_17_credit_card_masker](2025_10_17_credit_card_masker.py)*
+
+## **_Task condition:_**
+
+Given a string of credit card numbers, return a masked version of it using the following constraints:
+
+- The string will contain four sets of four digits (`0-9`), with all sets being separated by a single space, or a single hyphen (`-`).
+- Replace all numbers, except the last four, with an asterisk (`*`).
+- Leave the remaining characters unchanged.
+
+For example, given `"4012-8888-8888-1881"` return `"****-****-****-1881"`.
+
+### **_Examples_**
+
+```
+Input: mask("4012-8888-8888-1881") => Output: "****-****-****-1881"
+
+Input: mask("5105 1051 0510 5100") => Output: "**** **** **** 5100"
+
+Input: mask("6011 1111 1111 1117") => Output: "**** **** **** 1117"
+
+Input: mask("2223-0000-4845-0010") => Output: "****-****-****-0010"
+```
+
+#
+
+<br />
