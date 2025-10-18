@@ -467,3 +467,34 @@ Input: battle("Mr. Smith", "Dr. Jones") => Output: "It was a tie"
 #
 
 <br />
+
+# 2025.08.25 Challenge - camelCase
+
+My solution -> *[2025_08_25_camel_case](2025_08_25_camel_case.py)*
+
+## **_Task condition:_**
+
+Given a string, return its camel case version using the following rules:
+
+- Words in the string argument are separated by one or more characters from the following set: space (` `), dash (`-`), or underscore (`_`). Treat any sequence of these as a word break.
+- The first word should be all lowercase.
+- Each subsequent word should start with an uppercase letter, with the rest of it lowercase.
+- All spaces and separators should be removed.
+
+### **_Examples_**
+
+```
+Input: to_camel_case("hello world") => Output: "helloWorld"
+
+Input: to_camel_case("HELLO WORLD") => Output: "helloWorld"
+
+Input: to_camel_case("secret agent-X") => Output: "secretAgentX"
+
+Input: to_camel_case("FREE cODE cAMP") => Output: "freeCodeCamp"
+
+Input: to_camel_case("ye old-_-sea  faring_buccaneer_-_with a - peg__leg----and a_parrot_ _named- _squawk") => Output: "yeOldSeaFaringBuccaneerWithAPegLegAndAParrotNamedSquawk"
+```
+
+#
+
+<br />
