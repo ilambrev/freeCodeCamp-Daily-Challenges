@@ -637,3 +637,37 @@ Input: mask("2223-0000-4845-0010") => Output: "****-****-****-0010"
 #
 
 <br />
+
+# 2025.10.18 Challenge - Missing Socks
+
+My solution -> *[2025_10_18_missing_socks](2025_10_18_missing_socks.py)*
+
+## **_Task condition:_**
+
+Given an integer representing the number of pairs of socks you started with, and another integer representing how many wash cycles you have gone through, return the number of complete pairs of socks you currently have using the following constraints:
+
+- Every `2` wash cycles, you lose a single sock.
+- Every `3` wash cycles, you find a single missing sock.
+- Every `5` wash cycles, a single sock is worn out and must be thrown away.
+- Every `10` wash cycles, you buy a pair of socks.
+- You can never have less than `zero` total socks.
+- Rules can overlap. For example, on wash cycle `10`, you will lose a single sock, throw away a single sock, and buy a new pair of socks.
+- Return the number of complete pairs of socks.
+
+### **_Examples_**
+
+```
+Input: sock_pairs(2, 5) => Output: 1
+
+Input: sock_pairs(1, 2) => Output: 0
+
+Input: sock_pairs(5, 11) => Output: 4
+
+Input: sock_pairs(6, 25) => Output: 3
+
+Input: sock_pairs(1, 8) => Output: 0
+```
+
+#
+
+<br />
