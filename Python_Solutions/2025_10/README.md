@@ -671,3 +671,35 @@ Input: sock_pairs(1, 8) => Output: 0
 #
 
 <br />
+
+# 2025.10.19 Challenge - HTML Attribute Extractor
+
+My solution -> *[2025_10_19_html_attribute_extractor](2025_10_19_html_attribute_extractor.py)*
+
+## **_Task condition:_**
+
+Given a string of a valid HTML element, return the attributes of the element using the following criteria:
+
+- You will only be given one element.
+- Attributes will be in the format: `attribute="value"`.
+- Return an array of strings with each attribute property and value, separated by a comma, in this format: `["attribute1, value1", "attribute2, value2"]`.
+- Return attributes in the order they are given.
+- If no attributes are found, return an empty array.
+
+### **_Examples_**
+
+```
+Input: extract_attributes('<span class="red"></span>') => Output: ["class, red"]
+
+Input: extract_attributes('<meta charset="UTF-8" />') => Output: ["charset, UTF-8"]
+
+Input: extract_attributes("<p>Lorem ipsum dolor sit amet</p>") => Output: []
+
+Input: extract_attributes('<input name="email" type="email" required="true" />') => Output: ["name, email", "type, email", "required, true"]
+
+Input: extract_attributes('<button id="submit" class="btn btn-primary">Submit</button>') => Output: ["id, submit", "class, btn btn-primary"]
+```
+
+#
+
+<br />
