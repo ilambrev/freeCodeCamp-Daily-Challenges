@@ -703,3 +703,31 @@ Input: extract_attributes('<button id="submit" class="btn btn-primary">Submit</b
 #
 
 <br />
+
+# 2025.10.20 Challenge - Tip Calculator
+
+My solution -> *[2025_10_20_tip_calculator](2025_10_20_tip_calculator.py)*
+
+## **_Task condition:_**
+
+Given the price of your meal and a custom tip percent, return an array with three tip values; `15%`, `20%`, and the custom amount.
+
+- Prices will be given in the format: `"$N.NN"`.
+- Custom tip percents will be given in this format: `"25%"`.
+- Return amounts in the same `"$N.NN"` format, rounded to two decimal places.
+
+For example, given a `"$10.00"` meal price, and a `"25%"` custom tip value, return `["$1.50", "$2.00", "$2.50"]`.
+
+### **_Examples_**
+
+```
+Input: calculate_tips("$10.00", "25%") => Output: ["$1.50", "$2.00", "$2.50"]
+
+Input: calculate_tips("$89.67", "26%") => Output: ["$13.45", "$17.93", "$23.31"]
+
+Input: calculate_tips("$19.85", "9%") => Output: ["$2.98", "$3.97", "$1.79"]
+```
+
+#
+
+<br />
