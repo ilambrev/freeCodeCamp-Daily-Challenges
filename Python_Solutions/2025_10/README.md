@@ -763,3 +763,41 @@ Input: adjust_thermostat(59, 22) => Output: "Heat: 12.6 degrees Fahrenheit"
 #
 
 <br />
+
+# 2025.10.22 Challenge - Speak Wisely, You Must
+
+My solution -> *[2025_10_22_speak_wisely_you_must](2025_10_22_speak_wisely_you_must.py)*
+
+## **_Task condition:_**
+
+Given a sentence, return a version of it that sounds like advice from a wise teacher using the following rules:
+
+- Words are separated by a single space.
+- Find the first occurrence of one of the following words in the sentence: `"have"`, `"must"`, `"are"`, `"will"`, `"can"`.
+- Move all words before and including that word to the end of the sentence and:
+  - Preserve the order of the words when you move them.
+  - Make them all lowercase.
+  - And add a comma and space before them.
+- Capitalize the first letter of the new first word of the sentence.
+- All given sentences will end with a single punctuation mark. Keep the original punctuation of the sentence and move it to the end of the new sentence.
+- Return the new sentence, make sure there's a single space between each word and no spaces at the beginning or end of the sentence.
+
+For example, given `"You must speak wisely."` return `"Speak wisely, you must."`
+
+### **_Examples_**
+
+```
+Input: wise_speak("You must speak wisely.") => Output: "Speak wisely, you must."
+
+Input: wise_speak("You can do it!") => Output: "Do it, you can!"
+
+Input: wise_speak("Do you think you will complete this?") => Output: "Complete this, do you think you will?"
+
+Input: wise_speak("All your base are belong to us.") => Output: "Belong to us, all your base are."
+
+Input: wise_speak("You have much to learn.") => Output: "Much to learn, you have."
+```
+
+#
+
+<br />
