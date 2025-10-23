@@ -801,3 +801,29 @@ Input: wise_speak("You have much to learn.") => Output: "Much to learn, you have
 #
 
 <br />
+
+# 2025.10.23 Challenge - Favorite Songs
+
+My solution -> *[2025_10_23_favorite_songs](2025_10_23_favorite_songs.py)*
+
+## **_Task condition:_**
+
+Remember iPods? The first model came out 24 years ago today, on Oct. 23, 2001.
+
+Given an array of song objects representing your iPod playlist, return an array with the titles of the two most played songs, with the most played song first.
+
+- Each object will have a `"title"` property (string), and a `"plays"` property (integer).
+
+### **_Examples_**
+
+```
+Input: favorite_songs([{"title": "Sync or Swim", "plays": 3}, {"title": "Byte Me", "plays": 1}, {"title": "Earbud Blues", "plays": 2} ]) => Output: ["Sync or Swim", "Earbud Blues"]
+
+Input: favorite_songs([{"title": "Skip Track", "plays": 98}, {"title": "99 Downloads", "plays": 99}, {"title": "Clickwheel Love", "plays": 100} ]) => Output: ["Clickwheel Love", "99 Downloads"]
+
+Input: favorite_songs([{"title": "Song A", "plays": 42}, {"title": "Song B", "plays": 99}, {"title": "Song C", "plays": 75} ]) => Output: ["Song B", "Song C"]
+```
+
+#
+
+<br />
