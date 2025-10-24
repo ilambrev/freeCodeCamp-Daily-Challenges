@@ -827,3 +827,54 @@ Input: favorite_songs([{"title": "Song A", "plays": 42}, {"title": "Song B", "pl
 #
 
 <br />
+
+# 2025.10.24 Challenge - Hidden Treasure
+
+My solution -> *[2025_10_24_hidden_treasure](2025_10_24_hidden_treasure.py)*
+
+## **_Task condition:_**
+
+Given a 2D array representing a map of the ocean floor that includes a hidden treasure, and an array with the coordinates (`[row, column]`) for the next dive of your treasure search, return `"Empty"`, `"Found"`, or `"Recovered"` using the following rules:
+
+- The given 2D array will contain exactly one unrecovered treasure, which will occupy multiple cells.
+- Each cell in the 2D array will contain one of the following values:
+  
+  - `"-"`: No treasure.
+  - `"O"`: A part of the treasure that has not been found.
+  - `"X"`: A part of the treasure that has already been found.
+
+- If the dive location has no treasure, return `"Empty"`.
+- If the dive location finds treasure, but at least one other part of the treasure remains unfound, return `"Found"`.
+- If the dive location finds the last unfound part of the treasure, return `"Recovered"`.
+
+For example, given:
+
+```
+[
+  [ "-", "X"],
+  [ "-", "X"],
+  [ "-", "O"]
+]
+```
+
+And `[2, 1]` for the coordinates of the dive location, return `"Recovered"` because the dive found the last unfound part of the treasure.
+
+### **_Examples_**
+
+```
+Input: dive([[ "-", "X"], [ "-", "X"], [ "-", "O"]], [2, 1]) => Output: "Recovered"
+
+Input: dive([[ "-", "X"], [ "-", "X"], [ "-", "O"]], [2, 0]) => Output: "Empty"
+
+Input: dive([[ "-", "X"], [ "-", "O"], [ "-", "O"]], [1, 1]) => Output: "Found"
+
+Input: dive([[ "-", "-", "-"], [ "X", "O", "X"], [ "-", "-", "-"]], [1, 2]) => Output: "Found"
+
+Input: dive([[ "-", "-", "-"], [ "-", "-", "-"], [ "O", "X", "X"]], [2, 0]) => Output: "Recovered"
+
+Input: dive([[ "-", "-", "-"], [ "-", "-", "-"], [ "O", "X", "X"]], [1, 2]) => Output: "Empty"
+```
+
+#
+
+<br />
