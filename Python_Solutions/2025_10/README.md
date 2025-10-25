@@ -878,3 +878,33 @@ Input: dive([[ "-", "-", "-"], [ "-", "-", "-"], [ "O", "X", "X"]], [1, 2]) => O
 #
 
 <br />
+
+# 2025.10.25 Challenge - Complementary DNA
+
+My solution -> *[2025_10_25_complementary_dna](2025_10_25_complementary_dna.py)*
+
+## **_Task condition:_**
+
+Given a string representing a `DNA` sequence, return its complementary strand using the following rules:
+
+- `DNA` consists of the letters `"A"`, `"C"`, `"G"`, and `"T"`.
+- The letters `"A"` and `"T"` complement each other.
+- The letters `"C"` and `"G"` complement each other.
+
+For example, given `"ACGT"`, return `"TGCA"`.
+
+### **_Examples_**
+
+```
+Input: complementary_dna("ACGT") => Output: "TGCA"
+
+Input: complementary_dna("ATGCGTACGTTAGC") => Output: "TACGCATGCAATCG"
+
+Input: complementary_dna("GGCTTACGATCGAAG") => Output: "CCGAATGCTAGCTTC"
+
+Input: complementary_dna("GATCTAGCTAGGCTAGCTAG") => Output: "CTAGATCGATCCGATCGATC"
+```
+
+#
+
+<br />
