@@ -908,3 +908,33 @@ Input: complementary_dna("GATCTAGCTAGGCTAGCTAG") => Output: "CTAGATCGATCCGATCGAT
 #
 
 <br />
+
+# 2025.10.26 Challenge - Duration Formatter
+
+My solution -> *[2025_10_26_duration_formatter](2025_10_26_duration_formatter.py)*
+
+## **_Task condition:_**
+
+Given an integer number of seconds, return a string representing the same duration in the format `"H:MM:SS"`, where `"H"` is the number of hours, `"MM"` is the number of minutes, and `"SS"` is the number of seconds. Return the time using the following rules:
+
+- `Seconds`: Should always be two digits.
+- `Minutes`: Should omit leading zeros when they aren't needed. Use `"0"` if the duration is less than one minute.
+- `Hours`: Should be included only if they're greater than zero.
+
+### **_Examples_**
+
+```
+Input: format(500) => Output: "8:20"
+
+Input: format(4000) => Output: "1:06:40"
+
+Input: format(1) => Output: "0:01"
+
+Input: format(5555) => Output: "1:32:35"
+
+Input: format(99999) => Output: "27:46:39"
+```
+
+#
+
+<br />
