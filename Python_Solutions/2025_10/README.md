@@ -938,3 +938,29 @@ Input: format(99999) => Output: "27:46:39"
 #
 
 <br />
+
+# 2025.10.27 Challenge - Integer Sequence
+
+My solution -> *[2025_10_27_integer_sequence](2025_10_27_integer_sequence.py)*
+
+## **_Task condition:_**
+
+Given a positive integer, return a string with all of the integers from `1` up to, and including, the given number, in numerical order.
+
+For example, given `5`, return `"12345"`.
+
+### **_Examples_**
+
+```
+Input: sequence(5) => Output: "12345"
+
+Input: sequence(10) => Output: "12345678910"
+
+Input: sequence(1) => Output: "1"
+
+Input: sequence(27) => Output: "123456789101112131415161718192021222324252627"
+```
+
+#
+
+<br />
