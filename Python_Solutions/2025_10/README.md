@@ -964,3 +964,44 @@ Input: sequence(27) => Output: "123456789101112131415161718192021222324252627"
 #
 
 <br />
+
+# 2025.10.28 Challenge - Navigator
+
+My solution -> *[2025_10_28_navigator](2025_10_28_navigator.py)*
+
+## **_Task condition:_**
+
+On October 28, 1994, Netscape Navigator was released, helping millions explore the early web.
+
+Given an array of browser commands you executed on Netscape Navigator, return the current page you are on after executing all the commands using the following rules:
+
+- You always start on the `"Home"` page, which will not be included in the commands array.
+- Valid commands are:
+  - `"Visit Page"`: Where `"Page"` is the name of the page you are visiting. For example, `"Visit About"` takes you to the `"About"` page. When you visit a new page, make sure to discard any forward history you have.
+  - `"Back"`: Takes you to the previous page in your history or stays on the current page if there isn't one.
+  - `"Forward"`: Takes you forward in the history to the page you came from or stays on the current page if there isn't one.
+
+For example, given `["Visit About Us", "Back", "Forward"]`, return `"About Us"`.
+
+
+### **_Examples_**
+
+```
+Input: navigate(["Visit About Us", "Back", "Forward"]) => Output: "About Us"
+
+Input: navigate(["Forward"]) => Output: "Home"
+
+Input: navigate(["Back"]) => Output: "Home"
+
+Input: navigate(["Visit About Us", "Visit Gallery"]) => Output: "Gallery"
+
+Input: navigate(["Visit About Us", "Visit Gallery", "Back", "Back"]) => Output: "Home"
+
+Input: navigate(["Visit About", "Visit Gallery", "Back", "Visit Contact", "Forward"]) => Output: "Contact"
+
+Input: navigate(["Visit About Us", "Visit Visit Us", "Forward", "Visit Contact Us", "Back"]) => Output: "Visit Us"
+```
+
+#
+
+<br />
