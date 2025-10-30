@@ -1039,3 +1039,31 @@ Input: sort(["simon@beta.com", "sammy@alpha.com", "Sarah@Alpha.com", "SAM@ALPHA.
 #
 
 <br />
+
+# 2025.10.30 Challenge - Nth Prime
+
+My solution -> *[2025_10_30_nth_prime](2025_10_30_nth_prime.py)*
+
+## **_Task condition:_**
+
+A prime number is a positive integer greater than 1 that is divisible only by `1` and `itself`. The first five prime numbers are `2`, `3`, `5`, `7`, and `11`.
+
+Given a positive integer `n`, return the `n`th prime number. For example, given `5` return the `5`th prime number: `11`.
+
+### **_Examples_**
+
+```
+Input: nth_prime(5) => Output: 11
+
+Input: nth_prime(10) => Output: 29
+
+Input: nth_prime(16) => Output: 53
+
+Input: nth_prime(99) => Output: 523
+
+Input: nth_prime(1000) => Output: 7919
+```
+
+#
+
+<br />
