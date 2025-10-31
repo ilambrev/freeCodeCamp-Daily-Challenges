@@ -1067,3 +1067,34 @@ Input: nth_prime(1000) => Output: 7919
 #
 
 <br />
+
+# 2025.10.31 Challenge - SpOoKy~CaSe
+
+My solution -> *[2025_10_31_spooky_case](2025_10_31_spooky_case.py)*
+
+## **_Task condition:_**
+
+Given a string representing a variable name, convert it to "spooky case" using the following constraints:
+
+- Replace all underscores (`_`), and hyphens (`-`) with a tilde (`~`).
+- Capitalize the first letter of the string, and every other letter after that, ignore the tilde character when counting.
+
+For example, given `hello_world`, return `HeLlO~wOrLd`.
+
+### **_Examples_**
+
+```
+Input: spookify("hello_world") => Output: "HeLlO~wOrLd"
+
+Input: spookify("Spooky_Case") => Output: "SpOoKy~CaSe"
+
+Input: spookify("TRICK-or-TREAT") => Output: "TrIcK~oR~tReAt"
+
+Input: spookify("c_a-n_d-y_-b-o_w_l") => Output: "C~a~N~d~Y~~b~O~w~L"
+
+Input: spookify("thE_hAUntEd-hOUsE-Is-fUll_Of_ghOsts") => Output: "ThE~hAuNtEd~HoUsE~iS~fUlL~oF~gHoStS"
+```
+
+#
+
+<br />
