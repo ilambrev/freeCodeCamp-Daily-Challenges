@@ -82,3 +82,33 @@ Input: infected(25) => Output: 5217638
 #
 
 <br />
+
+# 2025.11.03 Challenge - Word Counter
+
+My solution -> *[2025_11_03_word_counter](2025_11_03_word_counter.py)*
+
+## **_Task condition:_**
+
+Given a sentence string, return the number of words that are in the sentence.
+
+### **_Examples_**
+
+```
+Input: count_words("Hello world") => Output: 2
+
+Input: count_words("The quick brown fox jumps over the lazy dog.") => Output: 9
+
+Input: count_words("I like coding challenges!") => Output: 4
+
+Input: count_words("Complete the challenge in JavaScript and Python.") => Output: 7
+
+Input: count_words("The missing semi-colon crashed the entire internet.") => Output: 7
+```
+
+**_NOTES:_**
+
+- Words are any sequence of non-space characters and are separated by a single space.
+
+#
+
+<br />
