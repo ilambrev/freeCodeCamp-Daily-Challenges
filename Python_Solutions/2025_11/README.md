@@ -112,3 +112,34 @@ Input: count_words("The missing semi-colon crashed the entire internet.") => Out
 #
 
 <br />
+
+# 2025.11.04 Challenge - Image Search
+
+My solution -> *[2025_11_04_image_search](2025_11_04_image_search.py)*
+
+## **_Task condition:_**
+
+On November 4th, 2001, Google launched its image search, allowing people to find images using search terms. In this challenge, you will imitate the image search.
+
+Given an array of image names and a search term, return an array of image names containing the search term.
+
+### **_Examples_**
+
+```
+Input: image_search(["dog.png", "cat.jpg", "parrot.jpeg"], "dog") => Output: ["dog.png"]
+
+Input: image_search(["Sunset.jpg", "Beach.png", "sunflower.jpeg"], "sun") => Output: ["Sunset.jpg", "sunflower.jpeg"]
+
+Input: image_search(["Moon.png", "sun.jpeg", "stars.png"], "PNG") => Output: ["Moon.png", "stars.png"]
+
+Input: image_search(["cat.jpg", "dogToy.jpeg", "kitty-cat.png", "catNip.jpeg", "franken_cat.gif"], "Cat") => Output: ["cat.jpg", "kitty-cat.png", "catNip.jpeg", "franken_cat.gif"]
+```
+
+**_NOTES:_**
+
+- Ignore the case when matching the search terms.
+- Return the images in the same order they appear in the input array.
+
+#
+
+<br />
