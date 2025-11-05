@@ -143,3 +143,36 @@ Input: image_search(["cat.jpg", "dogToy.jpeg", "kitty-cat.png", "catNip.jpeg", "
 #
 
 <br />
+
+# 2025.11.05 Challenge - Matrix Builder
+
+My solution -> *[2025_11_05_matrix_builder](2025_11_05_matrix_builder.py)*
+
+## **_Task condition:_**
+
+Given two integers (a number of rows and a number of columns), return a matrix (an array of arrays) filled with zeros (`0`) of the given size.
+
+For example, given `2` and `3`, return:
+
+```
+[
+  [0, 0, 0],
+  [0, 0, 0]
+]
+```
+
+### **_Examples_**
+
+```
+Input: build_matrix(2, 3) => Output: [[0, 0, 0], [0, 0, 0]]
+
+Input: build_matrix(3, 2) => Output: [[0, 0], [0, 0], [0, 0]]
+
+Input: build_matrix(4, 3) => Output: [[0, 0, 0], [0, 0, 0], [0, 0, 0], [0, 0, 0]]
+
+Input: build_matrix(9, 1) => Output: [[0], [0], [0], [0], [0], [0], [0], [0], [0]]
+```
+
+#
+
+<br />
