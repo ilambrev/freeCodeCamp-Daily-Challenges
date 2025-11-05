@@ -498,3 +498,30 @@ Input: to_camel_case("ye old-_-sea  faring_buccaneer_-_with a - peg__leg----and 
 #
 
 <br />
+
+# 2025.08.26 Challenge - Reverse Parenthesis
+
+My solution -> *[2025_08_26_reverse_parenthesis](2025_08_26_reverse_parenthesis.py)*
+
+## **_Task condition:_**
+
+Given a string that contains properly nested parentheses, return the decoded version of the string using the following rules:
+
+- All characters inside each pair of parentheses should be reversed.
+- Parentheses should be removed from the final result.
+- If parentheses are nested, the innermost pair should be reversed first, and then its result should be included in the reversal of the outer pair.
+- Assume all parentheses are evenly balanced and correctly nested.
+
+### **_Examples_**
+
+```
+Input: decode("(f(b(dc)e)a)") => Output: "abcdef"
+
+Input: decode("((is?)(a(t d)h)e(n y( uo)r)aC)") => Output: "Can you read this?"
+
+Input: decode("f(Ce(re))o((e(aC)m)d)p") => Output: "freeCodeCamp"
+```
+
+#
+
+<br />
