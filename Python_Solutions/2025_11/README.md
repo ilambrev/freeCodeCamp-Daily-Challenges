@@ -176,3 +176,41 @@ Input: build_matrix(9, 1) => Output: [[0], [0], [0], [0], [0], [0], [0], [0], [0
 #
 
 <br />
+
+# 2025.11.06 Challenge - Weekday Finder
+
+My solution -> *[2025_11_06_weekday_finder](2025_11_06_weekday_finder.py)*
+
+## **_Task condition:_**
+
+Given a string date in the format `YYYY-MM-DD`, return the day of the week.
+
+Valid return days are:
+
+- `"Sunday"`
+- `"Monday"`
+- `"Tuesday"`
+- `"Wednesday"`
+- `"Thursday"`
+- `"Friday"`
+- `"Saturday"`
+
+Be sure to ignore time zones.
+
+### **_Examples_**
+
+```
+Input: get_weekday("2025-11-06") => Output: "Thursday"
+
+Input: get_weekday("1999-12-31") => Output: "Friday"
+
+Input: get_weekday("1111-11-11") => Output: "Saturday"
+
+Input: get_weekday("2112-12-21") => Output: "Wednesday"
+
+Input: get_weekday("2345-10-01") => Output: "Monday"
+```
+
+#
+
+<br />
