@@ -525,3 +525,33 @@ Input: decode("f(Ce(re))o((e(aC)m)d)p") => Output: "freeCodeCamp"
 #
 
 <br />
+
+# 2025.08.27 Challenge - Unorder Of Operations
+
+My solution -> *[2025_08_27_unorder_of_operations](2025_08_27_unorder_of_operations.py)*
+
+## **_Task condition:_**
+
+Given an array of integers and an array of string operators, apply the operations to the numbers sequentially from left-to-right. Repeat the operations as needed until all numbers are used. Return the final result.
+
+For example, given `[1, 2, 3, 4, 5]` and `['+', '*']`, return the result of evaluating `1 + 2 * 3 + 4 * 5` from left-to-right ignoring standard order of operations.
+
+- Valid operators are `+`, `-`, `*`, `/`, and `%`.
+
+### **_Examples_**
+
+```
+Input: evaluate([5, 6, 7, 8, 9], ['+', '-']) => Output: 3
+
+Input: evaluate([17, 61, 40, 24, 38, 14], ['+', '%']) => Output: 38
+
+Input: evaluate([20, 2, 4, 24, 12, 3], ['*', '/']) => Output: 60
+
+Input: evaluate([11, 4, 10, 17, 2], ['*', '*', '%']) => Output: 30
+
+Input: evaluate([33, 11, 29, 13], ['/', '-']) => Output: -2
+```
+
+#
+
+<br />
