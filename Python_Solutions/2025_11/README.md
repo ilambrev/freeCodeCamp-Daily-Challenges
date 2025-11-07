@@ -214,3 +214,35 @@ Input: get_weekday("2345-10-01") => Output: "Monday"
 #
 
 <br />
+
+# 2025.11.07 Challenge - Counting Cards
+
+My solution -> *[2025_11_07_counting_cards](2025_11_07_counting_cards.py)*
+
+## **_Task condition:_**
+
+A standard deck of playing cards has `13` unique cards in each suit. Given an integer representing the number of cards to pick from the deck, return the number of unique combinations of cards you can pick.
+
+- Order does not matter. Picking card `A` then card `B` is the same as picking card `B` then card `A`.
+
+For example, given `52`, return `1`. There's only one combination of `52` cards to pick from a `52` card deck. And given `2`, return `1326`, There's `1326` card combinations you can end up with when picking `2` cards from the deck.
+
+### **_Examples_**
+
+```
+Input: combinations(52) => Output: 1
+
+Input: combinations(1) => Output: 52
+
+Input: combinations(2) => Output: 1326
+
+Input: combinations(5) => Output: 2598960
+
+Input: combinations(10) => Output: 15820024220
+
+Input: combinations(50) => Output: 1326
+```
+
+#
+
+<br />
