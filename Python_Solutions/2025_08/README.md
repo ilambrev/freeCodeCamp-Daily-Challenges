@@ -555,3 +555,35 @@ Input: evaluate([33, 11, 29, 13], ['/', '-']) => Output: -2
 #
 
 <br />
+
+# 2025.08.28 Challenge - Second Best
+
+My solution -> *[2025_08_28_second_best](2025_08_28_second_best.py)*
+
+## **_Task condition:_**
+
+Given an array of integers representing the price of different laptops, and an integer representing your budget, return:
+
+1. The second most expensive laptop if it is within your budget, or
+2. The most expensive laptop that is within your budget, or
+3. `0` if no laptops are within your budget.
+
+- Duplicate prices should be ignored.
+
+### **_Examples_**
+
+```
+Input: get_laptop_cost([1500, 2000, 1800, 1400], 1900) => Output: 1800
+
+Input: get_laptop_cost([1500, 2000, 2000, 1800, 1400], 1900) => Output: 1800
+
+Input: get_laptop_cost([2099, 1599, 1899, 1499], 2200) => Output: 1899
+
+Input: get_laptop_cost([2099, 1599, 1899, 1499], 1000) => Output: 0
+
+Input: get_laptop_cost([1200, 1500, 1600, 1800, 1400, 2000], 1450) => Output: 1400
+```
+
+#
+
+<br />
