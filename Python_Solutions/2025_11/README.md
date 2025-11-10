@@ -322,3 +322,35 @@ Input: find_word([["f", "x", "o", "x"], ["o", "x", "o", "f"], ["f", "o", "f", "x
 #
 
 <br />
+
+# 2025.11.10 Challenge - Extension Extractor
+
+My solution -> *[2025_11_10_extension_extractor](2025_11_10_extension_extractor.py)*
+
+## **_Task condition:_**
+
+Given a string representing a filename, return the extension of the file.
+
+- The extension is the part of the filename that comes after the last period (`.`).
+- If the filename does not contain a period or ends with a period, return `"none"`.
+- The extension should be returned as-is, preserving case.
+
+### **_Examples_**
+
+```
+Input: get_extension("document.txt") => Output: "txt"
+
+Input: get_extension("README") => Output: "none"
+
+Input: get_extension("image.PNG") => Output: "PNG"
+
+Input: get_extension(".gitignore") => Output: "gitignore"
+
+Input: get_extension("archive.tar.gz") => Output: "gz"
+
+Input: get_extension("final.draft.") => Output: "none"
+```
+
+#
+
+<br />
