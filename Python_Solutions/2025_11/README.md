@@ -354,3 +354,37 @@ Input: get_extension("final.draft.") => Output: "none"
 #
 
 <br />
+
+# 2025.11.11 Challenge - Vowels And Consonants
+
+My solution -> *[2025_11_11_vowels_and_consonants](2025_11_11_vowels_and_consonants.py)*
+
+## **_Task condition:_**
+
+Given a string, return an array with the number of vowels and number of consonants in the string.
+
+- Vowels consist of `a`, `e`, `i`, `o`, `u` in any case.
+- Consonants consist of all other letters in any case.
+- Ignore any non-letter characters.
+
+For example, given `"Hello World"`, return `[3, 7]`.
+
+### **_Examples_**
+
+```
+Input: count("Hello World") => Output: [3, 7]
+
+Input: count("JavaScript") => Output: [3, 7]
+
+Input: count("Python") => Output: [1, 5]
+
+Input: count("freeCodeCamp") => Output: [5, 7]
+
+Input: count("Hello, World!") => Output: [3, 7]
+
+Input: count("The quick brown fox jumps over the lazy dog.") => Output: [11, 24]
+```
+
+#
+
+<br />
