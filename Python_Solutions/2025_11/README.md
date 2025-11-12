@@ -388,3 +388,38 @@ Input: count("The quick brown fox jumps over the lazy dog.") => Output: [11, 24]
 #
 
 <br />
+
+# 2025.11.12 Challenge - Email Signature Generator
+
+My solution -> *[2025_11_12_email_signature_generator](2025_11_12_email_signature_generator.py)*
+
+## **_Task condition:_**
+
+Given strings for a person's name, title, and company, return an email signature as a single string using the following rules:
+
+- The name should appear first, preceded by a prefix that depends on the first letter of the name. For names starting with (case-insensitive):
+  - `A-I`: Use `>>` as the prefix.
+  - `J-R`: Use `--` as the prefix.
+  - `S-Z`: Use `::` as the prefix.
+- A comma and space (`, `) should follow the name.
+- The title and company should follow the comma and space, separated by `" at "` (with spaces around it).
+
+For example, given `"Quinn Waverly"`, `"Founder and CEO"`, and `"TechCo"` return `"--Quinn Waverly, Founder and CEO at TechCo"`.
+
+### **_Examples_**
+
+```
+Input: generate_signature("Quinn Waverly", "Founder and CEO", "TechCo") => Output: "--Quinn Waverly, Founder and CEO at TechCo"
+
+Input: generate_signature("Alice Reed", "Engineer", "TechCo") => Output: ">>Alice Reed, Engineer at TechCo"
+
+Input: generate_signature("Tina Vaughn", "Developer", "example.com") => Output: "::Tina Vaughn, Developer at example.com"
+
+Input: generate_signature("B. B.", "Product Tester", "AcmeCorp") => Output: ">>B. B., Product Tester at AcmeCorp"
+
+Input: generate_signature("windstorm", "Cloud Architect", "Atmospheronics") => Output: "::windstorm, Cloud Architect at Atmospheronics"
+```
+
+#
+
+<br />
