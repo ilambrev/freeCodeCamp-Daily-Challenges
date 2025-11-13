@@ -423,3 +423,35 @@ Input: generate_signature("windstorm", "Cloud Architect", "Atmospheronics") => O
 #
 
 <br />
+
+# 2025.11.13 Challenge - Array Shift
+
+My solution -> *[2025_11_13_array_shift](2025_11_13_array_shift.py)*
+
+## **_Task condition:_**
+
+Given an array and an integer representing how many positions to shift the array, return the shifted array.
+
+- A positive integer shifts the array to the left.
+- A negative integer shifts the array to the right.
+- The shift wraps around the array.
+
+For example, given `[1, 2, 3]` and `1`, shift the array `1` to the left, returning `[2, 3, 1]`.
+
+### **_Examples_**
+
+```
+Input: shift_array([1, 2, 3], 1) => Output: [2, 3, 1]
+
+Input: shift_array([1, 2, 3], -1) => Output: [3, 1, 2]
+
+Input: shift_array(["alpha", "bravo", "charlie"], 5) => Output: ["charlie", "alpha", "bravo"]
+
+Input: shift_array(["alpha", "bravo", "charlie"], -11) => Output: ["bravo", "charlie", "alpha"]
+
+Input: shift_array([0, 1, 2, 3, 4, 5, 6, 7, 8, 9], 15) => Output: [5, 6, 7, 8, 9, 0, 1, 2, 3, 4]
+```
+
+#
+
+<br />
