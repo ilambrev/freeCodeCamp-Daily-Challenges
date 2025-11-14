@@ -455,3 +455,37 @@ Input: shift_array([0, 1, 2, 3, 4, 5, 6, 7, 8, 9], 15) => Output: [5, 6, 7, 8, 9
 #
 
 <br />
+
+# 2025.11.14 Challenge - Is It the Weekend?
+
+My solution -> *[2025_11_14_is_it_the_weekend](2025_11_14_is_it_the_weekend.py)*
+
+## **_Task condition:_**
+
+Given a date in the format `"YYYY-MM-DD"`, return the number of days left until the weekend.
+
+- The weekend starts on `Saturday`.
+- If the given date is `Saturday` or `Sunday`, return `"It's the weekend!"`.
+- Otherwise, return `"X days until the weekend."`, where `X` is the number of days until `Saturday`.
+- If `X` is `1`, use `"day"` (singular) instead of `"days"` (plural).
+- Make sure the calculation ignores your local timezone.
+
+### **_Examples_**
+
+```
+Input: days_until_weekend("2025-11-14") => Output: "1 day until the weekend."
+
+Input: days_until_weekend("2025-01-01") => Output: "3 days until the weekend."
+
+Input: days_until_weekend("2025-12-06") => Output: "It's the weekend!"
+
+Input: days_until_weekend("2026-01-27") => Output: "4 days until the weekend."
+
+Input: days_until_weekend("2026-09-07") => Output: "5 days until the weekend."
+
+Input: days_until_weekend("2026-11-29") => Output: "It's the weekend!"
+```
+
+#
+
+<br />
