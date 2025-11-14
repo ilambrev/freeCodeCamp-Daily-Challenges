@@ -625,3 +625,27 @@ Input: burn_candles(2345, 3) => Output: 3517
 #
 
 <br />
+
+# 2025.08.30 Challenge - Array Duplicates
+
+My solution -> *[2025_08_30_array_duplicates](2025_08_30_array_duplicates.py)*
+
+## **_Task condition:_**
+
+Given an array of integers, return an array of integers that appear more than once in the initial array, sorted in ascending order. If no values appear more than once, return an empty array.
+
+- Only include one instance of each value in the returned array.
+
+### **_Examples_**
+
+```
+Input: find_duplicates([1, 2, 3, 4, 5]) => Output: []
+
+Input: find_duplicates([1, 2, 3, 4, 1, 2]) => Output: [1, 2]
+
+Input: find_duplicates([2, 34, 0, 1, -6, 23, 5, 3, 2, 5, 67, -6, 23, 2, 43, 2, 12, 0, 2, 4, 4]) => Output: [-6, 0, 2, 4, 5, 23]
+```
+
+#
+
+<br />
