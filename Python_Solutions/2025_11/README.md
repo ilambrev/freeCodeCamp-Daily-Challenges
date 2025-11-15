@@ -489,3 +489,33 @@ Input: days_until_weekend("2026-11-29") => Output: "It's the weekend!"
 #
 
 <br />
+
+# 2025.11.15 Challenge - GCD
+
+My solution -> *[2025_11_15_gcd](2025_11_15_gcd.py)*
+
+## **_Task condition:_**
+
+Given two positive integers, return their greatest common divisor (`GCD`).
+
+- The `GCD` of two integers is the largest number that divides evenly into both numbers without leaving a remainder.
+
+For example, the divisors of `4` are `1`, `2`, and `4`. The divisors of `6` are `1`, `2`, `3`, and `6`. So given `4` and `6`, return `2`, the largest number that appears in both sets of divisors.
+
+### **_Examples_**
+
+```
+Input: gcd(4, 6) => Output: 2
+
+Input: gcd(20, 15) => Output: 5
+
+Input: gcd(13, 17) => Output: 1
+
+Input: gcd(654, 456) => Output: 6
+
+Input: gcd(3456, 4320) => Output: 864
+```
+
+#
+
+<br />
