@@ -649,3 +649,44 @@ Input: find_duplicates([2, 34, 0, 1, -6, 23, 5, 3, 2, 5, 67, -6, 23, 2, 43, 2, 1
 #
 
 <br />
+
+# 2025.08.31 Challenge - Hex Generator
+
+My solution -> *[2025_08_31_hex_generator](2025_08_31_hex_generator.py)*
+
+## **_Task condition:_**
+
+Given a named CSS color string, generate a random hexadecimal (hex) color code that is dominant in the given color.
+
+- The function should handle `"red"`, `"green"`, or `"blue"` as an input argument.
+- If the input is not one of those, the function should return `"Invalid color"`.
+- The function should return a random six-character hex color code where the input color value is greater than any of the others.
+- Example of valid outputs for a given input:
+
+| Input   | Output   |
+| :-------| :------- |
+| "red"   | "FF0000" |
+| "green" | "00FF00" |
+| "blue"  | "0000FF" |
+
+### **_Examples_**
+
+```
+Input: generate_hex("yellow") => Output: "Invalid color"
+
+Input: generate_hex("red") => Output: a six-character string
+
+Input: generate_hex("red") => Output: a valid six-character hex color code
+
+Input: generate_hex("red") => Output: a valid hex color with a higher red value than other colors
+
+Input: Calling generate_hex("red") twice => Output: two different hex color values where red is dominant
+
+Input: Calling generate_hex("green") twice => Output: two different hex color values where green is dominant
+
+Input: Calling generate_hex("blue") twice => Output: two different hex color values where blue is dominant
+```
+
+#
+
+<br />
