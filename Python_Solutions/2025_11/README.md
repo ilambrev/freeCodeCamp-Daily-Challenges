@@ -519,3 +519,33 @@ Input: gcd(3456, 4320) => Output: 864
 #
 
 <br />
+
+# 2025.11.16 Challenge - Rectangle Count
+
+My solution -> *[2025_11_16_rectangle_count](2025_11_16_rectangle_count.py)*
+
+## **_Task condition:_**
+
+Given two positive integers representing the width and height of a rectangle, determine how many rectangles can fit in the given one.
+
+- Only count rectangles with integer width and height.
+
+For example, given `1` and `3`, return `6`. Three `1x1` rectangles, two `1x2` rectangles, and one `1x3` rectangle.
+
+### **_Examples_**
+
+```
+Input: count_rectangles(1, 3) => Output: 6
+
+Input: count_rectangles(3, 2) => Output: 18
+
+Input: count_rectangles(1, 2) => Output: 3
+
+Input: count_rectangles(5, 4) => Output: 150
+
+Input: count_rectangles(11, 19) => Output: 12540
+```
+
+#
+
+<br />
