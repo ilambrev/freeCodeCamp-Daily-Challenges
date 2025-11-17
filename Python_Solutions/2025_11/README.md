@@ -549,3 +549,36 @@ Input: count_rectangles(11, 19) => Output: 12540
 #
 
 <br />
+
+# 2025.11.17 Challenge - Fingerprint Test
+
+My solution -> *[2025_11_17_fingerprint_test](2025_11_17_fingerprint_test.py)*
+
+## **_Task condition:_**
+
+Given two strings representing fingerprints, determine if they are a match using the following rules:
+
+- Each fingerprint will consist only of lowercase letters (`a-z`).
+- Two fingerprints are considered a match if:
+  - They are the same length.
+  - The number of differing characters does not exceed `10%` of the fingerprint length.
+
+### **_Examples_**
+
+```
+Input: is_match("helloworld", "helloworld") => Output: True
+
+Input: is_match("helloworld", "helloworlds") => Output: False
+
+Input: is_match("helloworld", "jelloworld") => Output: True
+
+Input: is_match("thequickbrownfoxjumpsoverthelazydog", "thequickbrownfoxjumpsoverthelazydog") => Output: True
+
+Input: is_match("theslickbrownfoxjumpsoverthelazydog", "thequickbrownfoxjumpsoverthehazydog") => Output: True
+
+Input: is_match("thequickbrownfoxjumpsoverthelazydog", "thequickbrownfoxjumpsoverthehazycat") => Output: False
+```
+
+#
+
+<br />
