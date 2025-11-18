@@ -582,3 +582,29 @@ Input: is_match("thequickbrownfoxjumpsoverthelazydog", "thequickbrownfoxjumpsove
 #
 
 <br />
+
+# 2025.11.18 Challenge - 100 Characters
+
+My solution -> *[2025_11_18_100_characters](2025_11_18_100_characters.py)*
+
+## **_Task condition:_**
+
+Welcome to the 100th Daily Coding Challenge!
+
+Given a string, repeat its characters until the result is exactly `100` characters long. If your repetitions go over 100 characters, trim the extra so it's exactly `100`.
+
+### **_Examples_**
+
+```
+Input: one_hundred("One hundred ") => Output: "One hundred One hundred One hundred One hundred One hundred One hundred One hundred One hundred One "
+
+Input: one_hundred("freeCodeCamp ") => Output: "freeCodeCamp freeCodeCamp freeCodeCamp freeCodeCamp freeCodeCamp freeCodeCamp freeCodeCamp freeCodeC"
+
+Input: one_hundred("daily challenges ") => Output: "daily challenges daily challenges daily challenges daily challenges daily challenges daily challenge"
+
+Input: one_hundred("!") => Output: "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!"
+```
+
+#
+
+<br />
