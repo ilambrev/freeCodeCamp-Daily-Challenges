@@ -608,3 +608,50 @@ Input: one_hundred("!") => Output: "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 #
 
 <br />
+
+# 2025.11.19 Challenge - Markdown Heading Converter
+
+My solution -> *[2025_11_19_markdown_heading_converter](2025_11_19_markdown_heading_converter.py)*
+
+## **_Task condition:_**
+
+Given a string representing a Markdown heading, return the equivalent HTML heading.
+
+A valid Markdown heading must:
+
+- Start with zero or more spaces, followed by
+- `1` to `6` hash characters (`#`) in a row, then
+- At least one space. And finally,
+- The heading text.
+
+The number of hash symbols determines the heading level. For example, one hash symbol corresponds to an `h1` tag, and six hash symbols correspond to an `h6` tag.
+
+If the given string doesn't have the exact format above, return `"Invalid format"`.
+
+For example, given `"# My level 1 heading"`, return `"<h1>My level 1 heading</h1>"`.
+
+### **_Examples_**
+
+```
+Input: convert("# My level 1 heading") => Output: "<h1>My level 1 heading</h1>"
+
+Input: convert("My heading") => Output: "Invalid format"
+
+Input: convert("##### My level 5 heading") => Output: "<h5>My level 5 heading</h5>"
+
+Input: convert("#My heading") => Output: "Invalid format"
+
+Input: convert("  ###  My level 3 heading") => Output: "<h3>My level 3 heading</h3>"
+
+Input: convert("####### My level 7 heading") => Output: "Invalid format"
+
+Input: convert("## My #2 heading") => Output: "<h2>My #2 heading</h2>"
+```
+
+**_NOTES:_**
+
+- The console may not display HTML tags in strings when logging messages. Check the browser console to see logs with tags included.
+
+#
+
+<br />
