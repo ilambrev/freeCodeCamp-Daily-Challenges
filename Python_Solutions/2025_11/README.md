@@ -655,3 +655,36 @@ Input: convert("## My #2 heading") => Output: "<h2>My #2 heading</h2>"
 #
 
 <br />
+
+# 2025.11.20 Challenge - Longest Word
+
+My solution -> *[2025_11_20_longest_word](2025_11_20_longest_word.py)*
+
+## **_Task condition:_**
+
+Given a sentence string, return the longest word in the sentence.
+
+- Words are separated by a single space.
+- Only letters (`a-z`, case-insensitive) count toward the word's length.
+- If there are multiple words with the same length, return the first one that appears.
+- Return the word as it appears in the given string, with punctuation removed.
+
+### **_Examples_**
+
+```
+Input: longest_word("The quick red fox") => Output: "quick"
+
+Input: longest_word("Hello coding challenge.") => Output: "challenge"
+
+Input: longest_word("Do Try This At Home.") => Output: "This"
+
+Input: longest_word("This sentence... has commas, ellipses, and an exlamation point!") => Output: "exlamation"
+
+Input: longest_word("A tie? No way!") => Output: "tie"
+
+Input: longest_word("Wouldn't you like to know.") => Output: "Wouldnt"
+```
+
+#
+
+<br />
