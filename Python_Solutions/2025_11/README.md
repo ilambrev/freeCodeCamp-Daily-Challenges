@@ -688,3 +688,35 @@ Input: longest_word("Wouldn't you like to know.") => Output: "Wouldnt"
 #
 
 <br />
+
+# 2025.11.21 Challenge - LCM
+
+My solution -> *[2025_11_21_lcm](2025_11_21_lcm.py)*
+
+## **_Task condition:_**
+
+Given two integers, return the least common multiple (`LCM`) of the two numbers.
+
+The `LCM` of two numbers is the smallest positive integer that is a multiple of both numbers. For example, given `4` and `6`, return `12` because:
+
+- Multiples of `4` are `4`, `8`, `12` and so on.
+- Multplies of `6` are `6`, `12`, `18` and so on.
+- `12` is the smallest number that is a multiple of both.
+
+### **_Examples_**
+
+```
+Input: lcm(4, 6) => Output: 12
+
+Input: lcm(9, 6) => Output: 18
+
+Input: lcm(10, 100) => Output: 100
+
+Input: lcm(13, 17) => Output: 221
+
+Input: lcm(45, 70) => Output: 630
+```
+
+#
+
+<br />
