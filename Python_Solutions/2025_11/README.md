@@ -776,3 +776,33 @@ Input: count_characters("// TODO: Complete this challenge ASAP!") => Output: ["a
 #
 
 <br />
+
+# 2025.11.24 Challenge - Message Validator
+
+My solution -> *[2025_11_24_message_validator](2025_11_24_message_validator.py)*
+
+## **_Task condition:_**
+
+Given a message string and a validation string, determine if the message is valid.
+
+- A message is valid if each word in the message starts with the corresponding letter in the validation string, in order.
+- Letters are case-insensitive.
+- Words in the message are separated by single spaces.
+
+### **_Examples_**
+
+```
+Input: is_valid_message("hello world", "hw") => Output: True
+
+Input: is_valid_message("ALL CAPITAL LETTERS", "acl") => Output: True
+
+Input: is_valid_message("Coding challenge are boring.", "cca") => Output: False
+
+Input: is_valid_message("The quick brown fox jumps over the lazy dog.", "TQBFJOTLD") => Output: True
+
+Input: is_valid_message("The quick brown fox jumps over the lazy dog.", "TQBFJOTLDT") => Output: False
+```
+
+#
+
+<br />
