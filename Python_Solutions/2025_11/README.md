@@ -872,3 +872,33 @@ Input: is_fizz_buzz([1, 2, "Fizz", 4, "Buzz", "Fizz", 7, 8, "Fizz", "Buzz", 11, 
 #
 
 <br />
+
+# 2025.11.27 Challenge - What's My Age Again?
+
+My solution -> *[2025_11_27_whats_my_age_again](2025_11_27_whats_my_age_again.py)*
+
+## **_Task condition:_**
+
+Given the date of someone's birthday in the format `YYYY-MM-DD`, return the person's age as of `November 27th, 2025`.
+
+- Assume all birthdays are valid dates before `November 27th, 2025`.
+- Return the age as an integer.
+- Be sure to account for whether the person has already had their birthday in `2025`.
+
+### **_Examples_**
+
+```
+Input: calculate_age("2000-11-20") => Output: 25
+
+Input: calculate_age("2000-12-01") => Output: 24
+
+Input: calculate_age("2014-10-25") => Output: 11
+
+Input: calculate_age("1994-01-06") => Output: 31
+
+Input: calculate_age("1994-12-14") => Output: 30
+```
+
+#
+
+<br />
