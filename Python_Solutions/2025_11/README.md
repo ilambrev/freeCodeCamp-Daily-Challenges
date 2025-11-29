@@ -943,3 +943,38 @@ Input: compare("WIRELESS", "ETHERNET") => Output: "10021000"
 #
 
 <br />
+
+# 2025.11.29 Challenge - Ball Trajectory
+
+My solution -> *[2025_11_29_ball_trajectory](2025_11_29_ball_trajectory.py)*
+
+## **_Task condition:_**
+
+Today's challenge is inspired by the video game Pong, which was released November 29, 1972.
+
+Given a matrix (array of arrays) that includes the location of the ball (`2`), and the previous location of the ball (`1`), return the matrix indices for the next location of the ball.
+
+- The ball always moves in a straight line.
+- The movement direction is determined by how the ball moved from `1` to `2`.
+- The edges of the matrix are considered walls. If the balls hits a:
+  - top or bottom wall, it bounces by reversing its vertical direction.
+  - left or right wall, it bounces by reversing its horizontal direction.
+  - corner, it bounces by reversing both directions.
+
+### **_Examples_**
+
+```
+Input: get_next_location([[0,0,0,0], [0,0,0,0], [0,1,2,0], [0,0,0,0]]) => Output: [2, 3]
+
+Input: get_next_location([[0,0,0,0], [0,0,1,0], [0,2,0,0], [0,0,0,0]]) => Output: [3, 0]
+
+Input: get_next_location([[0,2,0,0], [1,0,0,0], [0,0,0,0], [0,0,0,0]]) => Output: [1, 2]
+
+Input: get_next_location([[0,0,0,0], [0,0,0,0], [2,0,0,0], [0,1,0,0]]) => Output: [1, 1]
+
+Input: get_next_location([[0,0,0,0], [0,0,0,0], [0,0,1,0], [0,0,0,2]]) => Output: [2, 2]
+```
+
+#
+
+<br />
