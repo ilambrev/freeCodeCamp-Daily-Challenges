@@ -28,3 +28,29 @@ Input: convert_to_km(0.621371) => Output: 1
 
 <br />
 
+# 2025.12.02 Challenge - Camel to Snake
+
+My solution -> *[2025_12_02_camel_to_snake](2025_12_02_camel_to_snake.py)*
+
+## **_Task condition:_**
+
+Given a string in camel case, return the snake case version of the string using the following rules:
+
+- The input string will contain only letters (`A-Z` and `a-z`) and will always start with a lowercase letter.
+- Every uppercase letter in the camel case string starts a new word.
+- Convert all letters to lowercase.
+- Separate words with an underscore (`_`).
+
+### **_Examples_**
+
+```
+Input: to_snake("helloWorld") => Output: "hello_world"
+
+Input: to_snake("myVariableName") => Output: "my_variable_name"
+
+Input: to_snake("freecodecampDailyChallenges") => Output: "freecodecamp_daily_challenges"
+```
+
+#
+
+<br />
