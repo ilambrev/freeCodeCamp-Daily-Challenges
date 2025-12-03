@@ -54,3 +54,46 @@ Input: to_snake("freecodecampDailyChallenges") => Output: "freecodecamp_daily_ch
 #
 
 <br />
+
+# 2025.12.03 Challenge - Markdown Ordered List Item Converter
+
+My solution -> *[2025_12_03_markdown_ordered_list_ltem_converter](2025_12_03_markdown_ordered_list_ltem_converter.py)*
+
+## **_Task condition:_**
+
+Given a string representing an ordered list item in Markdown, return the equivalent HTML string.
+
+A valid ordered list item in Markdown must:
+
+- Start with zero or more spaces, followed by
+- A number (`1` or greater) and a period (`.`), followed by
+- At least one space, and then
+- The list item text.
+
+If the string doesn't have the exact format above, return `"Invalid format"`. Otherwise, wrap the list item text in `li` tags and return the string.
+
+For example, given `"1. My item"`, return `"<li>My item</li>"`
+
+### **_Examples_**
+
+```
+Input: convert_list_item("1. My item") => Output: "<li>My item</li>"
+
+Input: convert_list_item(" 1.  Another item") => Output: "<li>Another item</li>"
+
+Input: convert_list_item("1 . invalid item") => Output: "Invalid format"
+
+Input: convert_list_item("2. list item text") => Output: "<li>list item text</li>"
+
+Input: convert_list_item(". invalid again") => Output: "Invalid format"
+
+Input: convert_list_item("A. last invalid") => Output: "Invalid format"
+```
+
+**_NOTES:_**
+
+- The console may not display HTML tags in strings when logging messages. Check the browser console to see logs with tags included.
+
+#
+
+<br />
