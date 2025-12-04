@@ -97,3 +97,34 @@ Input: convert_list_item("A. last invalid") => Output: "Invalid format"
 #
 
 <br />
+
+# 2025.12.04 Challenge - Permutation Count
+
+My solution -> *[2025_12_04_permutation_count](2025_12_04_permutation_count.py)*
+
+## **_Task condition:_**
+
+Given a string, return the number of distinct permutations that can be formed from its characters.
+
+- A permutation is any reordering of the characters in the string.
+- Do not count duplicate permutations.
+- If the string contains repeated characters, repeated arrangements should only be counted once.
+- The string will contain only letters (`A-Z`, `a-z`).
+
+For example, given `"abb"`, return `3` because there's three unique ways to arrange the letters: `"abb"`, `"bab"`, and `"bba"`.
+
+### **_Examples_**
+
+```
+Input: count_permutations("abb") => Output: 3
+
+Input: count_permutations("abc") => Output: 6
+
+Input: count_permutations("racecar") => Output: 630
+
+Input: count_permutations("freecodecamp") => Output: 39916800
+```
+
+#
+
+<br />
