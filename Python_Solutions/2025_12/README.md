@@ -128,3 +128,30 @@ Input: count_permutations("freecodecamp") => Output: 39916800
 #
 
 <br />
+
+# 2025.12.05 Challenge - Symmetric Difference
+
+My solution -> *[2025_12_05_symmetric_difference](2025_12_05_symmetric_difference.py)*
+
+## **_Task condition:_**
+
+Given two arrays, return a new array containing the symmetric difference of them.
+
+- The symmetric difference between two sets is the set of values that appear in either set, but not both.
+- Return the values in the order they first appear in the input arrays.
+
+### **_Examples_**
+
+```
+Input: difference([1, 2, 3], [3, 4, 5]) => Output: [1, 2, 4, 5]
+
+Input: difference(["a", "b"], ["c", "b"]) => Output: ["a", "c"]
+
+Input: difference([1, "a", 2], [2, "b", "a"]) => Output: [1, "b"]
+
+Input: difference([1, 3, 5, 7, 9], [1, 2, 3, 4, 5, 6, 7, 8, 9]) => Output: [2, 4, 6, 8]
+```
+
+#
+
+<br />
