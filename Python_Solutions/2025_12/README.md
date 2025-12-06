@@ -155,3 +155,36 @@ Input: difference([1, 3, 5, 7, 9], [1, 2, 3, 4, 5, 6, 7, 8, 9]) => Output: [2, 4
 #
 
 <br />
+
+# 2025.12.06 Challenge - Date Formatter
+
+My solution -> *[2025_12_06_date_formatter](2025_12_06_date_formatter.py)*
+
+## **_Task condition:_**
+
+Given a date in the format `"Month day, year"`, return the date in the format `"YYYY-MM-DD"`.
+
+- The given month will be the full English month name. For example: `"January"`, `"February"`, etc.
+- In the return value, pad the month and day with leading zeros if necessary to ensure two digits.
+
+For example, given `"December 6, 2025"`, return `"2025-12-06"`.
+
+### **_Examples_**
+
+```
+Input: format_date("December 6, 2025") => Output: "2025-12-06"
+
+Input: format_date("January 1, 2000") => Output: "2000-01-01"
+
+Input: format_date("November 11, 1111") => Output: "1111-11-11"
+
+Input: format_date("September 7, 512") => Output: "512-09-07"
+
+Input: format_date("May 4, 1950") => Output: "1950-05-04"
+
+Input: format_date("February 29, 1992") => Output: "1992-02-29"
+```
+
+#
+
+<br />
