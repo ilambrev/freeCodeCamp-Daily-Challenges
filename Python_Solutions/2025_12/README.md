@@ -188,3 +188,32 @@ Input: format_date("February 29, 1992") => Output: "1992-02-29"
 #
 
 <br />
+
+# 2025.12.07 Challenge - String Compression
+
+My solution -> *[2025_12_07_string_compression](2025_12_07_string_compression.py)*
+
+## **_Task condition:_**
+
+Given a string sentence, return a compressed version of the sentence where consecutive duplicate words are replaced by the word followed with the number of times it repeats in parentheses.
+
+- Only consecutive duplicates are compressed.
+- Words are separated by single spaces.
+
+For example, given `"yes yes yes please"`, return `"yes(3) please"`.
+
+### **_Examples_**
+
+```
+Input: compress_string("yes yes yes please") => Output: "yes(3) please"
+
+Input: compress_string("I have have have apples") => Output: "I have(3) apples"
+
+Input: compress_string("one one three and to the the the the") => Output: "one(2) three and to the(4)"
+
+Input: compress_string("route route route route route route tee tee tee tee tee tee") => Output: "route(6) tee(6)"
+```
+
+#
+
+<br />
