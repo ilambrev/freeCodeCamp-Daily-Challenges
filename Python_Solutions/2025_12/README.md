@@ -217,3 +217,35 @@ Input: compress_string("route route route route route route tee tee tee tee tee 
 #
 
 <br />
+
+# 2025.12.08 Challenge - Pounds to Kilograms
+
+My solution -> *[2025_12_08_pounds_to_kilograms](2025_12_08_pounds_to_kilograms.py)*
+
+## **_Task condition:_**
+
+Given a weight in pounds as a number, return the string `"(lbs) pounds equals (kgs) kilograms."`.
+
+- Replace `"(lbs)"` with the input number.
+- Replace `"(kgs)"` with the input converted to kilograms, rounded to two decimals and always include two decimal places in the value.
+- `1` pound equals `0.453592` kilograms.
+- If the input is `1`, use `"pound"` instead of `"pounds"`.
+- If the converted value is `1`, use `"kilogram"` instead of `"kilograms"`.
+
+### **_Examples_**
+
+```
+Input: convert_to_kgs(1) => Output: "1 pound equals 0.45 kilograms."
+
+Input: convert_to_kgs(0) => Output: "0 pounds equals 0.00 kilograms."
+
+Input: convert_to_kgs(100) => Output: "100 pounds equals 45.36 kilograms."
+
+Input: convert_to_kgs(2.5) => Output: "2.5 pounds equals 1.13 kilograms."
+
+Input: convert_to_kgs(2.20462) => Output: "2.20462 pounds equals 1.00 kilogram."
+```
+
+#
+
+<br />
