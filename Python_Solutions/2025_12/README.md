@@ -249,3 +249,29 @@ Input: convert_to_kgs(2.20462) => Output: "2.20462 pounds equals 1.00 kilogram."
 #
 
 <br />
+
+# 2025.12.09 Challenge - Most Frequent
+
+My solution -> *[2025_12_09_most_frequent](2025_12_09_most_frequent.py)*
+
+## **_Task condition:_**
+
+Given an array of elements, return the element that appears most frequently.
+
+- There will always be a single most frequent element.
+
+### **_Examples_**
+
+```
+Input: most_frequent(["a", "b", "a", "c"]) => Output: "a"
+
+Input: most_frequent([2, 3, 5, 2, 6, 3, 2, 7, 2, 9]) => Output: 2
+
+Input: most_frequent([True, False, "False", "True", False]) => Output: False
+
+Input: most_frequent([40, 20, 70, 30, 10, 40, 10, 50, 40, 60]) => Output: 40
+```
+
+#
+
+<br />
