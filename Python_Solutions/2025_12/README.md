@@ -351,7 +351,6 @@ return:
 
 Each cell updates according to the number of live neighbors. For instance, `[0][0]` stays dead (`2` live neighbors), `[0][1]` stays alive (`2` live neighbors), `[0][2]` dies (`3` live neighbors), and so on.
 
-
 ### **_Examples_**
 
 ```
@@ -362,6 +361,34 @@ Input: game_of_life([[1, 1, 0, 0], [1, 0, 1, 0], [0, 1, 1, 1], [0, 0, 1, 0]]) =>
 Input: game_of_life([[1, 0, 0], [0, 1, 0], [0, 0, 1]]) => Output: [[0, 0, 0], [0, 1, 0], [0, 0, 0]]
 
 Input: game_of_life([[0, 1, 1, 0], [1, 1, 0, 1], [0, 1, 1, 0], [0, 0, 1, 0]]) => Output: [[1, 1, 1, 0], [1, 0, 0, 1], [1, 0, 0, 1], [0, 1, 1, 0]]
+```
+
+#
+
+<br />
+
+# 2025.12.13 Challenge - Capitalize It
+
+My solution -> *[2025_12_14_capitalize_it](2025_12_14_capitalize_it.py)*
+
+## **_Task condition:_**
+
+Given a string title, return a new string formatted in title case using the following rules:
+
+- Capitalize the first letter of each word.
+- Make all other letters in each word lowercase.
+- Words are always separated by a single space.
+
+### **_Examples_**
+
+```
+Input: title_case("hello world") => Output: "Hello World"
+
+Input: title_case("the quick brown fox") => Output: "The Quick Brown Fox"
+
+Input: title_case("JAVASCRIPT AND PYTHON") => Output: "Javascript And Python"
+
+Input: title_case("AvOcAdO tOAst fOr brEAkfAst") => Output: "Avocado Toast For Breakfast"
 ```
 
 #
