@@ -367,7 +367,7 @@ Input: game_of_life([[0, 1, 1, 0], [1, 1, 0, 1], [0, 1, 1, 0], [0, 0, 1, 0]]) =>
 
 <br />
 
-# 2025.12.13 Challenge - Capitalize It
+# 2025.12.14 Challenge - Capitalize It
 
 My solution -> *[2025_12_14_capitalize_it](2025_12_14_capitalize_it.py)*
 
