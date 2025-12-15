@@ -394,3 +394,36 @@ Input: title_case("AvOcAdO tOAst fOr brEAkfAst") => Output: "Avocado Toast For B
 #
 
 <br />
+
+# 2025.12.15 Challenge - Speed Check
+
+My solution -> *[2025_12_15_speed_check](2025_12_15_speed_check.py)*
+
+## **_Task condition:_**
+
+Given the speed you are traveling in miles per hour (MPH), and a speed limit in kilometers per hour (KPH), determine whether you are speeding and if you will get a warning or a ticket.
+
+- `1` mile equals `1.60934` kilometers.
+- If you are travelling less than or equal to the speed limit, return `"Not Speeding"`.
+- If you are travelling `5` KPH or less over the speed limit, return `"Warning"`.
+- If you are travelling more than `5` KPH over the speed limit, return `"Ticket"`.
+
+### **_Examples_**
+
+```
+Input: speed_check(30, 70) => Output: "Not Speeding"
+
+Input: speed_check(40, 60) => Output: "Warning"
+
+Input: speed_check(40, 65) => Output: "Not Speeding"
+
+Input: speed_check(60, 90) => Output: "Ticket"
+
+Input: speed_check(65, 100) => Output: "Warning"
+
+Input: speed_check(88, 40) => Output: "Ticket"
+```
+
+#
+
+<br />
