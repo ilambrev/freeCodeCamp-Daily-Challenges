@@ -427,3 +427,32 @@ Input: speed_check(88, 40) => Output: "Ticket"
 #
 
 <br />
+
+# 2025.12.16 Challenge - Consonant Count
+
+My solution -> *[2025_12_16_consonant_count](2025_12_16_consonant_count.py)*
+
+## **_Task condition:_**
+
+Given a string and a target number, determine whether the string contains exactly the target number of consonants.
+
+- Consonants are all alphabetic characters except `"a"`, `"e"`, `"i"`, `"o"`, and `"u"` in any case.
+- Ignore digits, punctuation, spaces, and other non-letter characters when counting.
+
+### **_Examples_**
+
+```
+Input: has_consonant_count("helloworld", 7) => Output: True
+
+Input: has_consonant_count("eieio", 5) => Output: False
+
+Input: has_consonant_count("freeCodeCamp Rocks!", 11) => Output: True
+
+Input: has_consonant_count("Th3 Qu!ck Br0wn F0x Jump5 0ver Th3 L@zy D0g.", 24) => Output: False
+
+Input: has_consonant_count("Th3 Qu!ck Br0wn F0x Jump5 0ver Th3 L@zy D0g.", 23) => Output: True
+```
+
+#
+
+<br />
