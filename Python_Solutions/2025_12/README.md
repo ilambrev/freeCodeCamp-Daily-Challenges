@@ -312,6 +312,37 @@ Input: parse_bold("The **quick** brown fox __jumps__ over the **lazy** dog.") =>
 
 <br />
 
+# 2025.12.12 Challenge - Inventory Update
+
+My solution -> *[2025_12_12_inventory_update](2025_12_12_inventory_update.py)*
+
+## **_Task condition:_**
+
+Given a 2D array representing the inventory of your store, and another 2D array representing a shipment you have received, return your updated inventory.
+
+- Each element in the arrays will have the format: `[quantity, "item"]`, where `quantity` is an integer and `"item"` is a string.
+- Update items in the inventory by adding the quantity of any matching items from the shipment.
+- If a received item does not exist in the current inventory, add it as a new entry to the end of the inventory.
+- Return inventory in the order it was given with new items at the end in the order they appear in the shipment.
+
+For example, given an inventory of `[[2, "apples"], [5, "bananas"]]` and a shipment of `[[1, "apples"], [3, "bananas"]]`, return `[[3, "apples"], [8, "bananas"]]`.
+
+### **_Examples_**
+
+```
+Input: update_inventory([[2, "apples"], [5, "bananas"]], [[1, "apples"], [3, "bananas"]]) => Output: [[3, "apples"], [8, "bananas"]]
+
+Input: update_inventory([[2, "apples"], [5, "bananas"]], [[1, "apples"], [3, "bananas"], [4, "oranges"]]) => Output: [[3, "apples"], [8, "bananas"], [4, "oranges"]]
+
+Input: update_inventory([], [[10, "apples"], [30, "bananas"], [20, "oranges"]]) => Output: [[10, "apples"], [30, "bananas"], [20, "oranges"]]
+
+Input: update_inventory([[0, "Bowling Ball"], [0, "Dirty Socks"], [0, "Hair Pin"], [0, "Microphone"]], [[1, "Hair Pin"], [1, "Half-Eaten Apple"], [1, "Bowling Ball"], [1, "Toothpaste"]]) => Output: [[1, "Bowling Ball"], [0, "Dirty Socks"], [1, "Hair Pin"], [0, "Microphone"], [1, "Half-Eaten Apple"], [1, "Toothpaste"]]
+```
+
+#
+
+<br />
+
 # 2025.12.13 Challenge - Game of Life
 
 My solution -> *[2025_12_13_game_of_life](2025_12_13_game_of_life.py)*
