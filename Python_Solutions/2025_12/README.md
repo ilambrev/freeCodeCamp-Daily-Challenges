@@ -487,3 +487,40 @@ Input: has_consonant_count("Th3 Qu!ck Br0wn F0x Jump5 0ver Th3 L@zy D0g.", 23) =
 #
 
 <br />
+
+# 2025.12.18 Challenge - Checkerboard
+
+My solution -> *[2025_12_18_checkerboard](2025_12_18_checkerboard.py)*
+
+## **_Task condition:_**
+
+Given an array with two numbers, the first being the number of rows and the second being the number of columns, return a matrix (an array of arrays) filled with `"X"` and `"O"` characters of the given size.
+
+- The characters should alternate like a checkerboard.
+- The top-left cell must always be `"X"`.
+
+For example, given `[3, 3]`, return:
+
+```
+[
+  ["X", "O", "X"],
+  ["O", "X", "O"],
+  ["X", "O", "X"]
+]
+```
+
+### **_Examples_**
+
+```
+Input: create_board([3, 3]) => Output: [["X", "O", "X"], ["O", "X", "O"], ["X", "O", "X"]]
+
+Input: create_board([6, 1]) => Output: [["X"], ["O"], ["X"], ["O"], ["X"], ["O"]]
+
+Input: create_board([2, 10]) => Output: [["X", "O", "X", "O", "X", "O", "X", "O", "X", "O"], ["O", "X", "O", "X", "O", "X", "O", "X", "O", "X"]]
+
+Input: create_board([5, 4]) => Output: [["X", "O", "X", "O"], ["O", "X", "O", "X"], ["X", "O", "X", "O"], ["O", "X", "O", "X"], ["X", "O", "X", "O"]]
+```
+
+#
+
+<br />
