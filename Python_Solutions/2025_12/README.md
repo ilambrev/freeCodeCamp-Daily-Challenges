@@ -555,3 +555,30 @@ Input: pairwise([7, 9, 13, 19, 21, 6, 3, 1, 4, 8, 12, 22], 24) => Output: 10
 #
 
 <br />
+
+# 2025.12.20 Challenge - Purge Most Frequent
+
+My solution -> *[2025_12_20_purge_most_frequent](2025_12_20_purge_most_frequent.py)*
+
+## **_Task condition:_**
+
+Given an array of values, remove all occurrences of the most frequently occurring element and return the resulting array.
+
+- If multiple values are tied for most frequent, remove all of them.
+- Do not change any of the other elements or their order.
+
+### **_Examples_**
+
+```
+Input: purge_most_frequent([1, 2, 2, 3]) => Output: [1, 3]
+
+Input: purge_most_frequent(["a", "b", "d", "b", "c", "d", "c", "d", "c", "d"]) => Output: ["a", "b", "b", "c", "c", "c"]
+
+Input: purge_most_frequent(["red", "blue", "green", "red", "blue", "green", "blue"]) => Output: ["red", "green", "red", "green"]
+
+Input: purge_most_frequent([5, 5, 5, 5]) => Output: []
+```
+
+#
+
+<br />
