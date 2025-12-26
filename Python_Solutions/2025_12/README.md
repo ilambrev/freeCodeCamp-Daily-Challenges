@@ -710,3 +710,36 @@ Input: ("re:Ref:fw:re:review:FW:Re:fw:report:Re:FW:followup:re:summary:Fwd:Re:fw
 #
 
 <br />
+
+# 2025.12.26 Challenge - Sum of Divisors
+
+My solution -> *[2025_12_26_sum_of_divisors](2025_12_26_sum_of_divisors.py)*
+
+## **_Task condition:_**
+
+Given a positive integer, return the sum of all its divisors.
+
+- A divisor is any integer that divides the number evenly (the remainder is `0`).
+- Only count each divisor once.
+
+For example, given `6`, return `12` because the divisors of `6` are `1`, `2`, `3`, and `6`, and the sum of those is `12`.
+
+### **_Examples_**
+
+```
+Input: sum_divisors(6) => Output: 12
+
+Input: sum_divisors(13) => Output: 14
+
+Input: sum_divisors(28) => Output: 56
+
+Input: sum_divisors(84) => Output: 224
+
+Input: sum_divisors(549) => Output: 806
+
+Input: sum_divisors(9348) => Output: 23520
+```
+
+#
+
+<br />
