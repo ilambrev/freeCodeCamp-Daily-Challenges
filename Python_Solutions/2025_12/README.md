@@ -743,3 +743,41 @@ Input: sum_divisors(9348) => Output: 23520
 #
 
 <br />
+
+# 2025.12.27 Challenge - Rock, Paper, Scissors
+
+My solution -> *[2025_12_27_rock_paper_scissors](2025_12_27_rock_paper_scissors.py)*
+
+## **_Task condition:_**
+
+Given two strings, the first representing `Player 1` and the second representing `Player 2`, determine the winner of a match of `Rock, Paper, Scissors`.
+
+- The input strings will always be `"Rock"`, `"Paper"`, or `"Scissors"`.
+- `"Rock"` beats `"Scissors"`.
+- `"Paper"` beats `"Rock"`.
+- `"Scissors"` beats `"Paper"`.
+
+Return:
+- `"Player 1 wins"` if Player 1 wins.
+- `"Player 2 wins"` if Player 2 wins.
+- `"Tie"` if both players choose the same option.
+
+### **_Examples_**
+
+```
+Input: rock_paper_scissors("Rock", "Rock") => Output: "Tie"
+
+Input: rock_paper_scissors("Rock", "Paper") => Output: "Player 2 wins"
+
+Input: rock_paper_scissors("Scissors", "Paper") => Output: "Player 1 wins"
+
+Input: rock_paper_scissors("Rock", "Scissors") => Output: "Player 1 wins"
+
+Input: rock_paper_scissors("Scissors", "Scissors") => Output: "Tie"
+
+Input: rock_paper_scissors("Scissors", "Rock") => Output: "Player 2 wins"
+```
+
+#
+
+<br />
