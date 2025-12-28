@@ -827,3 +827,43 @@ Input: rock_paper_scissors("Scissors", "Rock") => Output: "Player 2 wins"
 #
 
 <br />
+
+# 2025.12.28 Challenge - SCREAMING_SNAKE_CASE
+
+My solution -> *[2025_12_28_screaming_snake_case](2025_12_28_screaming_snake_case.py)*
+
+## **_Task condition:_**
+
+Given a string representing a variable name, return the variable name converted to `SCREAMING_SNAKE_CASE`.
+
+The given variable names will be written in one of the following formats:
+
+- `camelCase`
+- `PascalCase`
+- `snake_case`
+- `kebab-case`
+
+In the above formats, words are separated by an underscore (`_`), a hyphen (`-`), or a new word starts with a `capital letter`.
+
+To convert to `SCREAMING_SNAKE_CASE`:
+
+- Make all letters `uppercase`
+- Separate words with an underscore (`_`)
+
+### **_Examples_**
+
+```
+Input: to_screaming_snake_case("userEmail") => Output: "USER_EMAIL"
+
+Input: to_screaming_snake_case("UserPassword") => Output: "USER_PASSWORD"
+
+Input: to_screaming_snake_case("user_id") => Output: "USER_ID"
+
+Input: to_screaming_snake_case("user-address") => Output: "USER_ADDRESS"
+
+Input: to_screaming_snake_case("username") => Output: "USERNAME"
+```
+
+#
+
+<br />
