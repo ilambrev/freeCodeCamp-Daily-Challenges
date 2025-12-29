@@ -867,3 +867,34 @@ Input: to_screaming_snake_case("username") => Output: "USERNAME"
 #
 
 <br />
+
+# 2025.12.29 Challenge - Takeoff Fuel
+
+My solution -> *[2025_12_29_takeoff_fuel](2025_12_29_takeoff_fuel.py)*
+
+## **_Task condition:_**
+
+Given the numbers of gallons of fuel currently in your airplane, and the required number of liters of fuel to reach your destination, determine how many additional gallons of fuel you should add.
+
+- `1` gallon equals `3.78541` liters.
+- If the airplane already has enough fuel, return `0`.
+- You can only add whole gallons.
+- Do not include decimals in the return number.
+
+### **_Examples_**
+
+```
+Input: fuel_to_add(0, 1) => Output: 1
+
+Input: fuel_to_add(5, 40) => Output: 6
+
+Input: fuel_to_add(10, 30) => Output: 0
+
+Input: fuel_to_add(896, 20500) => Output: 4520
+
+Input: fuel_to_add(1000, 50000) => Output: 12209
+```
+
+#
+
+<br />
