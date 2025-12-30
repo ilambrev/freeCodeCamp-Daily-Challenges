@@ -898,3 +898,32 @@ Input: fuel_to_add(1000, 50000) => Output: 12209
 #
 
 <br />
+
+# 2025.12.30 Challenge - Sum the String
+
+My solution -> *[2025_12_30_sum_the_string](2025_12_30_sum_the_string.py)*
+
+## **_Task condition:_**
+
+Given a string containing digits and other characters, return the sum of all numbers in the string.
+
+- Treat consecutive digits as a single number. For example, `"13"` counts as `13`, not `1 + 3`.
+- Ignore any non-digit characters.
+
+### **_Examples_**
+
+```
+Input: string_sum("3apples2bananas") => Output: 5
+
+Input: string_sum("10cats5dogs2birds") => Output: 17
+
+Input: string_sum("125344") => Output: 125344
+
+Input: string_sum("a1b20c300") => Output: 321
+
+Input: string_sum("a12b34c56d78e90f123g456h789i0j1k2l3m4n5") => Output: 1653
+```
+
+#
+
+<br />
