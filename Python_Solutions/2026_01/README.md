@@ -35,3 +35,32 @@ Input: resolution_streak([[10500, 75, 15], [11000, 90, 10], [10650, 100, 9], [10
 #
 
 <br />
+
+# 2026.01.02 Challenge - Nth Fibonacci Number
+
+My solution -> *[2026_01_02_nth_fibonacci_number](2026_01_02_nth_fibonacci_number.py)*
+
+## **_Task condition:_**
+
+Given an integer `n`, return the `nth` number in the fibonacci sequence.
+
+The Fibonacci sequence is a series of numbers where each number is the sum of the two preceding ones. The first `10` numbers in the sequence are `0`, `1`, `1`, `2`, `3`, `5`, `8`, `13`, `21`, `34`.
+
+
+### **_Examples_**
+
+```
+Input: nth_fibonacci(4) => Output: 2
+
+Input: nth_fibonacci(10) => Output: 34
+
+Input: nth_fibonacci(15) => Output: 377
+
+Input: nth_fibonacci(40) => Output: 63245986
+
+Input: nth_fibonacci(75) => Output: 1304969544928657
+```
+
+#
+
+<br />
