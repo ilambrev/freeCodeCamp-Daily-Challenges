@@ -112,3 +112,39 @@ Input: find_left_handed_seats([["U", "R", "U", "U"], ["U", "U", "L", "U"]]) => O
 #
 
 <br />
+
+# 2026.01.04 Challenge - Leap Year Calculator
+
+My solution -> *[2026_01_04_leap_year_calculator](2026_01_04_leap_year_calculator.py)*
+
+## **_Task condition:_**
+
+Given an integer year, determine whether it is a leap year.
+
+A year is a leap year if it satisfies the following rules:
+
+- The year is evenly divisible by `4`, and
+- The year is not evenly divisible by `100`, unless
+- The year is evenly divisible by `400`.
+
+### **_Examples_**
+
+```
+Input: is_leap_year(2024) => Output: True
+
+Input: is_leap_year(2023) => Output: False
+
+Input: is_leap_year(2100) => Output: False
+
+Input: is_leap_year(2000) => Output: True
+
+Input: is_leap_year(1999) => Output: False
+
+Input: is_leap_year(2040) => Output: True
+
+Input: is_leap_year(2026) => Output: False
+```
+
+#
+
+<br />
