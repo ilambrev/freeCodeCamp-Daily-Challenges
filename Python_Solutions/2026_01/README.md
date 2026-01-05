@@ -148,3 +148,37 @@ Input: is_leap_year(2026) => Output: False
 #
 
 <br />
+
+# 2026.01.05 Challenge - Tire Pressure
+
+My solution -> *[2026_01_05_tire_pressure](2026_01_05_tire_pressure.py)*
+
+## **_Task condition:_**
+
+Given an array with four numbers representing the tire pressures in psi of the four tires in your vehicle, and another array of two numbers representing the minimum and maximum pressure for your tires in bar, return an array of four strings describing each tire's status.
+
+- `1` bar equal `14.5038` psi.
+
+Return an array with the following values for each tire:
+
+- `"Low"` if the tire pressure is below the minimum allowed.
+- `"Good"` if it's between the minimum and maximum allowed.
+- `"High"` if it's above the maximum allowed.
+
+### **_Examples_**
+
+```
+Input: tire_status([32, 28, 35, 29], [2, 3]) => Output: ["Good", "Low", "Good", "Low"]
+
+Input: tire_status([32, 28, 35, 30], [2, 2.3]) => Output: ["Good", "Low", "High", "Good"]
+
+Input: tire_status([29, 26, 31, 28], [2.1, 2.5]) => Output: ["Low", "Low", "Good", "Low"]
+
+Input: tire_status([31, 31, 30, 29], [1.5, 2]) => Output: ["High", "High", "High", "Good"]
+
+Input: tire_status([30, 28, 30, 29], [1.9, 2.1]) => Output: ["Good", "Good", "Good", "Good"]
+```
+
+#
+
+<br />
