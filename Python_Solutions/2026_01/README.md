@@ -182,3 +182,33 @@ Input: tire_status([30, 28, 30, 29], [1.9, 2.1]) => Output: ["Good", "Good", "Go
 #
 
 <br />
+
+# 2026.01.06 Challenge - vOwElcAsE
+
+My solution -> *[2026_01_06_vowelcase](2026_01_06_vowelcase.py)*
+
+## **_Task condition:_**
+
+Given a string, return a new string where all vowels are converted to uppercase and all other alphabetical characters are converted to lowercase.
+
+- Vowels are `"a"`, `"e"`, `"i"`, `"o"`, and `"u"` in any case.
+- Non-alphabetical characters should remain unchanged.
+
+### **_Examples_**
+
+```
+Input: vowel_case("vowelcase") => Output: "vOwElcAsE"
+
+Input: vowel_case("coding is fun") => Output: "cOdIng Is fUn"
+
+Input: vowel_case("HELLO, world!") => Output: "hEllO, wOrld!"
+
+Input: vowel_case("git cherry-pick") => Output: "gIt chErry-pIck"
+
+Input: vowel_case("HEAD~1") => Output: "hEAd~1"
+
+```
+
+#
+
+<br />
