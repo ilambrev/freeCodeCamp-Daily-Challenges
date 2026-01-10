@@ -246,3 +246,33 @@ Input: is_sorted([0.4, 0.5, 0.3]) => Output: "Not sorted"
 #
 
 <br />
+
+# 2026.01.09 Challenge - Circular Prime
+
+My solution -> *[2026_01_09_circular_prime](2026_01_09_circular_prime.py)*
+
+## **_Task condition:_**
+
+Given an integer, determine if it is a circular prime.
+
+A circular prime is an integer where all rotations of its digits are themselves prime.
+
+For example, `197` is a circular prime because all rotations of its digits: `197`, `971`, and `719`, are prime numbers.
+
+### **_Examples_**
+
+```
+Input: is_circular_prime(197) => Output: True
+
+Input: is_circular_prime(23) => Output: False
+
+Input: is_circular_prime(13) => Output: True
+
+Input: is_circular_prime(89) => Output: False
+
+Input: is_circular_prime(1193) => Output: True
+```
+
+#
+
+<br />
