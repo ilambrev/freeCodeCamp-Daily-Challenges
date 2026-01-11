@@ -1,5 +1,5 @@
 def golf_score(par, strokes):
-    results = {
+    golf_terms = {
         -2: "Eagle",
         -1: "Birdie",
         0: "Par",
@@ -10,7 +10,7 @@ def golf_score(par, strokes):
     if strokes == 1:
         return "Hole in one!"
     else:
-        return results[strokes - par]
+        return golf_terms[strokes - par]
 
 # print(golf_score(3, 3))
 # print(golf_score(4, 3))
