@@ -313,3 +313,44 @@ Input: golf_score(5, 3) => Output: "Eagle"
 #
 
 <br />
+
+# 2026.01.12 Challenge - Plant the Crop
+
+My solution -> *[2026_01_12_plant_the_crop](2026_01_12_plant_the_crop.py)*
+
+## **_Task condition:_**
+
+Given an integer representing the size of your farm field, and `"acres"` or `"hectares"` representing the unit for the size of your farm field, and a type of crop, determine how many plants of that type you can fit in your field.
+
+- `1` acre equals `4046.86` square meters.
+- `1` hectare equals `10,000` square meters.
+
+Here's a list of crops that will be given as input and how much space a single plant takes:
+
+| Crop                    | Space per plant      |
+| :---------------------- | :------------------- |
+| `"corn"`                | 1 square meter       |
+| `"wheat"`               | 0.1 square meters    |
+| `"soybeans"`            | 0.5 square meters    |
+| `"tomatoes"`            | 0.25 square meters   |
+| `"lettuce"`             | 0.2 square meters    |
+
+Return the number of plants that fit in the field, rounded down to the nearest whole plant.
+
+### **_Examples_**
+
+```
+Input: get_number_of_plants(1, "acres", "corn") => Output: 4046
+
+Input: get_number_of_plants(2, "hectares", "lettuce") => Output: 100000
+
+Input: get_number_of_plants(20, "acres", "soybeans") => Output: 161874
+
+Input: get_number_of_plants(3.75, "hectares", "tomatoes") => Output: 150000
+
+Input: get_number_of_plants(16.75, "acres", "tomatoes") => Output: 271139
+```
+
+#
+
+<br />
