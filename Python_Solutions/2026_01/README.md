@@ -354,3 +354,29 @@ Input: get_number_of_plants(16.75, "acres", "tomatoes") => Output: 271139
 #
 
 <br />
+
+# 2026.01.13 Challenge - Odd or Even?
+
+My solution -> *[2026_01_13_odd_or_even](2026_01_13_odd_or_even.py)*
+
+## **_Task condition:_**
+
+Given a positive integer, return `"Odd"` if it's an odd number, and `"Even"` is it's even.
+
+### **_Examples_**
+
+```
+Input: odd_or_even(1) => Output: "Odd"
+
+Input: odd_or_even(2) => Output: "Even"
+
+Input: odd_or_even(13) => Output: "Odd"
+
+Input: odd_or_even(196) => Output: "Even"
+
+Input: odd_or_even(123456789) => Output: "Odd"
+```
+
+#
+
+<br />
