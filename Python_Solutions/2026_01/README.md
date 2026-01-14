@@ -380,3 +380,36 @@ Input: odd_or_even(123456789) => Output: "Odd"
 #
 
 <br />
+
+# 2026.01.14 Challenge - Markdown Link Parser
+
+My solution -> *[2026_01_14_markdown_link_parser](2026_01_14_markdown_link_parser.py)*
+
+## **_Task condition:_**
+
+Given the string of a link in `Markdown`, return the equivalent `HTML` string.
+
+A Markdown image has the following format: `"[link_text](link_url)"`. Return the string of the HTML `a` tag with the `href` set to the `link_url` and the `link_text` as the tag content.
+
+For example, given `"[freeCodeCamp](https://freecodecamp.org/)"` return `'<a href="https://freecodecamp.org/">freeCodeCamp</a>'`;
+
+### **_Examples_**
+
+```
+Input: parse_link("[freeCodeCamp](https://freecodecamp.org/)")
+Output: '<a href="https://freecodecamp.org/">freeCodeCamp</a>'
+
+Input: parse_link("[Donate to our charity.](https://www.freecodecamp.org/donate/)")
+Output: '<a href="https://www.freecodecamp.org/donate/">Donate to our charity.</a>'
+
+Input: parse_link("[Contribute to our repository at https://github.com/freeCodeCamp/freeCodeCamp.](https://github.com/freeCodeCamp/freeCodeCamp/)")
+Output: '<a href="https://github.com/freeCodeCamp/freeCodeCamp/">Contribute to our repository at https://github.com/freeCodeCamp/freeCodeCamp.</a>'
+```
+
+**_NOTES:_**
+
+- The console may not display HTML tags in strings when logging messages — check the browser console to see logs with tags included.
+
+#
+
+<br />
