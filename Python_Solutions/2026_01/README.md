@@ -413,3 +413,29 @@ Output: '<a href="https://github.com/freeCodeCamp/freeCodeCamp/">Contribute to o
 #
 
 <br />
+
+# 2026.01.15 Challenge - Array Swap
+
+My solution -> *[2026_01_15_array_swap](2026_01_15_array_swap.py)*
+
+## **_Task condition:_**
+
+Given an array with two values, return an array with the values swapped.
+
+For example, given `["A", "B"]` return `["B", "A"]`.
+
+### **_Examples_**
+
+```
+Input: array_swap(["A", "B"]) => Output: ["B", "A"]
+
+Input: array_swap([25, 20]) => Output: [20, 25]
+
+Input: array_swap([True, False]) => Output: [False, True]
+
+Input: array_swap(["1", 1]) => Output: [1, "1"]
+```
+
+#
+
+<br />
