@@ -439,3 +439,33 @@ Input: array_swap(["1", 1]) => Output: [1, "1"]
 #
 
 <br />
+
+# 2026.01.16 Challenge - Integer Hypotenuse
+
+My solution -> *[2026_01_16_integer_hypotenuse](2026_01_16_integer_hypotenuse.py)*
+
+## **_Task condition:_**
+
+Given two positive integers representing the lengths for the two legs (the two short sides) of a right triangle, determine whether the hypotenuse is an integer.
+
+The length of the hypotenuse is calculated by adding the squares of the two leg lengths together and then taking the square root of that total ( *a <sup>2</sup> + b <sup>2</sup> = c <sup>2</sup>* ).
+
+### **_Examples_**
+
+```
+Input: is_integer_hypotenuse(3, 4) => Output: True
+
+Input: is_integer_hypotenuse(2, 3) => Output: False
+
+Input: is_integer_hypotenuse(5, 12) => Output: True
+
+Input: is_integer_hypotenuse(10, 10) => Output: False
+
+Input: is_integer_hypotenuse(780, 1040) => Output: True
+
+Input: is_integer_hypotenuse(250, 333) => Output: False
+```
+
+#
+
+<br />
