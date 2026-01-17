@@ -482,7 +482,7 @@ Given the position of a knight on a chessboard, return the number of valid squar
 
 A standard chessboard is `8x8`, with columns labeled `A` through `H` (left to right) and rows labeled `1` through `8` (bottom to top). It looks like this:
 
-|    |    |    |    |    |    |    |    |
+|[]()|[]()|[]()|[]()|[]()|[]()|[]()|[]()|
 |----|----|----|----|----|----|----|----|
 | A8 | B8 | C8 | D8 | E8 | F8 | G8 | H8 |
 | A7 | B7 | C7 | D7 | E7 | F7 | G7 | H7 |
