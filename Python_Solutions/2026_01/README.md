@@ -482,7 +482,7 @@ Given the position of a knight on a chessboard, return the number of valid squar
 
 A standard chessboard is `8x8`, with columns labeled `A` through `H` (left to right) and rows labeled `1` through `8` (bottom to top). It looks like this:
 
-|[]()|[]()|[]()|[]()|[]()|[]()|[]()|[]()|
+|    |    |    |    |    |    |    |    |
 |----|----|----|----|----|----|----|----|
 | A8 | B8 | C8 | D8 | E8 | F8 | G8 | H8 |
 | A7 | B7 | C7 | D7 | E7 | F7 | G7 | H7 |
@@ -509,6 +509,45 @@ Input: knight_moves("G6") => Output: 6
 Input: knight_moves("B8") => Output: 3
 
 Input: knight_moves("H3") => Output: 4
+```
+
+#
+
+<br />
+
+# 2026.01.18 Challenge - Free Shipping
+
+My solution -> *[2026_01_18_free_shipping](2026_01_18_free_shipping.py)*
+
+## **_Task condition:_**
+
+Given an array of strings representing items in your shopping cart, and a number for the minimum order amount to qualify for free shipping, determine if the items in your shopping cart qualify for free shipping.
+
+The given array will contain items from the list below:
+
+| Item       | Price  |
+| :--------- | -----: |
+| `"shirt"`  | 34.25  |
+| `"jeans"`  | 48.50  |
+| `"shoes"`  | 75.00  |
+| `"hat"`    | 19.95  |
+| `"socks"`  | 15.00  |
+| `"jacket"` | 109.95 |
+
+### **_Examples_**
+
+```
+Input: gets_free_shipping(["shoes"], 50) => Output: True
+
+Input: gets_free_shipping(["hat", "socks"], 50) => Output: False
+
+Input: gets_free_shipping(["jeans", "shirt", "jacket"], 75) => Output: True
+
+Input: gets_free_shipping(["socks", "socks", "hat"], 75) => Output: False
+
+Input: gets_free_shipping(["shirt", "shirt", "jeans", "socks"], 100) => Output: True
+
+Input: gets_free_shipping(["hat", "socks", "hat", "jeans", "shoes", "hat"], 200) => Output: False
 ```
 
 #
