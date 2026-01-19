@@ -553,3 +553,40 @@ Input: gets_free_shipping(["hat", "socks", "hat", "jeans", "shoes", "hat"], 200)
 #
 
 <br />
+
+# 2026.01.19 Challenge - Energy Consumption
+
+My solution -> *[2026_01_19_energy_consumption](2026_01_19_energy_consumption.py)*
+
+## **_Task condition:_**
+
+Given the number of Calories burned during a workout, and the number of watt-hours used by your electronic devices during that workout, determine which one used more energy.
+
+To compare them, convert both values to joules using the following conversions:
+- `1` Calorie equals `4184` joules.
+- `1` watt-hour equals `3600` joules.
+
+Return:
+- `"Workout"` if the workout used more energy.
+- `"Devices"` if the device used more energy.
+- `"Equal"` if both used the same amount of energy.
+
+### **_Examples_**
+
+```
+Input: compare_energy(250, 50) => Output: "Workout"
+
+Input: compare_energy(100, 200) => Output: "Devices"
+
+Input: compare_energy(450, 523) => Output: "Equal"
+
+Input: compare_energy(300, 75) => Output: "Workout"
+
+Input: compare_energy(200, 250) => Output: "Devices"
+
+Input: compare_energy(900, 1046) => Output: "Equal"
+```
+
+#
+
+<br />
