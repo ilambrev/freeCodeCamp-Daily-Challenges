@@ -590,3 +590,31 @@ Input: compare_energy(900, 1046) => Output: "Equal"
 #
 
 <br />
+
+# 2026.01.20 Challenge - Consonant Case
+
+My solution -> *[2026_01_20_consonant_case](2026_01_20_consonant_case.py)*
+
+## **_Task condition:_**
+
+Given a string representing a variable name, convert it to consonant case using the following rules:
+
+- All consonants should be converted to uppercase.
+- All vowels (`a`, `e`, `i`, `o`, `u` in any case) should be converted to lowercase.
+- All hyphens (`-`) should be converted to underscores (`_`).
+
+### **_Examples_**
+
+```
+Input: to_consonant_case("helloworld") => Output: "HeLLoWoRLD"
+
+Input: to_consonant_case("HELLOWORLD") => Output: "HeLLoWoRLD"
+
+Input: to_consonant_case("_hElLO-WOrlD-") => Output: "_HeLLo_WoRLD_"
+
+Input: to_consonant_case("_~-generic_~-variable_~-name_~-here-~_") => Output: "_~_GeNeRiC_~_VaRiaBLe_~_NaMe_~_HeRe_~_"
+```
+
+#
+
+<br />
