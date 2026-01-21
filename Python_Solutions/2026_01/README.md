@@ -618,3 +618,35 @@ Input: to_consonant_case("_~-generic_~-variable_~-name_~-here-~_") => Output: "_
 #
 
 <br />
+
+# 2026.01.21 Challenge - Markdown Inline Code Parser
+
+My solution -> *[2026_01_21_markdown_inline_code_parser](2026_01_21_markdown_inline_code_parser.py)*
+
+## **_Task condition:_**
+
+Given a string of Markdown that includes one or more inline code blocks, return the equivalent HTML string.
+
+Inline code blocks in Markdown use a single backtick (`` ` ``) at the start and end of the code block text.
+
+Return the given string with all code blocks converted to HTML `code` tags.
+
+For example, given the string ``"Use `let` to declare the variable."``, return `"Use <code>let</code> to declare the variable."`.
+
+### **_Examples_**
+
+```
+Input: parse_inline_code("Use `let` to declare the variable.") => Output: "Use <code>let</code> to declare the variable."
+
+Input: parse_inline_code("Use `let` or `const` to declare a variable.") => Output: "Use <code>let</code> or <code>const</code> to declare a variable."
+
+Input: parse_inline_code("Run `npm install` then `npm start`.") => Output: "Run <code>npm install</code> then <code>npm start</code>."
+```
+
+**_NOTES:_**
+
+- The console may not display HTML tags in strings when logging messages. Check the browser console to see logs with tags included.
+
+#
+
+<br />
