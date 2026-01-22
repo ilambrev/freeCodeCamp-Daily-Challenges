@@ -650,3 +650,49 @@ Input: parse_inline_code("Run `npm install` then `npm start`.") => Output: "Run 
 #
 
 <br />
+
+# 2026.01.22 Challenge - Class Average
+
+My solution -> *[2026_01_22_class_average](2026_01_22_class_average.py)*
+
+## **_Task condition:_**
+
+Given an array of exam scores (numbers), return the average score in form of a letter grade according to the following chart:
+
+| Average Score | Letter Grade |
+| :-----------: | :----------: |
+| 97-100        | `"A+"`       |
+| 93-96         | `"A"`        |
+| 90-92         | `"A-`        |
+| 87-89         | `"B+"`       |
+| 83-86         | `"B"`        | 	
+| 80-82         | `"B-"`       |
+| 77-79         | `"C+"`       |
+| 73–76         | `"C"`        |
+| 70-72         | `"C-"`       |
+| 67-69         | `"D+"`       |
+| 63-66         | `"D"`        |
+| 60–62         | `"D-"`       |
+| below 60      | `"F"`        |
+
+Calculate the average by adding all scores in the array and dividing by the total number of scores.
+
+### **_Examples_**
+
+```
+Input: get_average_grade([92, 91, 90, 94, 89, 93]) => Output: "A-"
+
+Input: get_average_grade([84, 89, 85, 100, 91, 88, 79]) => Output: "B+"
+
+Input: get_average_grade([63, 69, 65, 66, 71, 64, 65]) => Output: "D"
+
+Input: get_average_grade([97, 98, 99, 100, 96, 97, 98, 99, 100]) => Output: "A+"
+
+Input: get_average_grade([75, 100, 88, 79, 80, 78, 64, 60]) => Output: "C+"
+
+Input: get_average_grade([45, 48, 50, 52, 100, 54, 56, 58, 59]) => Output: "F"
+```
+
+#
+
+<br />
