@@ -696,3 +696,40 @@ Input: get_average_grade([45, 48, 50, 52, 100, 54, 56, 58, 59]) => Output: "F"
 #
 
 <br />
+
+# 2026.01.23 Challenge - Hex Validator
+
+My solution -> *[2026_01_23_hex_validator](2026_01_23_hex_validator.py)*
+
+## **_Task condition:_**
+
+Given a string, determine whether it is a valid CSS hex color. A valid CSS hex color must:
+
+- Start with a `#`, and
+- be followed by either `3` or `6` hexadecimal characters.
+
+Hexadecimal characters are numbers `0` through `9` and letters `a` through `f` (case-insensitive).
+
+### **_Examples_**
+
+```
+Input: is_valid_hex("#123") => Output: True
+
+Input: is_valid_hex("#123abc") => Output: True
+
+Input: is_valid_hex("#ABCDEF") => Output: True
+
+Input: is_valid_hex("#0a1B2c") => Output: True
+
+Input: is_valid_hex("#12G") => Output: False
+
+Input: is_valid_hex("#1234567") => Output: False
+
+Input: is_valid_hex("#12 3") => Output: False
+
+Input: is_valid_hex("fff") => Output: False
+```
+
+#
+
+<br />
