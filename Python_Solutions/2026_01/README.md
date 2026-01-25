@@ -733,3 +733,32 @@ Input: is_valid_hex("fff") => Output: False
 #
 
 <br />
+
+# 2026.01.25 Challenge - Scaled Image
+
+My solution -> *[2026_01_25_scaled_image](2026_01_25_scaled_image.py)*
+
+## **_Task condition:_**
+
+Given a string representing the width and height of an image, and a number to scale the image, return the scaled width and height.
+
+- The input string is in the format `"WxH"`. For example, `"800x600"`.
+- The scale is a number to multiply the width and height by.
+
+Return the scaled dimensions in the same `"WxH"` format.
+
+### **_Examples_**
+
+```
+Input: scale_image("800x600", 2) => Output: "1600x1200"
+
+Input: scale_image("100x100", 10) => Output: "1000x1000"
+
+Input: scale_image("1024x768", 0.5) => Output: "512x384"
+
+Input: scale_image("300x200", 1.5) => Output: "450x300"
+```
+
+#
+
+<br />
