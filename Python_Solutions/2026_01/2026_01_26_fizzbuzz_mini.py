@@ -1,0 +1,15 @@
+def fizz_buzz_mini(n):
+    if n % 3 == 0 and n % 5 == 0:
+        return "FizzBuzz"
+    if n % 3 == 0:
+        return "Fizz"
+    if n % 5 == 0:
+        return "Buzz"
+
+    return str(n)
+
+# print(fizz_buzz_mini(3))
+# print(fizz_buzz_mini(4))
+# print(fizz_buzz_mini(35))
+# print(fizz_buzz_mini(75))
+# print(fizz_buzz_mini(98))
