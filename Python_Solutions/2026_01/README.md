@@ -762,3 +762,34 @@ Input: scale_image("300x200", 1.5) => Output: "450x300"
 #
 
 <br />
+
+# 2026.01.26 Challenge - FizzBuzz Mini
+
+My solution -> *[2026_01_26_fizzbuzz_mini](2026_01_26_fizzbuzz_mini.py)*
+
+## **_Task condition:_**
+
+Given an integer, return a string based on the following rules:
+
+- If the number is divisible by `3`, return `"Fizz"`.
+- If the number is divisible by `5`, return `"Buzz"`.
+- If the number is divisible by both `3` and `5`, return `"FizzBuzz"`.
+- Otherwise, return the given number as a string.
+
+### **_Examples_**
+
+```
+Input: fizz_buzz_mini(3) => Output: "Fizz"
+
+Input: fizz_buzz_mini(4) => Output: "4"
+
+Input: fizz_buzz_mini(35) => Output: "Buzz"
+
+Input: fizz_buzz_mini(75) => Output: "FizzBuzz"
+
+Input: fizz_buzz_mini(98) => Output: "98"
+```
+
+#
+
+<br />
