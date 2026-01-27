@@ -734,6 +734,40 @@ Input: is_valid_hex("fff") => Output: False
 
 <br />
 
+# 2026.01.24 Challenge - Bingo! Letter
+
+My solution -> *[2026_01_24_bingo_letter](2026_01_24_bingo_letter.py)*
+
+## **_Task condition:_**
+
+Given a number, return the bingo letter associated with it (capitalized). Bingo numbers are grouped as follows:
+
+| Letter | Number Range |
+| :----: | :----------: |
+| `"B"`  | 1-15         |
+| `"I"`  | 16-30        |
+| `"N"`  | 31-45        |
+| `"G"`  | 46-60        |
+| `"O"`  | 61-75        |
+
+### **_Examples_**
+
+```
+Input: get_bingo_letter(75) => Output: "O"
+
+Input: get_bingo_letter(54) => Output: "G"
+
+Input: get_bingo_letter(25) => Output: "I"
+
+Input: get_bingo_letter(38) => Output: "N"
+
+Input: get_bingo_letter(11) => Output: "B"
+```
+
+#
+
+<br />
+
 # 2026.01.25 Challenge - Scaled Image
 
 My solution -> *[2026_01_25_scaled_image](2026_01_25_scaled_image.py)*
