@@ -827,3 +827,34 @@ Input: fizz_buzz_mini(98) => Output: "98"
 #
 
 <br />
+
+# 2026.01.27 Challenge - Odd or Even Day
+
+My solution -> *[2026_01_27_odd_or_even_day](2026_01_27_odd_or_even_day.py)*
+
+## **_Task condition:_**
+
+Given a timestamp (number of milliseconds since the Unix epoch), return:
+
+- `"odd"` if the day of the month for that timestamp is odd.
+- `"even"` if the day of the month for that timestamp is even.
+
+For example, given `1769472000000`, a timestamp for `January 27th, 2026`, return `"odd"` because the day number (`27`) is an odd number.
+
+### **_Examples_**
+
+```
+Input: odd_or_even_day(1769472000000) => Output: "odd"
+
+Input: odd_or_even_day(1769444440000) => Output: "even"
+
+Input: odd_or_even_day(6739456780000) => Output: "odd"
+
+Input: odd_or_even_day(1) => Output: "odd"
+
+Input: odd_or_even_day(86400000) => Output: "even"
+```
+
+#
+
+<br />
