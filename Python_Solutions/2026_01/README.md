@@ -858,3 +858,27 @@ Input: odd_or_even_day(86400000) => Output: "even"
 #
 
 <br />
+
+# 2026.01.29 Challenge - Letters-Numbers
+
+My solution -> *[2026_01_29_letters_numbers](2026_01_29_letters_numbers.py)*
+
+## **_Task condition:_**
+
+Given a string containing only letters and numbers, return a new string where a hyphen (`-`) is inserted every time the string switches from a letter to a number, or a number to a letter.
+
+### **_Examples_**
+
+```
+Input: separate_letters_and_numbers("ABC123") => Output: "ABC-123"
+
+Input: separate_letters_and_numbers("Route66") => Output: "Route-66"
+
+Input: separate_letters_and_numbers("H3LL0W0RLD") => Output: "H-3-LL-0-W-0-RLD"
+
+Input: separate_letters_and_numbers("a1b2c3d4") => Output: "a-1-b-2-c-3-d-4"
+```
+
+#
+
+<br />
