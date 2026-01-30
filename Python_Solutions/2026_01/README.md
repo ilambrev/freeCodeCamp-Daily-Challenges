@@ -277,6 +277,44 @@ Input: is_circular_prime(1193) => Output: True
 
 <br />
 
+# 2026.01.10 Challenge - Tic-Tac-Toe
+
+My solution -> *[2026_01_10_tic_tac_toe](2026_01_10_tic_tac_toe.py)*
+
+## **_Task condition:_**
+
+Given a `3×3` matrix (an array of arrays) representing a completed `Tic-Tac-Toe` game, determine the winner.
+
+- Each element in the given matrix is either an `"X"` or `"O"`.
+
+A player wins if they have three of their characters in a row - horizontally, vertically, or diagonally.
+
+Return:
+
+- `"X wins"` if player `X` has three in a row.
+- `"O wins"` if player `O` has three in a row.
+- `"Draw"` if no player has three in a row.
+
+### **_Examples_**
+
+```
+Input: tic_tac_toe([["X", "X", "X"], ["O", "O", "X"], ["O", "X", "O"]]) => Output: "X wins"
+
+Input: tic_tac_toe([["X", "O", "X"], ["X", "O", "X"], ["O", "X", "X"]]) => Output: "X wins"
+
+Input: tic_tac_toe([["X", "O", "X"], ["O", "X", "O"], ["O", "X", "O"]]) => Output: "Draw"
+
+Input: tic_tac_toe([["X", "X", "O"], ["X", "O", "X"], ["O", "X", "X"]]) => Output: "O wins"
+
+Input: tic_tac_toe([["X", "O", "O"], ["O", "X", "O"], ["O", "X", "X"]]) => Output: "X wins"
+
+Input: tic_tac_toe([["O", "X", "X"], ["X", "O", "O"], ["X", "O", "X"]]) => Output: "Draw"
+```
+
+#
+
+<br />
+
 # 2026.01.11 Challenge - Par for the Hole
 
 My solution -> *[2026_01_11_par_for_the_hole](2026_01_11_par_for_the_hole.py)*
@@ -367,7 +405,7 @@ Given a positive integer, return `"Odd"` if it's an odd number, and `"Even"` is 
 
 ```
 Input: odd_or_even(1) => Output: "Odd"
-
+Tic-Tac-Toe
 Input: odd_or_even(2) => Output: "Even"
 
 Input: odd_or_even(13) => Output: "Odd"
