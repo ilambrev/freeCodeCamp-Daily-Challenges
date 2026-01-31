@@ -965,3 +965,54 @@ Input: find_pawn_moves("E3") => Output: ["E4"]
 #
 
 <br />
+
+# 2026.01.31 Challenge - 
+
+My solution -> *[2026_01_31_zodiac_finder](2026_01_31_zodiac_finder.py)*
+
+## **_Task condition:_**
+
+Given a date string in the format `"YYYY-MM-DD"`, return the zodiac sign for that date using the following chart:
+
+| Date Range                | Zodiac Sign     |
+| :-----------------------: | :-------------: |
+| March 21 - April 19       | `"Aries"`       |
+| April 20 - May 20         | `"Taurus"`      |
+| May 21 - June 20          | `"Gemini"`      |
+| June 21 - July 22         | `"Cancer"`      |
+| July 23 - August 22       | `"Leo"`         |
+| August 23 - September 22  | `"Virgo"`       |
+| September 23 - October 22 | `"Libra"`       |
+| October 23 - November 21  | `"Scorpio"`     |
+| November 22 - December 21 | `"Sagittarius"` |
+| December 22 - January 19  | `"Capricorn"`   |
+| January 20 - February 18  | `"Aquarius"`    |
+| February 19 - March 20    | `"Pisces"`      |
+
+- Zodiac signs are based only on the month and day, you can ignore the year.
+
+### **_Examples_**
+
+```
+Input: get_sign("2026-01-31") => Output: "Aquarius"
+
+Input: get_sign("2001-06-10") => Output: "Gemini"
+
+Input: get_sign("1985-09-07") => Output: "Virgo"
+
+Input: get_sign("2023-03-19") => Output: "Pisces"
+
+Input: get_sign("2045-11-05") => Output: "Scorpio"
+
+Input: get_sign("1985-12-06") => Output: "Sagittarius"
+
+Input: get_sign("2025-12-30") => Output: "Capricorn"
+
+Input: get_sign("2018-10-08") => Output: "Libra"
+
+Input: get_sign("1958-05-04") => Output: "Taurus"
+```
+
+#
+
+<br />
