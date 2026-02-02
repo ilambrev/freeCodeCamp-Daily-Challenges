@@ -32,3 +32,35 @@ Input: digital_detox(["2026-02-05 10:00:00", "2026-02-01 09:00:00", "2026-02-03 
 #
 
 <br />
+
+# 2026.02.02 Challenge - Groundhog Day
+
+My solution -> *[2026_02_02_groundhog_day](2026_02_02_groundhog_day.py)*
+
+## **_Task condition:_**
+
+Today is Groundhog Day, in which a groundhog predicts the weather based on whether or not it sees its shadow.
+
+Given a value representing the groundhog's appearance, return the correct prediction:
+
+- If the given value is the boolean `true` (the groundhog saw its shadow), return `"Looks like we'll have six more weeks of winter."`.
+- If the value is the boolean `false` (the groundhog did not see its shadow), return `"It's going to be an early spring."`.
+- If the value is anything `else` (the groundhog did not show up), return `"No prediction this year."`.
+
+### **_Examples_**
+
+```
+Input: groundhog_day_prediction(True) => Output: "Looks like we'll have six more weeks of winter."
+
+Input: groundhog_day_prediction(False) => Output: "It's going to be an early spring."
+
+Input: groundhog_day_prediction(None) => Output: "No prediction this year."
+
+Input: groundhog_day_prediction(" ") => Output: "No prediction this year."
+
+Input: groundhog_day_prediction("True") => Output: "No prediction this year."
+```
+
+#
+
+<br />
