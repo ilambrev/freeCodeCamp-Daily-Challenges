@@ -488,6 +488,43 @@ Input: has_consonant_count("Th3 Qu!ck Br0wn F0x Jump5 0ver Th3 L@zy D0g.", 23) =
 
 <br />
 
+# 2025.12.17 Challenge - Markdown Blockquote Parser
+
+My solution -> *[2025_12_17_markdown_blockquote_parser](2025_12_17_markdown_blockquote_parser.py)*
+
+## **_Task condition:_**
+
+Given a string that includes a blockquote in Markdown, return the equivalent HTML string.
+
+A blockquote in Markdown is any line that:
+
+- Starts with zero or more spaces
+- Followed by a greater-than sign (`>`)
+- Then, one or more spaces
+- And finally, the blockquote text.
+
+Return the blockquote text surrounded by opening and closing HTML `blockquote` tags.
+
+For example, given `"> This is a quote"`, return `<blockquote>This is a quote</blockquote>`.
+
+### **_Examples_**
+
+```
+Input: parse_blockquote("> This is a quote") => Output: "<blockquote>This is a quote</blockquote>"
+
+Input: parse_blockquote(" > This is also a quote") => Output: "<blockquote>This is also a quote</blockquote>"
+
+Input: parse_blockquote("  >    So  Is  This") => Output: "<blockquote>So  Is  This</blockquote>"
+```
+
+**_NOTES:_**
+
+- The console may not display HTML tags in strings when logging messages. Check the browser console to see logs with tags included.
+
+#
+
+<br />
+
 # 2025.12.18 Challenge - Checkerboard
 
 My solution -> *[2025_12_18_checkerboard](2025_12_18_checkerboard.py)*
