@@ -64,3 +64,27 @@ Input: groundhog_day_prediction("True") => Output: "No prediction this year."
 #
 
 <br />
+
+# 2026.02.03 Challenge - String Mirror
+
+My solution -> *[2026_02_03_string_mirror](2026_02_03_string_mirror.py)*
+
+## **_Task condition:_**
+
+Given a string, return a new string that consists of the given string with a reversed copy of itself appended to the end of it.
+
+### **_Examples_**
+
+```
+Input: mirror("freeCodeCamp") => Output: "freeCodeCamppmaCedoCeerf"
+
+Input: mirror("RaceCar") => Output: "RaceCarraCecaR"
+
+Input: mirror("helloworld") => Output: "helloworlddlrowolleh"
+
+Input: mirror("The quick brown fox...") => Output: "The quick brown fox......xof nworb kciuq ehT"
+```
+
+#
+
+<br />
