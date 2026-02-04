@@ -88,3 +88,27 @@ Input: mirror("The quick brown fox...") => Output: "The quick brown fox......xof
 #
 
 <br />
+
+# 2026.02.04 Challenge - Truncate the Text
+
+My solution -> *[2026_02_04_truncate_the_text](2026_02_04_truncate_the_text.py)*
+
+## **_Task condition:_**
+
+Given a string, return it as-is if it's `20` characters or shorter. If it's longer than `20` characters, truncate it to the first `17` characters and append `"..."` to the end of it (so it's `20` characters total) and return the result.
+
+### **_Examples_**
+
+```
+Input: truncate_text("Hello, world!") => Output: "Hello, world!"
+
+Input: truncate_text("This string should get truncated.") => Output: "This string shoul..."
+
+Input: truncate_text("Exactly twenty chars") => Output: "Exactly twenty chars"
+
+Input: truncate_text(".....................") => Output: "...................."
+```
+
+#
+
+<br />
