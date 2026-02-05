@@ -112,3 +112,34 @@ Input: truncate_text(".....................") => Output: "...................."
 #
 
 <br />
+
+# 2026.02.05 Challenge - Pocket Change
+
+My solution -> *[2026_02_05_pocket_change](2026_02_05_pocket_change.py)*
+
+## **_Task condition:_**
+
+Given an array of integers representing the coins in your pocket, with each integer being the value of a coin in cents, return the total amount in the format `"$D.CC"`.
+
+- `100` cents equals `1` dollar.
+- In the return value, include a leading zero for amounts less than one dollar and always exactly two digits for the cents.
+
+### **_Examples_**
+
+```
+Input: count_change([25, 10, 5, 1]) => Output: "$0.41"
+
+Input: count_change([25, 10, 5, 1, 25, 10, 25, 1, 1, 10, 5, 25]) => Output: "$1.43"
+
+Input: count_change([100, 25, 100, 1000, 5, 500, 2000, 25]) => Output: "$37.55"
+
+Input: count_change([10, 5, 1, 10, 1, 25, 1, 1, 5, 1, 10]) => Output: "$0.70"
+
+Input: count_change([1]) => Output: "$0.01"
+
+Input: count_change([25, 25, 25, 25]) => Output: "$1.00"
+```
+
+#
+
+<br />
