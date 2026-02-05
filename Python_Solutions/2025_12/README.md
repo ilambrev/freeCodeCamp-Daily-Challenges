@@ -748,6 +748,43 @@ Input: ("re:Ref:fw:re:review:FW:Re:fw:report:Re:FW:followup:re:summary:Fwd:Re:fw
 
 <br />
 
+# 2025.12.24 Challenge - Markdown Image Parser
+
+My solution -> *[2025_12_24_markdown_image_parser](2025_12_24_markdown_image_parser.py)*
+
+## **_Task condition:_**
+
+Given a string of an image in Markdown, return the equivalent HTML string.
+
+A Markdown image has the following format: `"![alt text](image_url)"`. Where:
+
+- `alt text` is the description of the image (the `alt` attribute value).
+- `image_url` is the source URL of the image (the `src` attribute value).
+
+Return a string of the HTML `img` tag with the `src` set to the image URL and the `alt` set to the alt text.
+
+For example, given `"![Cute cat](cat.png)"` return `'<img src="cat.png" alt="Cute cat">'`;
+
+- Make sure the tag, order of attributes, spacing, and quote usage is the same as above.
+
+### **_Examples_**
+
+```
+Input: parse_image("![Cute cat](cat.png)") => Output: '<img src="cat.png" alt="Cute cat">'
+
+Input: parse_image("![Rocket Ship](https://freecodecamp.org/cdn/rocket-ship.jpg)") => Output: '<img src="https://freecodecamp.org/cdn/rocket-ship.jpg" alt="Rocket Ship">'
+
+Input: parse_image("![Cute cats!](https://freecodecamp.org/cats.jpeg)") => Output: '<img src="https://freecodecamp.org/cats.jpeg" alt="Cute cats!">'
+```
+
+**_NOTES:_**
+
+- The console may not display HTML tags in strings when logging messages — check the browser console to see logs with tags included.
+
+#
+
+<br />
+
 # 2025.12.25 Challenge - Snowflake Generator
 
 My solution -> *[2025_12_25_snowflake_generator](2025_12_25_snowflake_generator.py)*
