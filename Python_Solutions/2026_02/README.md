@@ -143,3 +143,299 @@ Input: count_change([25, 25, 25, 25]) => Output: "$1.00"
 #
 
 <br />
+
+# 2026.02.06 Challenge - 2026 Winter Games Day 1: Opening Day
+
+My solution -> *[2026_02_06_2026_winter_games_day_1_opening_day](2026_02_06_2026_winter_games_day_1_opening_day.py)*
+
+## **_Task condition:_**
+
+Today marks the start of the 2026 Winter Games. The next 17 days will bring you coding challenges inspired by them.
+
+For the first one, you are given a two-letter country code and need to return the flag emoji for that country.
+
+Use this list:
+
+| Country                | Code   | Flag   |
+| :--------------------: | :----: | :----: |	 	
+| Albania 	             | `"AL"` | `"🇦🇱"` |
+| Andorra                | `"AD"` | `"🇦🇩"` |
+| Argentina              | `"AR"` | `"🇦🇷"` |
+| Armenia                | `"AM"` | `"🇦🇲"` |
+| Australia              | `"AU"` | `"🇦🇺"` |
+| Austria                | `"AT"` | `"🇦🇹"` |
+| Azerbaijan             | `"AZ"` | `"🇦🇿"` |
+| Belgium                | `"BE"` | `"🇧🇪"` |
+| Benin                  | `"BJ"` | `"🇧🇯"` |
+| Bolivia                | `"BO"` | `"🇧🇴"` |
+| Bosnia and Herzegovina | `"BA"` | `"🇧🇦"` |
+| Brazil                 | `"BR"` | `"🇧🇷"` |
+| Bulgaria               | `"BG"` | `"🇧🇬"` |
+| Canada                 | `"CA"` | `"🇨🇦"` |
+| Chile                  | `"CL"` | `"🇨🇱"` |
+| China                  | `"CN"` | `"🇨🇳"` |
+| Colombia               | `"CO"` | `"🇨🇴"` |
+| Croatia                | `"HR"` | `"🇭🇷"` |
+| Cyprus                 | `"CY"` | `"🇨🇾"` |
+| Czech Republic         | `"CZ"` | `"🇨🇿"` |
+| Denmark                | `"DK"` | `"🇩🇰"` |
+| Ecuador                | `"EC"` | `"🇪🇨"` |
+| Eritrea                | `"ER"` | `"🇪🇷"` |
+| Estonia                | `"EE"` | `"🇪🇪"` |
+| Finland                | `"FI"` | `"🇫🇮"` |
+| France                 | `"FR"` | `"🇫🇷"` |
+| Georgia                | `"GE"` | `"🇬🇪"` |
+| Germany                | `"DE"` | `"🇩🇪"` |
+| Great Britain          | `"GB"` | `"🇬🇧"` |
+| Greece                 | `"GR"` | `"🇬🇷"` |
+| Guinea-Bissau          | `"GW"` | `"🇬🇼"` |
+| Haiti                  | `"HT"` | `"🇭🇹"` |
+| Hong Kong              | `"HK"` | `"🇭🇰"` |
+| Hungary                | `"HU"` | `"🇭🇺"` |
+| Iceland                | `"IS"` | `"🇮🇸"` |
+| India                  | `"IN"` | `"🇮🇳"` |
+| Iran                   | `"IR"` | `"🇮🇷"` |
+| Ireland                | `"IE"` | `"🇮🇪"` |
+| Israel                 | `"IL"` | `"🇮🇱"` |
+| Italy                  | `"IT"` | `"🇮🇹"` |
+| Jamaica                | `"JM"` | `"🇯🇲"` |
+| Japan                  | `"JP"` | `"🇯🇵"` |
+| Kazakhstan             | `"KZ"` | `"🇰🇿"` |
+| Kenya                  | `"KE"` | `"🇰🇪"` |
+| Kosovo                 | `"XK"` | `"🇽🇰"` |
+| Kyrgyzstan             | `"KG"` | `"🇰🇬"` |
+| Latvia                 | `"LV"` | `"🇱🇻"` |
+| Lebanon                | `"LB"` | `"🇱🇧"` |
+| Liechtenstein          | `"LI"` | `"🇱🇮"` |
+| Lithuania              | `"LT"` | `"🇱🇹"` |
+| Luxembourg             | `"LU"` | `"🇱🇺"` |
+| Madagascar             | `"MG"` | `"🇲🇬"` |
+| Malaysia               | `"MY"` | `"🇲🇾"` |
+| Malta                  | `"MT"` | `"🇲🇹"` |
+| Mexico                 | `"MX"` | `"🇲🇽"` |
+| Moldova                | `"MD"` | `"🇲🇩"` |
+| Monaco                 | `"MC"` | `"🇲🇨"` |
+| Mongolia               | `"MN"` | `"🇲🇳"` |
+| Montenegro             | `"ME"` | `"🇲🇪"` |
+| Morocco                | `"MA"` | `"🇲🇦"` |
+| Netherlands            | `"NL"` | `"🇳🇱"` |
+| New Zealand            | `"NZ"` | `"🇳🇿"` |
+| Nigeria                | `"NG"` | `"🇳🇬"` |
+| North Macedonia        | `"MK"` | `"🇲🇰"` |
+| Norway                 | `"NO"` | `"🇳🇴"` |
+| Pakistan               | `"PK"` | `"🇵🇰"` |
+| Philippines            | `"PH"` | `"🇵🇭"` |
+| Poland                 | `"PL"` | `"🇵🇱"` |
+| Portugal               | `"PT"` | `"🇵🇹"` |
+| Puerto Rico            | `"PR"` | `"🇵🇷"` |
+| Romania                | `"RO"` | `"🇷🇴"` |
+| San Marino             | `"SM"` | `"🇸🇲"` |
+| Saudi Arabia           | `"SA"` | `"🇸🇦"` |
+| Serbia                 | `"RS"` | `"🇷🇸"` |
+| Singapore              | `"SG"` | `"🇸🇬"` |
+| Slovakia               | `"SK"` | `"🇸🇰"` |
+| Slovenia               | `"SI"` | `"🇸🇮"` |
+| South Africa           | `"ZA"` | `"🇿🇦"` |
+| South Korea            | `"KR"` | `"🇰🇷"` |
+| Spain                  | `"ES"` | `"🇪🇸"` |
+| Sweden                 | `"SE"` | `"🇸🇪"` |
+| Switzerland            | `"CH"` | `"🇨🇭"` |
+| Thailand               | `"TH"` | `"🇹🇭"` |
+| Trinidad & Tobago      | `"TT"` | `"🇹🇹"` |
+| Turkey                 | `"TR"` | `"🇹🇷"` |
+| Ukraine                | `"UA"` | `"🇺🇦"` |
+| United Arab Emirates   | `"AE"` | `"🇦🇪"` |
+| United States          | `"US"` | `"🇺🇸"` |
+| Uruguay                | `"UY"` | `"🇺🇾"` |
+| Uzbekistan             | `"UZ"` | `"🇺🇿"` |
+| Venezuela              | `"VE"` | `"🇻🇪"` |
+
+### **_Examples_**
+
+```
+Input: get_flag("AL") => Output: "🇦🇱"
+
+Input: get_flag("AD") => Output: "🇦🇩"
+
+Input: get_flag("AR") => Output: "🇦🇷"
+
+Input: get_flag("AM") => Output: "🇦🇲"
+
+Input: get_flag("AU") => Output: "🇦🇺"
+
+Input: get_flag("AT") => Output: "🇦🇹"
+
+Input: get_flag("AZ") => Output: "🇦🇿"
+
+Input: get_flag("BE") => Output: "🇧🇪"
+
+Input: get_flag("BJ") => Output: "🇧🇯"
+
+Input: get_flag("BO") => Output: "🇧🇴"
+
+Input: get_flag("BA") => Output: "🇧🇦"
+
+Input: get_flag("BR") => Output: "🇧🇷"
+
+Input: get_flag("BG") => Output: "🇧🇬"
+
+Input: get_flag("CA") => Output: "🇨🇦"
+
+Input: get_flag("CL") => Output: "🇨🇱"
+
+Input: get_flag("CN") => Output: "🇨🇳"
+
+Input: get_flag("CO") => Output: "🇨🇴"
+
+Input: get_flag("HR") => Output: "🇭🇷"
+
+Input: get_flag("CY") => Output: "🇨🇾"
+
+Input: get_flag("CZ") => Output: "🇨🇿"
+
+Input: get_flag("DK") => Output: "🇩🇰"
+
+Input: get_flag("EC") => Output: "🇪🇨"
+
+Input: get_flag("ER") => Output: "🇪🇷"
+
+Input: get_flag("EE") => Output: "🇪🇪"
+
+Input: get_flag("FI") => Output: "🇫🇮"
+
+Input: get_flag("FR") => Output: "🇫🇷"
+
+Input: get_flag("GE") => Output: "🇬🇪"
+
+Input: get_flag("DE") => Output: "🇩🇪"
+
+Input: get_flag("GB") => Output: "🇬🇧"
+
+Input: get_flag("GR") => Output: "🇬🇷"
+
+Input: get_flag("GW") => Output: "🇬🇼"
+
+Input: get_flag("HT") => Output: "🇭🇹"
+
+Input: get_flag("HK") => Output: "🇭🇰"
+
+Input: get_flag("HU") => Output: "🇭🇺"
+
+Input: get_flag("IS") => Output: "🇮🇸"
+
+Input: get_flag("IN") => Output: "🇮🇳"
+
+Input: get_flag("IR") => Output: "🇮🇷"
+
+Input: get_flag("IE") => Output: "🇮🇪"
+
+Input: get_flag("IL") => Output: "🇮🇱"
+
+Input: get_flag("IT") => Output: "🇮🇹"
+
+Input: get_flag("JM") => Output: "🇯🇲"
+
+Input: get_flag("JP") => Output: "🇯🇵"
+
+Input: get_flag("KZ") => Output: "🇰🇿"
+
+Input: get_flag("KE") => Output: "🇰🇪"
+
+Input: get_flag("XK") => Output: "🇽🇰"
+
+Input: get_flag("KG") => Output: "🇰🇬"
+
+Input: get_flag("LV") => Output: "🇱🇻"
+
+Input: get_flag("LB") => Output: "🇱🇧"
+
+Input: get_flag("LI") => Output: "🇱🇮"
+
+Input: get_flag("LT") => Output: "🇱🇹"
+
+Input: get_flag("LU") => Output: "🇱🇺"
+
+Input: get_flag("MG") => Output: "🇲🇬"
+
+Input: get_flag("MY") => Output: "🇲🇾"
+
+Input: get_flag("MT") => Output: "🇲🇹"
+
+Input: get_flag("MX") => Output: "🇲🇽"
+
+Input: get_flag("MD") => Output: "🇲🇩"
+
+Input: get_flag("MC") => Output: "🇲🇨"
+
+Input: get_flag("MN") => Output: "🇲🇳"
+
+Input: get_flag("ME") => Output: "🇲🇪"
+
+Input: get_flag("MA") => Output: "🇲🇦"
+
+Input: get_flag("NL") => Output: "🇳🇱"
+
+Input: get_flag("NZ") => Output: "🇳🇿"
+
+Input: get_flag("NG") => Output: "🇳🇬"
+
+Input: get_flag("MK") => Output: "🇲🇰"
+
+Input: get_flag("NO") => Output: "🇳🇴"
+
+Input: get_flag("PK") => Output: "🇵🇰"
+
+Input: get_flag("PH") => Output: "🇵🇭"
+
+Input: get_flag("PL") => Output: "🇵🇱"
+
+Input: get_flag("PT") => Output: "🇵🇹"
+
+Input: get_flag("PR") => Output: "🇵🇷"
+
+Input: get_flag("RO") => Output: "🇷🇴"
+
+Input: get_flag("SM") => Output: "🇸🇲"
+
+Input: get_flag("SA") => Output: "🇸🇦"
+
+Input: get_flag("RS") => Output: "🇷🇸"
+
+Input: get_flag("SG") => Output: "🇸🇬"
+
+Input: get_flag("SK") => Output: "🇸🇰"
+
+Input: get_flag("SI") => Output: "🇸🇮"
+
+Input: get_flag("ZA") => Output: "🇿🇦"
+
+Input: get_flag("KR") => Output: "🇰🇷"
+
+Input: get_flag("ES") => Output: "🇪🇸"
+
+Input: get_flag("SE") => Output: "🇸🇪"
+
+Input: get_flag("CH") => Output: "🇨🇭"
+
+Input: get_flag("TH") => Output: "🇹🇭"
+
+Input: get_flag("TT") => Output: "🇹🇹"
+
+Input: get_flag("TR") => Output: "🇹🇷"
+
+Input: get_flag("UA") => Output: "🇺🇦"
+
+Input: get_flag("AE") => Output: "🇦🇪"
+
+Input: get_flag("US") => Output: "🇺🇸"
+
+Input: get_flag("UY") => Output: "🇺🇾"
+
+Input: get_flag("UZ") => Output: "🇺🇿"
+
+Input: get_flag("VE") => Output: "🇻🇪"
+```
+
+#
+
+<br />
