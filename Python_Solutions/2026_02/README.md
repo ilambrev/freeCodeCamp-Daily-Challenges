@@ -292,7 +292,7 @@ Input: get_flag("HR") => Output: "🇭🇷"
 Input: get_flag("CY") => Output: "🇨🇾"
 
 Input: get_flag("CZ") => Output: "🇨🇿"
-2026 Winter Games Day 2: Snowboarding
+
 Input: get_flag("DK") => Output: "🇩🇰"
 
 Input: get_flag("EC") => Output: "🇪🇨"
