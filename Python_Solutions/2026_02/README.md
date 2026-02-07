@@ -292,7 +292,7 @@ Input: get_flag("HR") => Output: "🇭🇷"
 Input: get_flag("CY") => Output: "🇨🇾"
 
 Input: get_flag("CZ") => Output: "🇨🇿"
-
+2026 Winter Games Day 2: Snowboarding
 Input: get_flag("DK") => Output: "🇩🇰"
 
 Input: get_flag("EC") => Output: "🇪🇨"
@@ -434,6 +434,40 @@ Input: get_flag("UY") => Output: "🇺🇾"
 Input: get_flag("UZ") => Output: "🇺🇿"
 
 Input: get_flag("VE") => Output: "🇻🇪"
+```
+
+#
+
+<br />
+
+# 2026.02.07 Challenge - 2026 Winter Games Day 2: Snowboarding
+
+My solution -> *[2026_02_07_2026_winter_games_day_2_snowboarding](2026_02_07_2026_winter_games_day_2_snowboarding.py)*
+
+## **_Task condition:_**
+
+Given a snowboarder's starting stance and a rotation in degrees, determine their landing stance.
+
+- A snowboarder's stance is either `"Regular"` or `"Goofy"`.
+- Trick rotations are multiples of `90` degrees. Positive indicates `clockwise rotation`, and negative indicate `counter-clockwise rotation`.
+- The landing stance flips every `180` degrees of rotation.
+
+For example, given `"Regular"` and `90`, return `"Regular"`. Given `"Regular"` and `180` degrees, return `"Goofy"`.
+
+### **_Examples_**
+
+```
+Input: get_landing_stance("Regular", 90) => Output: "Regular"
+
+Input: get_landing_stance("Regular", 180) => Output: "Goofy"
+
+Input: get_landing_stance("Goofy", -270) => Output: "Regular"
+
+Input: get_landing_stance("Regular", 2340) => Output: "Goofy"
+
+Input: get_landing_stance("Goofy", 2160) => Output: "Goofy"
+
+Input: get_landing_stance("Goofy", -540) => Output: "Regular"
 ```
 
 #
