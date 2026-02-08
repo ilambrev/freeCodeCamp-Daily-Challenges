@@ -473,3 +473,32 @@ Input: get_landing_stance("Goofy", -540) => Output: "Regular"
 #
 
 <br />
+
+# 2026.02.08 Challenge - 2026 Winter Games Day 3: Biathlon
+
+My solution -> *[2026_02_08_2026_winter_games_day_3_biathlon](2026_02_08_2026_winter_games_day_3_biathlon.py)*
+
+## **_Task condition:_**
+
+Given an array of integers, where each value represents the number of targets hit in a single round of a biathlon, return the total penalty distance the athlete must ski.
+
+- Each round consists of `5` targets.
+- Each missed target results in a `150` meter penalty loop.
+
+### **_Examples_**
+
+```
+Input: calculate_penalty_distance([4, 4]) => Output: 300
+
+Input: calculate_penalty_distance([5, 5]) => Output: 0
+
+Input: calculate_penalty_distance([4, 5, 3, 5]) => Output: 450
+
+Input: calculate_penalty_distance([5, 4, 5, 5]) => Output: 150
+
+Input: calculate_penalty_distance([4, 3, 0, 3]) => Output: 1500
+```
+
+#
+
+<br />
