@@ -503,7 +503,7 @@ Input: calculate_penalty_distance([4, 3, 0, 3]) => Output: 1500
 
 <br />
 
-# 2026.02.09 Challenge - 2026 Winter Games Day 3: Biathlon
+# 2026.02.09 Challenge - 2026 Winter Games Day 4: Ski Jumping
 
 My solution -> *[2026_02_09_2026_winter_games_day_4_ski_jumping](2026_02_09_2026_winter_games_day_4_ski_jumping.py)*
 
@@ -515,15 +515,16 @@ Given `distance points`, `style points`, a `wind compensation value`, and `K-poi
 
 The current total scores of the other jumpers are:
 
-|**165.5**|
-|---------|
-|**172.0**|
-|**158.0**|
-|**180.0**|
-|**169.5**|
-|**175.0**|
-|**162.0**|
-|**170.0**|
+|       |
+|-------|
+|`165.5`|
+|`172.0`|
+|`158.0`|
+|`180.0`|
+|`169.5`|
+|`175.0`|
+|`162.0`|
+|`170.0`|
 
 - If your score is the best, return `"Gold"`
 - If it's second best, return `"Silver"`
@@ -544,6 +545,39 @@ Input: ski_jump_medal(118.0, 50.5, -1.5, 4.0) => Output: "No Medal"
 Input: ski_jump_medal(124.0, 50.5, 2.0, 5.0) => Output: "Gold"
 
 Input: ski_jump_medal(119.0, 49.5, 0.0, 3.0) => Output: "No Medal"
+```
+
+#
+
+<br />
+
+# 2026.02.10 Challenge - 2026 Winter Games Day 5: Cross-Country Skiing
+
+My solution -> *[2026_02_10_2026_winter_games_day_5_cross_country_skiing](2026_02_10_2026_winter_games_day_5_cross_country_skiing.py)*
+
+## **_Task condition:_**
+
+Given an array of finish times for a cross-country ski race, convert them into times behind the winner.
+
+- Given times are strings in `"H:MM:SS"` format.
+- Given times will be in order from fastest to slowest.
+- The winners time (fastest time) should correspond to `"0"`.
+- Each other time should show the time behind the winner, in the format `"+M:SS"`.
+
+For example, given `["1:25:32", "1:26:10", "1:27:05"]`, return `["0", "+0:38", "+1:33"]`.
+
+### **_Examples_**
+
+```
+Input: get_relative_results(["1:25:32", "1:26:10", "1:27:05"]) => Output: ["0", "+0:38", "+1:33"]
+
+Input: get_relative_results(["1:00:01", "1:00:05", "1:00:10"]) => Output: ["0", "+0:04", "+0:09"]
+
+Input: get_relative_results(["1:10:06", "1:10:23", "1:10:48", "1:12:11"]) => Output: ["0", "+0:17", "+0:42", "+2:05"]
+
+Input: get_relative_results(["0:49:13", "0:49:15", "0:50:14", "0:51:30", "0:51:58", "0:52:16", "0:53:12", "0:53:31", "0:56:19", "1:02:20"]) => Output: ["0", "+0:02", "+1:01", "+2:17", "+2:45", "+3:03", "+3:59", "+4:18", "+7:06", "+13:07"]
+
+Input: get_relative_results(["2:01:15", "2:10:45", "2:10:53", "2:11:04", "2:11:55", "2:13:27", "2:14:30", "2:15:10"]) => Output: ["0", "+9:30", "+9:38", "+9:49", "+10:40", "+12:12", "+13:15", "+13:55"]
 ```
 
 #
