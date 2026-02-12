@@ -613,3 +613,31 @@ Input: compute_score([6.0, 8.5, 7.0, 9.0, 7.5, 8.0, 6.5, 9.5, 7.0, 8.0], 1.5, 0.
 #
 
 <br />
+
+# 2026.02.12 Challenge - 2026 Winter Games Day 7: Speed Skating
+
+My solution -> *[2026_02_12_2026_winter_games_day_7_speed_skating](2026_02_12_2026_winter_games_day_7_speed_skating.py)*
+
+## **_Task condition:_**
+
+Given two arrays representing the lap times (`in seconds`) for two speed skaters, return the lap number where the difference in lap times is the largest.
+
+The first element of each array corresponds to lap `1`, the second to lap `2`, and so on.
+
+### **_Examples_**
+
+```
+Input: largest_difference([26.11, 25.80, 25.92, 26.23, 26.07], [25.93, 25.74, 26.53, 26.11, 26.30]) => Output: 3
+
+Input: largest_difference([27.04, 25.94, 26.22, 26.07, 26.18], [25.59, 25.80, 26.11, 26.01, 26.23]) => Output: 1
+
+Input: largest_difference([25.82, 25.90, 26.05, 26.00, 26.48], [25.85, 25.92, 26.07, 25.98, 25.95]) => Output: 5
+
+Input: largest_difference([25.88, 26.10, 25.95, 26.05, 26.00], [25.90, 26.55, 25.92, 26.03, 26.01]) => Output: 2
+
+Input: largest_difference([25.92, 26.01, 26.05, 25.88, 26.12], [25.95, 26.00, 26.03, 26.45, 26.10]) => Output: 4
+```
+
+#
+
+<br />
