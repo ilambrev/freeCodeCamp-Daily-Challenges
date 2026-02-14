@@ -681,3 +681,45 @@ Input: get_fastest_speed([8.204, 7.230, 9.673, 7.645, 6.508]) => Output: "The lu
 #
 
 <br />
+
+# 2026.02.14 Challenge - 2026 Winter Games Day 9: Skeleton
+
+My solution -> *[2026_02_14_2026_winter_games_day_9_skeleton](2026_02_14_2026_winter_games_day_9_skeleton.py)*
+
+## **_Task condition:_**
+
+Given a string representing the curves on a skeleton track, determine the difficulty of the track.
+
+- The given string will only consist of the letters:
+    - `"L"` for a left turn
+    - `"R"` for a right turn
+    - `"S"` for a straight segment
+- Each direction change adds 15 points (an "L" followed by an "R" or vice versa).
+- All other curves add 5 points each (all other "L" or "R" characters).
+- Straight segments add 0 points.
+
+The difficulty of the track is based on the total score. Return:
+
+- `"Easy"` if the total is `0-100`
+- `"Medium"` if the total is `101-200`
+- `"Hard"` if the total is over `200`
+
+### **_Examples_**
+
+```
+Input: get_difficulty("SLSLLSRRLSRLRL") => Output: "Easy"
+
+Input: get_difficulty("LLRSLRLRSLLRLRSLRRLRSRLLS") => Output: "Hard"
+
+Input: get_difficulty("SRRRRLSLLRLRSSRLSRL") => Output: "Medium"
+
+Input: get_difficulty("LSRLRLSRLRLSLRSLRLLRLSRLRLRSL") => Output: "Hard"
+
+Input: get_difficulty("SLLSSLRLSLSLRSLSSLRL") => Output: "Medium"
+
+Input: get_difficulty("SRSLSRSLSRRSLSRSRSLSRLSRSR") => Output: "Easy"
+```
+
+#
+
+<br />
