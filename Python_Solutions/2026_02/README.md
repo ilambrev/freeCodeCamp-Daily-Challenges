@@ -723,3 +723,45 @@ Input: get_difficulty("SRSLSRSLSRRSLSRSRSLSRLSRSR") => Output: "Easy"
 #
 
 <br />
+
+# 2026.02.15 Challenge - 2026 Winter Games Day 10: Alpine Skiing
+
+My solution -> *[2026_02_15_2026_winter_games_day_10_alpine_skiing](2026_02_15_2026_winter_games_day_10_alpine_skiing.py)*
+
+## **_Task condition:_**
+
+Given a ski hill's vertical drop, horizontal distance, and type, determine the difficulty rating of the hill.
+
+To determine the rating:
+
+- Calculate the steepness of the hill by taking the drop divided by the distance.
+- Then, calculate the adjusted steepness based on the hill type:
+    - `"Downhill"` multiply steepness by `1.2`
+    - `"Slalom"`: multiply steepness by `0.9`
+    - `"Giant Slalom"`: multiply steepness by `1.0`
+
+Return:
+
+- `"Green"` if the adjusted steepness is less than or equal to `0.1`
+- `"Blue"` if the adjusted steepness is greater than `0.1` and less than or equal to `0.25`
+- `"Black"` if the adjusted steepness is greater than `0.25`
+
+### **_Examples_**
+
+```
+Input: get_hill_rating(95, 900, "Slalom") => Output: "Green"
+
+Input: get_hill_rating(620, 2800, "Downhill") => Output: "Black"
+
+Input: get_hill_rating(420, 1680, "Giant Slalom") => Output: "Blue"
+
+Input: get_hill_rating(250, 3000, "Downhill") => Output: "Green"
+
+Input: get_hill_rating(110, 900, "Slalom") => Output: "Blue"
+
+Input: get_hill_rating(380, 1500, "Giant Slalom") => Output: "Black"
+```
+
+#
+
+<br />
