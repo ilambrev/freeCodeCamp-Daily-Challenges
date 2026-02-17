@@ -799,3 +799,54 @@ Input: get_semifinal_matchups(["AUT: 2-2-1-0", "DEN: 1-0-0-4", "ITA: 1-1-1-2", "
 #
 
 <br />
+
+# 2026.02.17 Challenge - 2026 Winter Games Day 12: Bobsled
+
+My solution -> *[2026_02_17_2026_winter_games_day_12_bobsled](2026_02_17_2026_winter_games_day_12_bobsled.py)*
+
+## **_Task condition:_**
+
+Given an array representing the weights of the athletes on a bobsled team and a number representing the weight of the bobsled, determine whether the team is eligible to race.
+
+- The length of the array determines the team size: `1`, `2` or `4` person teams.
+- All given weight values are in kilograms (`kg`).
+
+The bobsled (`sled by iteself`) must have a minimum weight of:
+
+- `162` kg for a `1`-person team
+- `170` kg for a `2`-person team
+- `210` kg for a `4`-person team
+
+The total weight of the bobsled (`athletes plus sled`) must not exceed:
+
+- `247` kg for a `1`-person team
+- `390` kg for a `2`-person team
+- `630` kg for a `4`-person team
+
+Return `"Eligible"` if the team meets all the requirements, or `"Not Eligible"` if the team fails to meet one or more of the requirements.
+
+### **_Examples_**
+
+```
+Input: check_eligibility([78], 165) => Output: "Eligible"
+
+Input: check_eligibility([80], 160) => Output: "Not Eligible"
+
+Input: check_eligibility([80], 170) => Output: "Not Eligible"
+
+Input: check_eligibility([85, 90], 170) => Output: "Eligible"
+
+Input: check_eligibility([85, 95], 168) => Output: "Not Eligible"
+
+Input: check_eligibility([112, 97], 185) => Output: "Not Eligible"
+
+Input: check_eligibility([110, 102, 90, 106], 222) => Output: "Eligible"
+
+Input: check_eligibility([106, 99, 90, 88], 205) => Output: "Not Eligible"
+
+Input: check_eligibility([106, 99, 103, 96], 227) => Output: "Not Eligible"
+```
+
+#
+
+<br />
