@@ -878,3 +878,48 @@ Input: calculate_start_delays([130, 125, 128, 120, 118, 122, 127, 115, 132, 124]
 #
 
 <br />
+
+# 2026.02.19 Challenge - 
+
+My solution -> *[2026_02_19_2026_winter_games_day_14_ski_mountaineering](2026_02_19_2026_winter_games_day_14_ski_mountaineering.py)*
+
+## **_Task condition:_**
+
+Given the snow depth and slope of a mountain, determine if there's an avalanche risk.
+
+- The snow depth values are `"Shallow"`, `"Moderate"`, or `"Deep"`.
+- Slope values are `"Gentle"`, `"Steep"`, or `"Very Steep"`.
+
+Return `"Safe"` or `"Risky"` based on this table:
+
+|                | `"Shallow"` | `"Moderate"` | `"Deep"`  |
+| :------------: | :---------: | :----------: | :-------: | 	
+| `"Gentle"`     | `"Safe"`    | `"Safe"`     | `"Safe"`  |
+| `"Steep"`      | `"Safe"`    | `"Risky"`    | `"Risky"` |
+| `"Very Steep"` | `"Safe"`    | `"Risky"`    | `"Risky"` |
+
+### **_Examples_**
+
+```
+Input: avalanche_risk("Shallow", "Gentle") => Output: "Safe"
+
+Input: avalanche_risk("Shallow", "Steep") => Output: "Safe"
+
+Input: avalanche_risk("Shallow", "Very Steep") => Output: "Safe"
+
+Input: avalanche_risk("Moderate", "Gentle") => Output: "Safe"
+
+Input: avalanche_risk("Moderate", "Steep") => Output: "Risky"
+
+Input: avalanche_risk("Moderate", "Very Steep") => Output: "Risky"
+
+Input: avalanche_risk("Deep", "Gentle") => Output: "Safe"
+
+Input: avalanche_risk("Deep", "Steep") => Output: "Risky"
+
+Input: avalanche_risk("Deep", "Very Steep") => Output: "Risky"
+```
+
+#
+
+<br />
