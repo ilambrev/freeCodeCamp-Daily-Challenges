@@ -879,7 +879,7 @@ Input: calculate_start_delays([130, 125, 128, 120, 118, 122, 127, 115, 132, 124]
 
 <br />
 
-# 2026.02.19 Challenge - 
+# 2026.02.19 Challenge - 2026 Winter Games Day 14: Ski Mountaineering
 
 My solution -> *[2026_02_19_2026_winter_games_day_14_ski_mountaineering](2026_02_19_2026_winter_games_day_14_ski_mountaineering.py)*
 
@@ -918,6 +918,51 @@ Input: avalanche_risk("Deep", "Gentle") => Output: "Safe"
 Input: avalanche_risk("Deep", "Steep") => Output: "Risky"
 
 Input: avalanche_risk("Deep", "Very Steep") => Output: "Risky"
+```
+
+#
+
+<br />
+
+# 2026.02.20 Challenge - 2026 Winter Games Day 15: Freestyle Skiing
+
+My solution -> *[2026_02_20_2026_winter_games_day_15_freestyle_skiing](2026_02_20_2026_winter_games_day_15_freestyle_skiing.py)*
+
+## **_Task condition:_**
+
+Given a trick name consisting of two words, determine if it is a valid freestyle skiing trick name.
+
+A trick is valid if the first word is in the list of valid first words, and the second word is in the list of valid second words.
+
+- The two words will be separated by a single space.
+
+| Valid first words |   | Valid second words |
+| :---------------: | - | :----------------: |	
+| `"Misty"`         |   | `"Twister"`        |
+| `"Ghost"`         |   | `"Icequake"`       |
+| `"Thunder"`       |   | `"Avalanche"`      |
+| `"Solar"`         |   | `"Vortex"`         |
+| `"Sky"`           |   | `"Snowstorm"`      |
+| `"Phantom"`       |   | `"Frostbite"`      |
+| `"Frozen"`        |   | `"Blizzard"`       |
+| `"Polar"`         |   | `"Shadow"`         |
+
+### **_Examples_**
+
+```
+Input: is_valid_trick("Polar Vortex") => Output: True
+
+Input: is_valid_trick("Solar Icequake") => Output: True
+
+Input: is_valid_trick("Thunder Blizzard") => Output: True
+
+Input: is_valid_trick("Phantom Frostbite") => Output: True
+
+Input: is_valid_trick("Ghost Avalanche") => Output: True
+
+Input: is_valid_trick("Snowstorm Shadow") => Output: False
+
+Input: is_valid_trick("Solar Sky") => Output: False
 ```
 
 #
