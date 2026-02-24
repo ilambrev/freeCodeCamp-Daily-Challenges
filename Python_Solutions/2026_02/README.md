@@ -1158,3 +1158,34 @@ Input: can_donate("AB+", "AB-") => Output: False
 #
 
 <br />
+
+# 2026.02.24 Challenge - Business Day Count
+
+My solution -> *[2026_02_24_business_day_count](2026_02_24_business_day_count.py)*
+
+## **_Task condition:_**
+
+Given a start date and an end date, return the number of business days between the two.
+
+- Given dates are in the format `"YYYY-MM-DD"`.
+- Weekdays are business days (`Monday through Friday`).
+- Weekends are not business days (`Saturday and Sunday`).
+- Include both the `start and end` dates when counting.
+
+### **_Examples_**
+
+```
+Input: count_business_days("2026-02-24", "2026-02-26") => Output: 3
+
+Input: count_business_days("2026-02-24", "2026-02-28") => Output: 4
+
+Input: count_business_days("2026-02-21", "2026-03-01") => Output: 5
+
+Input: count_business_days("2026-03-08", "2026-03-17") => Output: 7
+
+Input: count_business_days("2026-02-24", "2027-02-24") => Output: 262
+```
+
+#
+
+<br />
