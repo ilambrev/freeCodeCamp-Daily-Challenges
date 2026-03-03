@@ -54,3 +54,31 @@ Input: sum_letters("</404>") => Output: 0
 #
 
 <br />
+
+# 2026.03.03 Challenge - Perfect Cube Count
+
+My solution -> *[2026_03_03_perfect_cube_count](2026_03_03_perfect_cube_count.py)*
+
+## **_Task condition:_**
+
+Given two integers, determine how many perfect cubes exist in the range between and including the two numbers.
+
+- The lower number is not garanteed to be the first argument.
+- A number is a perfect cube if there exists an integer (`n`) where `n * n * n = number`. For example, `27` is a perfect cube because `3 * 3 * 3 = 27`.
+
+### **_Examples_**
+
+```
+Input: count_perfect_cubes(3, 30) => Output: 2
+
+Input: count_perfect_cubes(1, 30) => Output: 3
+
+Input: count_perfect_cubes(30, 0) => Output: 4
+
+Input: count_perfect_cubes(-64, 64) => Output: 9
+
+Input: count_perfect_cubes(9214, -8127) => Output: 41
+```
+#
+
+<br />
