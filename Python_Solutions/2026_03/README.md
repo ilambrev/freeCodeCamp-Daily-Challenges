@@ -290,7 +290,7 @@ Input: is_valid_hsl("hsl (80, 20%, 10%)") => Output: False
 
 <br />
 
-# 2026.03.09 Challenge - HSL Validator
+# 2026.03.09 Challenge - Array Sum
 
 My solution -> *[2026_03_09_array_sum](2026_03_09_array_sum.py)*
 
@@ -310,6 +310,29 @@ Input: sum_array([5, -2, 7, -3]) => Output: 7
 Input: sum_array([203, 145, -129, 6293, 523, -919, 845, 2434]) => Output: 9395
 
 Input: sum_array([0, 0]) => Output: 0
+```
+#
+
+<br />
+
+# 2026.03.10 Challenge - Array Insertion
+
+My solution -> *[2026_03_10_array_insertion](2026_03_10_array_insertion.py)*
+
+## **_Task condition:_**
+
+Given an array, a value to insert into the array, and an index to insert the value at, return a new array with the value inserted at the specified index.
+
+### **_Examples_**
+
+```
+Input: insert_into_array([2, 4, 8, 10], 6, 2) => Output: [2, 4, 6, 8, 10]
+
+Input: insert_into_array(["the", "quick", "fox"], "brown", 2) => Output: ["the", "quick", "brown", "fox"]
+
+Input: insert_into_array([], 0, 0) => Output: [0]
+
+Input: insert_into_array([0, 1, 1, 2, 3, 8, 13], 5, 5) => Output: [0, 1, 1, 2, 3, 5, 8, 13]
 ```
 #
 
