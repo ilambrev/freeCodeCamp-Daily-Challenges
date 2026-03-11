@@ -337,3 +337,31 @@ Input: insert_into_array([0, 1, 1, 2, 3, 8, 13], 5, 5) => Output: [0, 1, 1, 2, 3
 #
 
 <br />
+
+# 2026.03.11 Challenge - Word Length Converter
+
+My solution -> *[2026_03_11_word_length_converter](2026_03_11_word_length_converter.py)*
+
+## **_Task condition:_**
+
+Given a string of words, return a new string where each word is replaced by its length.
+
+- Words in the given string will be separated by a single space
+- Keep the spaces in the returned string.
+
+For example, given `"hello world"`, return `"5 5"`.
+
+### **_Examples_**
+
+```
+Input: convert_words("hello world") => Output: "5 5"
+
+Input: convert_words("Thanks and happy coding") => Output: "6 3 5 6"
+
+Input: convert_words("The quick brown fox jumps over the lazy dog") => Output: "3 5 5 3 5 4 3 4 3"
+
+Input: convert_words("Lorem ipsum dolor sit amet consectetur adipiscing elit donec ut ligula vehicula iaculis orci vel semper nisl") => Output: "5 5 5 3 4 11 10 4 5 2 6 8 7 4 3 6 4"
+```
+#
+
+<br />
