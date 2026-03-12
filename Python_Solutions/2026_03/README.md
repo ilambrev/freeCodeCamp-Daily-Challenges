@@ -365,3 +365,32 @@ Input: convert_words("Lorem ipsum dolor sit amet consectetur adipiscing elit don
 #
 
 <br />
+
+# 2026.03.12 Challenge - Domino Chain Validator
+
+My solution -> *[2026_03_12_domino_chain_validator](2026_03_12_domino_chain_validator.py)*
+
+## **_Task condition:_**
+
+Given a `2D` array representing a sequence of dominoes, determine whether it forms a valid chain.
+
+- Each element in the array represents a domino and will be an array of two numbers from `1` to `6`, (inclusive).
+- For the chain to be valid, the second number of each domino must match the first number of the next domino.
+- The first number of the first domino and the last number of the last domino don't need to match anything.
+
+### **_Examples_**
+
+```
+Input: is_valid_domino_chain([[1, 3], [3, 6], [6, 5]]) => Output: True
+
+Input: is_valid_domino_chain([[6, 2], [3, 4], [4, 1]]) => Output: False
+
+Input: is_valid_domino_chain([[2, 5], [5, 6], [5, 1]]) => Output: False
+
+Input: is_valid_domino_chain([[4, 3], [3, 1], [1, 6], [6, 6], [6, 5], [5, 1], [1, 1], [1, 4], [4, 4], [4, 2]]) => Output: True
+
+Input: is_valid_domino_chain([[2, 3], [3, 3], [3, 6], [6, 1], [1, 4], [3, 5], [5, 5], [5, 4], [4, 2], [2, 2]]) => Output: False
+```
+#
+
+<br />
