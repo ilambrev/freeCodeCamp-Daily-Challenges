@@ -394,3 +394,43 @@ Input: is_valid_domino_chain([[2, 3], [3, 3], [3, 6], [6, 1], [1, 4], [3, 5], [5
 #
 
 <br />
+
+# 2026.03.13 Challenge - Parking Fee Calculator
+
+My solution -> *[2026_03_13_parking_fee_calculator](2026_03_13_parking_fee_calculator.py)*
+
+## **_Task condition:_**
+
+Given two strings representing the time you parked your car and the time you picked it up, calculate the parking fee.
+
+- The given strings will be in the format `"HH:MM"` using a `24-hour` clock. So `"14:00"` is `2pm` for example.
+- The first string will be the time you parked your car, and the second will be the time you picked it up.
+- If the pickup time is earlier than the entry time, it means the parking spanned past midnight into the next day.
+
+Fee rules:
+
+- Each hour parked costs `$3`.
+- Partial hours are rounded up to the next full hour.
+- If the parking spans overnight (past midnight), an additional `$10` overnight fee is applied.
+- There is a minimum fee of `$5` (only used if the total would be less than `$5`).
+
+Return the total cost in the format `"$cost"`, `"$5"` for example.
+
+### **_Examples_**
+
+```
+Input: calculate_parking_fee("09:00", "11:00") => Output: "$6"
+
+Input: calculate_parking_fee("10:00", "10:30") => Output: "$5"
+
+Input: calculate_parking_fee("08:10", "10:45") => Output: "$9"
+
+Input: calculate_parking_fee("14:40", "23:10") => Output: "$27"
+
+Input: calculate_parking_fee("18:15", "01:30") => Output: "$34"
+
+Input: calculate_parking_fee("11:11", "11:10") => Output: "$82"
+```
+#
+
+<br />
