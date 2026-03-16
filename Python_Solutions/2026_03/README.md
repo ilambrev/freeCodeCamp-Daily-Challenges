@@ -518,3 +518,30 @@ Input: get_captured_value(["N", "P", "P", "B", "P", "R", "Q", "P", "P", "P", "B"
 #
 
 <br />
+
+# 2026.03.16 Challenge - Evenly Divisible
+
+My solution -> *[2026_03_16_evenly_divisible](2026_03_16_evenly_divisible.py)*
+
+## **_Task condition:_**
+
+Given two integers, determine if you can evenly divide the first one by the second one.
+
+### **_Examples_**
+
+```
+Input: is_evenly_divisible(4, 2) => Output: True
+
+Input: is_evenly_divisible(7, 3) => Output: False
+
+Input: is_evenly_divisible(5, 10) => Output: False
+
+Input: is_evenly_divisible(48, 6) => Output: True
+
+Input: is_evenly_divisible(3186, 9) => Output: True
+
+Input: is_evenly_divisible(4192, 11) => Output: False
+```
+#
+
+<br />
