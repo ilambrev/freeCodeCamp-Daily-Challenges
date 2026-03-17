@@ -545,3 +545,49 @@ Input: is_evenly_divisible(4192, 11) => Output: False
 #
 
 <br />
+
+# 2026.03.17 Challenge - Anniversary Milestones
+
+My solution -> *[2026_03_17_anniversary_milestones](2026_03_17_anniversary_milestones.py)*
+
+## **_Task condition:_**
+
+Given an integer representing the number of years a couple has been married, return their most recent anniversary milestone according to this chart:
+
+| Years Married | Milestone    |
+| :-----------: | :----------: |
+| 1             | `"Paper"`    |
+| 5             | `"Wood"`     |
+| 10            | `"Tin"`      |
+| 25            | `"Silver"`   |
+| 40            | `"Ruby"`     |
+| 50            | `"Gold"`     |
+| 60            | `"Diamond"`  |
+| 70            | `"Platinum"` |
+
+- If they haven't reached the first milestone, return "Newlyweds".
+
+### **_Examples_**
+
+```
+Input: get_milestone(0) => Output: "Newlyweds"
+
+Input: get_milestone(1) => Output: "Paper"
+
+Input: get_milestone(8) => Output: "Wood"
+
+Input: get_milestone(10) => Output: "Tin"
+
+Input: get_milestone(26) => Output: "Silver"
+
+Input: get_milestone(45) => Output: "Ruby"
+
+Input: get_milestone(50) => Output: "Gold"
+
+Input: get_milestone(64) => Output: "Diamond"
+
+Input: get_milestone(71) => Output: "Platinum"
+```
+#
+
+<br />
