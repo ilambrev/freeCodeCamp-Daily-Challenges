@@ -617,3 +617,46 @@ Input: largest_number("12;-50,99.9,49.1!-10.1?88?16") => Output: 99.9
 #
 
 <br />
+
+# 2026.03.19 Challenge - Inverted Matrix
+
+My solution -> *[2026_03_19_inverted_matrix](2026_03_19_inverted_matrix.py)*
+
+## **_Task condition:_**
+
+Given a matrix (an array of arrays) filled with two distinct values, return a new matrix where all occurrences of one value are swapped with the other.
+
+For example, given:
+
+```
+[
+  ["a", "b"],
+  ["a", "a"]
+]
+```
+
+Return:
+
+```
+[
+  ["b", "a"],
+  ["b", "b"]
+]
+```
+
+### **_Examples_**
+
+```
+Input: invert_matrix([["a", "b"], ["a", "a"]]) => Output: [["b", "a"], ["b", "b"]]
+
+Input: invert_matrix([[1, 0, 1], [1, 1, 1], [0, 1, 0]]) => Output: [[0, 1, 0], [0, 0, 0], [1, 0, 1]]
+
+Input: invert_matrix([["apple", "banana", "banana", "apple"], ["banana", "apple", "apple", "banana"], ["banana", "banana", "banana", "apple"]]) => Output: [["banana", "apple", "apple", "banana"], ["apple", "banana", "banana", "apple"], ["apple", "apple", "apple", "banana"]]
+
+Input: invert_matrix([[6, 7, 7, 7, 6], [7, 6, 7, 6, 7], [7, 7, 6, 7, 7], [7, 6, 7, 6, 7], [6, 7, 7, 7, 6]]) => Output: [[7, 6, 6, 6, 7], [6, 7, 6, 7, 6], [6, 6, 7, 6, 6], [6, 7, 6, 7, 6], [7, 6, 6, 6, 7]]
+
+Input: invert_matrix([[1.2, 2.1, 2.1, 2.1], [2.1, 1.2, 2.1, 1.2], [1.2, 1.2, 2.1, 2.1]]) => Output: [[2.1, 1.2, 1.2, 1.2], [1.2, 2.1, 1.2, 2.1], [2.1, 2.1, 1.2, 1.2]]
+```
+#
+
+<br />
