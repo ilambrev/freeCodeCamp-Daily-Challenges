@@ -769,3 +769,44 @@ Input: decode_qr(["111100", "110001", "100011", "001101", "110011", "110011"]) =
 #
 
 <br />
+
+# 2026.03.22 Challenge - Coffee Roast Detector
+
+My solution -> *[2026_03_22_coffee_roast_detector](2026_03_22_coffee_roast_detector.py)*
+
+## **_Task condition:_**
+
+Given a string representing the beans used to make a cup of coffee, determine the roast of the cup.
+
+- The given string will contain the following characters, each representing a type of bean:
+  - An apostrophe (`'`) is a light roast bean worth `1` point each.
+  - A dash (`-`) is a medium roast bean worth `2` points each.
+  - A period (`.`) is a dark roast bean worth `3` points each.
+- The roast level is determined by the average of all the beans.
+
+Return:
+
+- `"Light"` if the average is less than `1.75`.
+- `"Medium"` if the average is `1.75` to `2.5`.
+- `"Dark"` if the average is greater than `2.5`.
+
+### **_Examples_**
+
+```
+Input: detect_roast("''-''''''-'-''--''''") => Output: "Light"
+
+Input: detect_roast(".'-''-''..'''.-.-''-") => Output: "Medium"
+
+Input: detect_roast("--.''--'-''.--..-.--") => Output: "Medium"
+
+Input: detect_roast("-...'-......-..-...-") => Output: "Dark"
+
+Input: detect_roast(".--.-..-......----.'") => Output: "Medium"
+
+Input: detect_roast("..-..-..-..-....-.-.") => Output: "Dark"
+
+Input: detect_roast("-'-''''''..-'.''-'.'") => Output: "Light"
+```
+#
+
+<br />
