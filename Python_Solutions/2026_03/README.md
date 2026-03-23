@@ -810,3 +810,32 @@ Input: detect_roast("-'-''''''..-'.''-'.'") => Output: "Light"
 #
 
 <br />
+
+# 2026.03.23 Challenge - No Consecutive Repeats
+
+My solution -> *[2026_03_23_no_consecutive_repeats](2026_03_23_no_consecutive_repeats.py)*
+
+## **_Task condition:_**
+
+Given a string, determine if it has no repeating characters.
+
+- A string has no repeats if it does not have the same character two or more times in a row.
+
+### **_Examples_**
+
+```
+Input: has_no_repeats("hi world") => Output: True
+
+Input: has_no_repeats("hello world") => Output: False
+
+Input: has_no_repeats("abcdefghijklmnopqrstuvwxyz") => Output: True
+
+Input: has_no_repeats("freeCodeCamp") => Output: False
+
+Input: has_no_repeats("The quick brown fox jumped over the lazy dog.") => Output: True
+
+Input: has_no_repeats("Mississippi") => Output: False
+```
+#
+
+<br />
