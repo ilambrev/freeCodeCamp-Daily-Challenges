@@ -864,3 +864,29 @@ Input: passing_count([84, 65, 98, 53, 58, 71, 91, 80, 92, 70, 73, 83, 86, 69, 84
 #
 
 <br />
+
+# 2026.03.25 Challenge - Cooldown Time
+
+My solution -> *[2026_03_25_cooldown_time](2026_03_25_cooldown_time.py)*
+
+## **_Task condition:_**
+
+Given two timestamps, the first representing when a user finished an exam, and the second representing the current time, determine whether the user can take an exam again.
+
+- Both timestamps will be given the format: `"YYYY-MM-DDTHH:MM:SS"`, for example `"2026-03-25T14:00:00"`. Note that the time is `24-hour` clock.
+- A user must wait at least `48` hours before retaking an exam.
+
+### **_Examples_**
+
+```
+Input: can_retake("2026-03-23T08:00:00", "2026-03-25T14:00:00") => Output: True
+
+Input: can_retake("2026-03-24T14:00:00", "2026-03-25T10:00:00") => Output: False
+
+Input: can_retake("2026-03-23T09:25:00", "2026-03-25T09:25:00") => Output: True
+
+Input: can_retake("2026-03-25T11:50:00", "2026-03-23T11:49:59") => Output: False
+```
+#
+
+<br />
