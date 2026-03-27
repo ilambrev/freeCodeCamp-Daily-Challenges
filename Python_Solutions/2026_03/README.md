@@ -938,3 +938,44 @@ Input: get_movie_night_cost("Tuesday", "11:30am", 1) => Output: "$5.00"
 #
 
 <br />
+
+# 2026.03.27 Challenge - Truncate the Text 2
+
+My solution -> *[2026_03_27_truncate_the_text_2](2026_03_27_truncate_the_text_2.py)*
+
+## **_Task condition:_**
+
+Given a string, return a new string that is truncated so that the total width of the characters does not exceed `50` units.
+
+Each character has a specific width:
+
+| Letters                      | Width |
+| :--------------------------: | :---: |
+| `"ilI"`                      | 1     |
+| `"fjrt"`                     | 2     |
+| `"abcdeghkmnopqrstuvwxyzJL"` | 3     |
+| `"ABCDEFGHKMNOPQRSTUVWXYZ"`  | 4     |
+
+The table above includes all upper and lower case letters. Additionally:
+
+- Spaces (`" "`) have a width of `2`
+- Periods (`"."`) have a width of `1`
+- If the given string is `50` units or less, return the string `as-is`, otherwise
+- Truncate the string and add three periods at the end (`"..."`) so it's total width, including the three periods, is as close as possible to `50` units without going over.
+
+### **_Examples_**
+
+```
+Input: truncate_text("The quick brown fox") => Output: "The quick brown f..."
+
+Input: truncate_text("The silky smooth sloth") => Output: "The silky smooth s..."
+
+Input: truncate_text("THE LOUD BRIGHT BIRD") => Output: "THE LOUD BRIG..."
+
+Input: truncate_text("The fast striped zebra") => Output: "The fast striped z..."
+
+Input: truncate_text("The big black bear") => Output: "The big black bear"
+```
+#
+
+<br />
