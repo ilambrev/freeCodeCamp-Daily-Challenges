@@ -1016,3 +1016,39 @@ Input: pascal_row(15) => Output: [1, 14, 91, 364, 1001, 2002, 3003, 3432, 3003, 
 #
 
 <br />
+
+# 2026.03.29 Challenge - ISBN-10 Validator
+
+My solution -> *[2026_03_29_isbn_10_validator](2026_03_29_isbn_10_validator.py)*
+
+## **_Task condition:_**
+
+Given a string, determine if it's a valid `ISBN-10`.
+
+An `ISBN-10` consists of hyphens (`"-"`) and `10` other characters. After removing the hyphens (`"-"`):
+
+- The first `9` characters must be digits, and
+- The final character may be a digit or the letter `"X"`, which represents the number `10`.
+
+To validate it:
+
+- Multiply each digit (or value) by its position (multiply the first digit by `1`, the second by `2`, and so on).
+- Add all the results together.
+- If the total is divisible by `11`, it's valid.
+
+### **_Examples_**
+
+```
+Input: is_valid_isbn10("0-306-40615-2") => Output: True
+
+Input: is_valid_isbn10("0-306-40615-1") => Output: False
+
+Input: is_valid_isbn10("0-8044-2957-X") => Output: True
+
+Input: is_valid_isbn10("X-306-40615-2") => Output: False
+
+Input: is_valid_isbn10("0-6822-2589-4") => Output: True
+```
+#
+
+<br />
