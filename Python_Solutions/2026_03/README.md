@@ -1052,3 +1052,31 @@ Input: is_valid_isbn10("0-6822-2589-4") => Output: True
 #
 
 <br />
+
+# 2026.03.30 Challenge - Due Date
+
+My solution -> *[2026_03_30_due_date](2026_03_30_due_date.py)*
+
+## **_Task condition:_**
+
+Given a date string, return the date `9` months in the future.
+
+- The given and return strings have the format `"YYYY-MM-DD"`.
+- If the month nine months into the future doesn't contain the original day number, return the last day of that month.
+
+### **_Examples_**
+
+```
+Input: get_due_date("2025-03-30") => Output: "2025-12-30"
+
+Input: get_due_date("2025-04-27") => Output: "2026-01-27"
+
+Input: get_due_date("2025-05-29") => Output: "2026-02-28"
+
+Input: get_due_date("2026-06-30") => Output: "2027-03-30"
+
+Input: get_due_date("2026-10-11") => Output: "2027-07-11"
+```
+#
+
+<br />
