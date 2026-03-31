@@ -1080,3 +1080,42 @@ Input: get_due_date("2026-10-11") => Output: "2027-07-11"
 #
 
 <br />
+
+# 2026.03.31 Challenge - Wake-Up Alarm
+
+My solution -> *[2026_03_31_wake_up_alarm](2026_03_31_wake_up_alarm.py)*
+
+## **_Task condition:_**
+
+Given a string representing the time you set your alarm and a string representing the time you actually woke up, determine if you woke up early, on time, or late.
+
+- Both times will be given in `"HH:MM"` `24-hour` format.
+
+Return:
+
+- `"early"` if you woke up before your alarm time.
+- `"on time"` if you woke up at your alarm time, or within the `10` minute snooze window after the alarm time.
+- `"late"` if you woke up more than `10` minutes after your alarm time.
+
+Both times are on the same day.
+
+### **_Examples_**
+
+```
+Input: alarm_check("07:00", "06:45") => Output: "early"
+
+Input: alarm_check("06:30", "06:30") => Output: "on time"
+
+Input: alarm_check("08:10", "08:15") => Output: "on time"
+
+Input: alarm_check("09:30", "09:45") => Output: "late"
+
+Input: alarm_check("08:15", "08:25") => Output: "on time"
+
+Input: alarm_check("05:45", "05:56") => Output: "late"
+
+Input: alarm_check("04:30", "04:00") => Output: "early"
+```
+#
+
+<br />
