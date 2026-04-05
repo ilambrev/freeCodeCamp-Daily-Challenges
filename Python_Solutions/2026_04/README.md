@@ -103,3 +103,32 @@ Input: is_valid_equation("3 + 9 / 3 = 4") => Output: False
 #
 
 <br />
+
+# 2026.04.05 Challenge - Digit Rotation Escape
+
+My solution -> *[2026_04_05_digit_rotation_escape](2026_04_05_digit_rotation_escape.py)*
+
+## **_Task condition:_**
+
+Given a positive integer, determine if it, or any of its rotations, is evenly divisible by its digit count.
+
+A rotation means to move the first digit to the end. For example, after `1` rotation, `123` becomes `231`.
+
+- Check rotation `0` (the given number) first.
+- Given numbers won't contain any zeros.
+- Return the first rotation number if one is found, or `"none"` if not.
+
+### **_Examples_**
+
+```
+Input: get_rotation(123) => Output: 0
+
+Input: get_rotation(13579) => Output: 3
+
+Input: get_rotation(24681) => Output: "none"
+
+Input: get_rotation(84138789345) => Output: 6
+```
+#
+
+<br />
