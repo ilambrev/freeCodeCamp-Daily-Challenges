@@ -132,3 +132,42 @@ Input: get_rotation(84138789345) => Output: 6
 #
 
 <br />
+
+# 2026.04.06 Challenge - What Day Is It?
+
+My solution -> *[2026_04_06_what_day_is_it](2026_04_06_what_day_is_it.py)*
+
+## **_Task condition:_**
+
+Given a Unix timestamp in milliseconds, return the day of the week.
+
+Valid return days are:
+
+| Day of week   |
+| :-----------: |
+| `"Sunday"`    |
+| `"Monday"`    |
+| `"Tuesday"`   |
+| `"Wednesday"` |
+| `"Thursday"`  |
+| `"Friday"`    |
+| `"Saturday"`  |
+
+Be sure to ignore time zones.
+
+### **_Examples_**
+
+```
+Input: get_day_of_week(1775492249000) => Output: "Monday"
+
+Input: get_day_of_week(1766246400000) => Output: "Saturday"
+
+Input: get_day_of_week(33791256000000) => Output: "Tuesday"
+
+Input: get_day_of_week(1773576000000) => Output: "Sunday"
+
+Input: get_day_of_week(0) => Output: "Thursday"
+```
+#
+
+<br />
