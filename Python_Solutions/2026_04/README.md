@@ -171,3 +171,31 @@ Input: get_day_of_week(0) => Output: "Thursday"
 #
 
 <br />
+
+# 2026.04.07 Challenge - Palindrome Characters
+
+My solution -> *[2026_04_07_palindrome_characters](2026_04_07_palindrome_characters.py)*
+
+## **_Task condition:_**
+
+Given a string, determine if it's a palindrome and return the middle character (if it's odd length) or middle two characters (if it's even).
+
+- A palindrome is a string that is the same forward and backward.
+- If it's not a palindrome, return `"none"`.
+
+### **_Examples_**
+
+```
+Input: palindrome_locator("racecar") => Output: "e"
+
+Input: palindrome_locator("level") => Output: "v"
+
+Input: palindrome_locator("freecodecamp") => Output: "none"
+
+Input: palindrome_locator("noon") => Output: "oo"
+
+Input: palindrome_locator("11100111") => Output: "00"
+```
+#
+
+<br />
