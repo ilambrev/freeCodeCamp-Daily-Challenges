@@ -199,3 +199,40 @@ Input: palindrome_locator("11100111") => Output: "00"
 #
 
 <br />
+
+# 2026.04.09 Challenge - Next Bingo Number
+
+My solution -> *[2026_04_09_next_bingo_number](2026_04_09_next_bingo_number.py)*
+
+## **_Task condition:_**
+
+Given a bingo number, return the next bingo number sequentially.
+
+A bingo number is a single letter followed by a number in its range according to this chart:
+
+| Letter | Number Range |
+| :----: | :----------: |
+| "B"    | 1-15         |
+| "I"    | 16-30        |
+| "N"    | 31-45        |
+| "G"    | 46-60        |
+| "O"    | 61-75        |
+
+For example, given `"B10"`, return `"B11"`, the next bingo number. If given the last bingo number, return `"B1"`.
+
+### **_Examples_**
+
+```
+Input: get_next_bingo_number("B10") => Output: "B11"
+
+Input: get_next_bingo_number("N33") => Output: "N34"
+
+Input: get_next_bingo_number("I30") => Output: "N31"
+
+Input: get_next_bingo_number("G60") => Output: "O61"
+
+Input: get_next_bingo_number("O75") => Output: "B1"
+```
+#
+
+<br />
