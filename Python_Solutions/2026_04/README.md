@@ -322,3 +322,31 @@ Input: rook_bishop_attack("G3", "E8") => Output: "neither"
 #
 
 <br />
+
+# 2026.04.14 Challenge - Last Letter
+
+My solution -> *[2026_04_14_last_letter](2026_04_14_last_letter.py)*
+
+## **_Task condition:_**
+
+Given a string, return the letter from the string that appears last in the alphabet.
+
+- If two or more letters tie for the last in the alphabet, return the first one.
+- Ignore all non-letter characters.
+
+### **_Examples_**
+
+```
+Input: get_last_letter("world") => Output: "w"
+
+Input: get_last_letter("Hello World") => Output: "W"
+
+Input: get_last_letter("The quick brown fox jumped over the lazy dog.") => Output: "L"
+
+Input: get_last_letter("HeLl0") => Output: "z"
+
+Input: get_last_letter("!#$ er@R asd fT.,> 2t0e9") => Output: "T"
+```
+#
+
+<br />
