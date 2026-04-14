@@ -323,6 +323,37 @@ Input: rook_bishop_attack("G3", "E8") => Output: "neither"
 
 <br />
 
+# 2026.04.13 Challenge - Last Letter
+
+My solution -> *[2026_04_13_name_initials](2026_04_13_name_initials.py)*
+
+## **_Task condition:_**
+
+Given a full name as a string, return their initials.
+
+- Names to initialize are separated by a space.
+- Initials should be made uppercase.
+- Initials should be separated by dots.
+
+For example, `"Tommy Millwood"` returns `"T.M."`.
+
+### **_Examples_**
+
+```
+Input: get_initials("Tommy Millwood") => Output: "T.M."
+
+Input: get_initials("Savanna Puddlesplash") => Output: "S.P."
+
+Input: get_initials("Frances Cowell Conrad") => Output: "F.C.C."
+
+Input: get_initials("Dragon") => Output: "D."
+
+Input: get_initials("Dorothy Vera Clump Haverstock Norris") => Output: "D.V.C.H.N."
+```
+#
+
+<br />
+
 # 2026.04.14 Challenge - Last Letter
 
 My solution -> *[2026_04_14_last_letter](2026_04_14_last_letter.py)*
