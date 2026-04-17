@@ -411,3 +411,45 @@ Input: sort_and_swap([5, 9, 13, 77, 88, 313, -10, -65, 0, 8, 99, 101, -4, 2]) =>
 #
 
 <br />
+
+# 2026.04.17 Challenge - Hidden Key
+
+My solution -> *[2026_04_17_hidden_key](2026_04_17_hidden_key.py)*
+
+## **_Task condition:_**
+
+Welcome to the `250th` daily challenge!
+
+Given an encoded string, decode it using an encryption key and return it.
+
+To find the key:
+- Look at all daily challenges up to today whose challenge number is a multiple of `25` (including this one).
+- Take the first letter from each of those challenge titles and combine them into a string. If the title starts with a non-letter, find its first letter.
+
+To decode the message, go over each letter in the encoded message and:
+1. Look at the corresponding letter in the key (repeat the key if the message is longer than the key).
+2. Convert the key letter to its corresponding number: `"A"` = 1, `"B"` = 2, ..., `"Z"` = 26.
+3. Shift the encoded letter backward in the alphabet by that number.
+4. If the shift goes before `"A"`, wrap around to `"Z"`.
+
+For example, if the encoded message starts with `"Y"` and the first key letter is `"V"` (`22`), shift `"Y"` back `22` places to get `"C"`. Repeat this process for each letter to decode the full message.
+
+- Only letters are shifted, spaces are returned as-is.
+- All given and returned letters are uppercase.
+
+### **_Examples_**
+
+```
+Input: decode("YAVJYNXE") => Output: "CONGRATS"
+
+Input: decode("YALLUT PQUMJP") => Output: "CODING LEGEND"
+
+Input: decode("UAC DYR EISAKYM") => Output: "YOU ARE AWESOME"
+
+Input: decode("GQMS NBMZU") => Output: "KEEP GOING"
+
+Input: decode("W IQQURV UG I ZDMDTRV IVW JQDHY TMHSA QB") => Output: "A WINNER IS A DREAMER WHO NEVER GIVES UP"
+```
+#
+
+<br />
