@@ -412,6 +412,39 @@ Input: sort_and_swap([5, 9, 13, 77, 88, 313, -10, -65, 0, 8, 99, 101, -4, 2]) =>
 
 <br />
 
+# 2026.04.16 Challenge - String Math
+
+My solution -> *[2026_04_16_string_math](2026_04_16_string_math.py)*
+
+## **_Task condition:_**
+
+Given a string with numbers and other characters, perform math on the numbers based on the count of non-digit characters between the numbers.
+
+- If the count of characters separating two numbers is even, use addition.
+- If it's odd, use subtraction.
+- Consecutive digits form a single number.
+- Operations are applied left to right.
+- Ignore leading and trailing characters that aren't digits.
+
+For example, given `"3ab10c8"`, return `5`. Add `3` and `10` to get `13` because there's an even number of characters between them. Then subtract `8` from `13` because there's an odd number of characters between the result and `8`.
+
+### **_Examples_**
+
+```
+Input: do_math("3ab10c8") => Output: 5
+
+Input: do_math("6MINUS4") => Output: 2
+
+Input: do_math("9plus3") => Output: 12
+
+Input: do_math("5fkwo#10i#%.<>15P=@20!#B/25") => Output: 15
+
+Input: do_math("a.67,1$lk6ldf34@#LD@]2d32d2'2l3,@l3L#@2gh35s09if=df#$t9sm49t0df3$^%[vc;:0:4mt") => Output: 67
+```
+#
+
+<br />
+
 # 2026.04.17 Challenge - Hidden Key
 
 My solution -> *[2026_04_17_hidden_key](2026_04_17_hidden_key.py)*
