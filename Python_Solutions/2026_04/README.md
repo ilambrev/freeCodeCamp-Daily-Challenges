@@ -486,3 +486,39 @@ Input: decode("W IQQURV UG I ZDMDTRV IVW JQDHY TMHSA QB") => Output: "A WINNER I
 #
 
 <br />
+
+# 2026.04.20 Challenge - Acronym Finder
+
+My solution -> *[2026_04_20_acronym_finder](2026_04_20_acronym_finder.py)*
+
+## **_Task condition:_**
+
+Given a string representing an acronym, return the full name of the organization it belongs to from the list below:
+
+- `"National Avocado Storage Authority"`
+- `"Cats Infiltration Agency"`
+- `"Fluffy Beanbag Inspectors"`
+- `"Department Of Jelly"`
+- `"Wild Honey Organization"`
+- `"Eating Pancakes Administration"`
+
+Each letter in the given acronym should match the first letter of each word in the organization it belongs to, in the same order.
+
+### **_Examples_**
+
+```
+Input: find_org("NASA") => Output: "National Avocado Storage Authority"
+
+Input: find_org("CIA") => Output: "Cats Infiltration Agency"
+
+Input: find_org("FBI") => Output: "Fluffy Beanbag Inspectors"
+
+Input: find_org("DOJ") => Output: "Department Of Jelly"
+
+Input: find_org("WHO") => Output: "Wild Honey Organization"
+
+Input: find_org("EPA") => Output: "Eating Pancakes Administration"
+```
+#
+
+<br />
