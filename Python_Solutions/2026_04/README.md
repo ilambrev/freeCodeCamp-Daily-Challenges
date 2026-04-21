@@ -522,3 +522,29 @@ Input: find_org("EPA") => Output: "Eating Pancakes Administration"
 #
 
 <br />
+
+# 2026.04.21 Challenge - Odd Words
+
+My solution -> *[2026_04_21_odd_words](2026_04_21_odd_words.py)*
+
+## **_Task condition:_**
+
+Given a string of words, return only the words with an odd number of letters.
+
+- Words in the given string will be separated by a single space.
+- Return the words separated by a single space.
+
+### **_Examples_**
+
+```
+Input: get_odd_words("This is a super good test") => Output: "a super"
+
+Input: get_odd_words("one two three four") => Output: "one two three"
+
+Input: get_odd_words("banana split sundae with rainbow sprinkles on top") => Output: "split rainbow sprinkles top"
+
+Input: get_odd_words("The quick brown fox jumped over the lazy river") => Output: "The quick brown fox the river"
+```
+#
+
+<br />
