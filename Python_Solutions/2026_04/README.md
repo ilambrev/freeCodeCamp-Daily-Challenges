@@ -603,3 +603,39 @@ Input: get_cleanup_score(["bottle", "can", "can", "shoe", "shoe", ["rare", 56], 
 #
 
 <br />
+
+# 2026.04.23 Challenge - Closest Time Direction
+
+My solution -> *[2026_04_23_closest_time_direction](2026_04_23_closest_time_direction.py)*
+
+## **_Task condition:_**
+
+Given two times, determine whether you can get from the first to the second faster by moving forward or backward.
+
+- Times are given in `24-hour` format (`"HH:MM"`)
+- The clock wraps around (`23:59` goes to `00:00` when moving forward, and `00:00` goes to `23:59` when moving backwards)
+
+Return:
+
+- `"forward"` if moving forward is shorter
+- `"backward"` if moving backward is shorter
+- `"equal"` if both directions take the same amount of time
+
+### **_Examples_**
+
+```
+Input: get_direction("10:00", "12:00") => Output: "forward"
+
+Input: get_direction("11:00", "05:00") => Output: "backward"
+
+Input: get_direction("00:00", "12:00") => Output: "equal"
+
+Input: get_direction("15:45", "01:10") => Output: "forward"
+
+Input: get_direction("03:30", "19:50") => Output: "backward"
+
+Input: get_direction("06:30", "18:30") => Output: "equal"
+```
+#
+
+<br />
