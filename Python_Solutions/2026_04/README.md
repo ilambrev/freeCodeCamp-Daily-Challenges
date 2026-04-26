@@ -701,3 +701,42 @@ Input: decompress("lorem ipsum dolor sit per elit donec 4 nostra libero 5 7 ligu
 #
 
 <br />
+
+# 2026.04.26 Challenge - FizzBuzz Explosion
+
+My solution -> *[2026_04_26_fizzbuzz_explosion](2026_04_26_fizzbuzz_explosion.py)*
+
+## **_Task condition:_**
+
+Given an integer, return the number of steps it takes to turn the word `"fizzbuzz"` into a string with at least the given number of `"z"`'s using the following rules:
+
+- Start with the string `"fizzbuzz"`.
+- Each step, apply the standard FizzBuzz rules using the letter position in the string (the first `"f"` is position `1`).
+    - If the letter position is divisible by `3`, replace the letter with `"fizz"`
+    - If it's divisible by `5`, replace the letter with `"buzz"`
+    - If it's divisible by `3` and `5`, replace the letter with `"fizzbuzz"`
+
+So after `1` step, `"fizzbuzz"` turns into `"fifizzzbuzzfizzzz"`, which has `9` `"z"`'s.
+
+### **_Examples_**
+
+```
+Input: explode_fizzbuzz(9) => Output: 1
+
+Input: explode_fizzbuzz(15) => Output: 2
+
+Input: explode_fizzbuzz(51) => Output: 3
+
+Input: explode_fizzbuzz(52) => Output: 4
+
+Input: explode_fizzbuzz(359) => Output: 5
+
+Input: explode_fizzbuzz(789) => Output: 6
+
+Input: explode_fizzbuzz(54482) => Output: 11
+
+Input: explode_fizzbuzz(1000000) => Output: 14
+```
+#
+
+<br />
