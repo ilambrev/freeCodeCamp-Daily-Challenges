@@ -740,3 +740,58 @@ Input: explode_fizzbuzz(1000000) => Output: 14
 #
 
 <br />
+
+# 2026.04.27 Challenge - Word Score
+
+My solution -> *[2026_04_27_word_score](2026_04_27_word_score.py)*
+
+## **_Task condition:_**
+
+Given a word, return its score using a standard letter-value table:
+
+| Letter | Value |
+| :----: | :---: |
+| A      | 1     |
+| B      | 2     |
+| C      | 3     |
+| D      | 4     |
+| E      | 5     |
+| F      | 6     |
+| G      | 7     |
+| H      | 8     |
+| I      | 9     |
+| J      | 10    |
+| K      | 11    |
+| L      | 12    |
+| M      | 13    |
+| N      | 14    |
+| O      | 15    |
+| P      | 16    |
+| Q      | 17    |
+| R      | 18    |
+| S      | 19    |
+| T      | 20    |
+| U      | 21    |
+| V      | 22    |
+| W      | 23    |
+| X      | 24    |
+| Y      | 25    |
+| Z      | 26    |
+
+- Upper and lowercase letters have the same value.
+
+### **_Examples_**
+
+```
+Input: get_word_score("hi") => Output: 17
+
+Input: get_word_score("hello") => Output: 52
+
+Input: get_word_score("hippopotamus") => Output: 169
+
+Input: get_word_score("freeCodeCamp") => Output: 94
+```
+#
+
+<br />
+
