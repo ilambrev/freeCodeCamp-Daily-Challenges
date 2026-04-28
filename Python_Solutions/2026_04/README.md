@@ -795,3 +795,42 @@ Input: get_word_score("freeCodeCamp") => Output: 94
 
 <br />
 
+# 2026.04.28 Challenge - Number Words
+
+My solution -> *[2026_04_28_number_words](2026_04_28_number_words.py)*
+
+## **_Task condition:_**
+
+Given an integer from 0 to 99, return its English word representation.
+
+- `0` returns `"zero"`.
+- Numbers `1-19` have unique names (`"one"`, `"two"`, ..., `"ten"`, `"eleven"`, ..., `"eighteen"`, `"nineteen"`).
+- Multiples of `10` from `20-90` have their own names (`"twenty"`, `"thirty"`, ..., `"eighty"`, `"ninety"`).
+- Numbers `21-99` that are not multiples of `10` are written as two words joined by a hyphen. For example `"forty-two"` and `"fifty-three"`.
+
+### **_Examples_**
+
+```
+Input: get_number_words(0) => Output: "zero"
+
+Input: get_number_words(10) => Output: "ten"
+
+Input: get_number_words(19) => Output: "nineteen"
+
+Input: get_number_words(30) => Output: "thirty"
+
+Input: get_number_words(53) => Output: "fifty-three"
+
+Input: get_number_words(7) => Output: "seven"
+
+Input: get_number_words(12) => Output: "twelve"
+
+Input: get_number_words(60) => Output: "sixty"
+
+Input: get_number_words(67) => Output: "sixty-seven"
+
+Input: get_number_words(98) => Output: "ninety-eight"
+```
+#
+
+<br />
