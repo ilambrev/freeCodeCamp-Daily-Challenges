@@ -834,3 +834,41 @@ Input: get_number_words(98) => Output: "ninety-eight"
 #
 
 <br />
+
+# 2026.04.29 Challenge - URL Query Parser
+
+My solution -> *[2026_04_29_url_query_parser](2026_04_29_url_query_parser.py)*
+
+## **_Task condition:_**
+
+Given a URL that contains a query string, parse the query string into an object (or dictionary) of key-value pairs.
+
+- The query string begins after the `"?"`,
+- each parameter is separated by `"&"`,
+- each key/value pair is separated by `"="`
+
+For example, given `"https://example.com/search?name=Alice&age=30"`, return:
+
+```
+{
+  "name": "Alice",
+  "age": "30"
+}
+```
+
+All values should be returned as strings.
+
+### **_Examples_**
+
+```
+Input: parse_url_query("https://example.com/search?name=Alice&age=30") => Output: {"name": "Alice", "age": "30"}
+
+Input: parse_url_query("https://freecodecamp.org/learn?skill=programming&language=python") => Output: {"skill": "programming", "language": "python"}
+
+Input: parse_url_query("https://freecodecamp.org/items?category=books&sort=asc&page=2") => Output: {"category": "books", "sort": "asc", "page": "2"}
+
+Input: parse_url_query("https://example.com?redirect=freecodecamp.org/learn&when=now") => Output: {"redirect": "freecodecamp.org/learn", "when": "now"}
+```
+#
+
+<br />
