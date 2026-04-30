@@ -872,3 +872,47 @@ Input: parse_url_query("https://example.com?redirect=freecodecamp.org/learn&when
 #
 
 <br />
+
+# 2026.04.30 Challenge - Binary Crossword
+
+My solution -> *[2026_04_30_binary_crossword](2026_04_30_binary_crossword.py)*
+
+## **_Task condition:_**
+
+Given a character, determine if its `8-bit binary` representation can be found in the following grid, horizontally or vertically in either direction:
+
+```
+0 1 0 0 0 0 0 1
+0 1 1 0 1 1 1 1
+0 1 0 0 0 1 0 0
+0 1 1 0 0 1 0 1
+0 1 0 1 0 0 1 0
+0 1 0 1 0 1 0 0
+0 1 1 0 1 0 0 0
+1 0 1 0 1 1 1 0
+```
+
+For example, `"A"` has the binary representation `01000001`, which appears in the first row from left to right.
+
+### **_Examples_**
+
+```
+Input: is_in_crossword("I") => Output: True
+
+Input: is_in_crossword("D") => Output: True
+
+Input: is_in_crossword("0") => Output: True
+
+Input: is_in_crossword("u") => Output: True
+
+Input: is_in_crossword("Y") => Output: False
+
+Input: is_in_crossword("p") => Output: False
+
+Input: is_in_crossword("1") => Output: False
+
+Input: is_in_crossword("Q") => Output: False
+```
+#
+
+<br />
