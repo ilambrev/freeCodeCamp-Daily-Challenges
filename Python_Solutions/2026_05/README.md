@@ -1,4 +1,4 @@
-# 2026.04.01 Challenge - Anagram Groups
+# 2026.05.01 Challenge - Anagram Groups
 
 My solution -> *[2026_05_01_anagram_groups](2026_05_01_anagram_groups.py)*
 
