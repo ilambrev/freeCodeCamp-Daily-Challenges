@@ -56,3 +56,38 @@ Input: get_greeting("11:30") => Output: "Good morning"
 #
 
 <br />
+
+# 2026.05.05 Challenge - Narcissistic Number
+
+My solution -> *[2026_05_05_narcissistic_number](2026_05_05_narcissistic_number.py)*
+
+## **_Task condition:_**
+
+Given a positive integer, determine whether it is a narcissistic number.
+
+- A number is narcissistic if the sum of each of its digits raised to the power of the total number of digits equals the number itself.
+
+For example, `153` has `3` digits, and <strong><i>1<sup>3</sup> + 5<sup>3</sup> + 3<sup>3</sup> = 153</i></strong>, so it is narcissistic.
+
+### **_Examples_**
+
+```
+Input: is_narcissistic(153) => Output: True
+
+Input: is_narcissistic(154) => Output: False
+
+Input: is_narcissistic(371) => Output: True
+
+Input: is_narcissistic(512) => Output: False
+
+Input: is_narcissistic(9) => Output: True
+
+Input: is_narcissistic(11) => Output: False
+
+Input: is_narcissistic(9474) => Output: True
+
+Input: is_narcissistic(6549) => Output: False
+```
+#
+
+<br />
