@@ -57,6 +57,44 @@ Input: get_greeting("11:30") => Output: "Good morning"
 
 <br />
 
+# 2026.05.04 Challenge - Parsec Converter
+
+My solution -> *[2026_05_04_parsec_converter](2026_05_04_parsec_converter.py)*
+
+## **_Task condition:_**
+
+In a distant galaxy, parsecs are used to measure both time and distance. Given an integer number of parsecs, return its equivalent in time or distance.
+
+- If the given integer is odd, it represents time. If it's even, it represents distance.
+
+Use these conversion rates:
+
+| Parsecs | Time/Distance |
+| :-----: | :-----------: |
+| 1       | 2 hours       |
+| 2       | 6 light years |
+
+Return the converted value as an integer.
+
+### **_Examples_**
+
+```
+Input: convert_parsecs(1) => Output: 2
+
+Input: convert_parsecs(2) => Output: 6
+
+Input: convert_parsecs(31) => Output: 62
+
+Input: convert_parsecs(88) => Output: 264
+
+Input: convert_parsecs(17) => Output: 34
+
+Input: convert_parsecs(14) => Output: 42
+```
+#
+
+<br />
+
 # 2026.05.05 Challenge - Narcissistic Number
 
 My solution -> *[2026_05_05_narcissistic_number](2026_05_05_narcissistic_number.py)*
