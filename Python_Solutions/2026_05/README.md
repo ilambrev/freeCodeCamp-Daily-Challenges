@@ -129,3 +129,49 @@ Input: is_narcissistic(6549) => Output: False
 #
 
 <br />
+
+# 2026.05.09 Challenge - Transposed Matrix
+
+My solution -> *[2026_05_09_transposed_matrix](2026_05_09_transposed_matrix.py)*
+
+## **_Task condition:_**
+
+Given a matrix (an array of arrays), return the transposed version of it.
+
+To transpose the matrix, swap the rows and columns. E.g: a value at index `[0, 1]` should move to index `[1, 0]`.
+
+For example, given:
+
+```
+[
+  [1, 2, 3],
+  [4, 5, 6]
+]
+```
+
+Return:
+
+```
+[
+  [1, 4],
+  [2, 5],
+  [3, 6]
+]
+```
+
+### **_Examples_**
+
+```
+Input: transpose([[1, 2, 3], [4, 5, 6]]) => Output: [[1, 4], [2, 5], [3, 6]]
+
+Input: transpose([[1, 2], [3, 4], [5, 6]]) => Output: [[1, 3, 5], [2, 4, 6]]
+
+Input: transpose([[1, 2], [3, 4], [5, 6], [7, 8]]) => Output: [[1, 3, 5, 7], [2, 4, 6, 8]]
+
+Input: transpose([["a", "b", "c"], ["d", "e", "f"], ["g", "h", "i"], ["j", "k", "l"]]) => Output: [["a", "d", "g", "j"], ["b", "e", "h", "k"], ["c", "f", "i", "l"]]
+
+Input: transpose([[True, False, True, False], [False, True, False, True], [True, True, False, False], [False, False, True, True], [True, False, False, True]]) => Output: [[True, False, True, False, True], [False, True, True, False, False], [True, False, False, True, False], [False, True, False, True, True]]
+```
+#
+
+<br />
