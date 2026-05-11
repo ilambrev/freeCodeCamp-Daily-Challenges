@@ -175,3 +175,28 @@ Input: transpose([[True, False, True, False], [False, True, False, True], [True,
 #
 
 <br />
+
+# 2026.05.11 Challenge - Oldest Person
+
+My solution -> *[2026_05_11_oldest_person](2026_05_11_oldest_person.py)*
+
+## **_Task condition:_**
+
+Given an array of objects, each with a `"name"` and `"age"` property, return an array containing the name of the oldest person.
+
+If multiple people share the oldest age, return all of their names in the order they appear in the input.
+
+### **_Examples_**
+
+```
+Input: get_oldest([{ "name": "Brenda", "age": 40 }]) => Output: ["Brenda"]
+
+Input: get_oldest([{ "name": "Alice", "age": 30 }, { "name": "Bob", "age": 25 }]) => Output: ["Alice"]
+
+Input: get_oldest([{ "name": "Allison", "age": 25 }, { "name": "Bill", "age": 30 }, { "name": "Carol", "age": 30 }]) => Output: ["Bill", "Carol"]
+
+Input: get_oldest([{ "name": "George", "age": 50 }, { "name": "Shirley", "age": 42 }, { "name": "Beth", "age": 48 }, { "name": "Holly", "age": 50 }, { "name": "Kevin", "age": 44 }, { "name": "Frank", "age": 47 }, { "name": "Zach", "age": 50 }, { "name": "Jennifer", "age": 43 }]) => Output: ["George", "Holly", "Zach"]
+```
+#
+
+<br />
