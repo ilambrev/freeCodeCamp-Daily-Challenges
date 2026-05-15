@@ -226,6 +226,58 @@ Input: get_frequency("The quick brown fox jumps over the lazy dog.") => Output: 
 
 <br />
 
+# 2026.05.14 Challenge - Mirror Image
+
+My solution -> *[2026_05_14_mirror_image](2026_05_14_mirror_image.py)*
+
+## **_Task condition:_**
+
+Given two strings, determine if the second string is a mirror image of the first.
+
+A mirror image is formed by reversing the string and replacing each character with its mirror equivalent.
+
+- Symmetric characters look like themselves in a mirror:
+
+`W`, `T`, `Y`, `U`, `I`, `O`, `H`, `A`, `X`, `V`, `M`, `w`, `o`, `x`, `v`, `0`, `8`, `=`, `+`, `:`, `|`, `-`, `_`, `*`, `^`, `!`, `.`, and the space (` `).
+
+- Mirrored pairs swap with each other in a mirror:
+
+| Character | Swaps with |
+| :-------: | :--------: |
+| `[`       | `]`        |
+| `{`       | `}`        |
+| `<`       | `>`        |
+| `b`       | `d`        |
+| `p`       | `q`        |
+| `(`       | `)`        |
+
+If either string includes a character not in the lists above, it doesn't have mirror image that can be created from the characters.
+
+For example, the mirrored image of `"[HOW]"` is `"[WOH]"`.
+
+### **_Examples_**
+
+```
+Input: is_mirror_image("[HOW]", "[WOH]") => Output: True
+
+Input: is_mirror_image("MOM", "MOM") => Output: True
+
+Input: is_mirror_image("vow", "wov") => Output: True
+
+Input: is_mirror_image("TIM", "TIM") => Output: False
+
+Input: is_mirror_image("{WOW}", "}WOW{") => Output: False
+
+Input: is_mirror_image("XXVII", "IIV%X") => Output: False
+
+Input: is_mirror_image("><(((*>", "<*)))><") => Output: True
+
+Input: is_mirror_image("WTYUIOHAXVMwoxv08=+:|-_*^!.[]{}<>bdpq()", "()pqbd<>{}[].!^*_-|:+=80vxowMVXAHOIUYTW") => Output: True
+```
+#
+
+<br />
+
 # 2026.05.15 Challenge - Coffee Order Parser
 
 My solution -> *[2026_05_15_coffee_order_parser](2026_05_15_coffee_order_parser.py)*
