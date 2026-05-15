@@ -225,3 +225,48 @@ Input: get_frequency("The quick brown fox jumps over the lazy dog.") => Output: 
 #
 
 <br />
+
+# 2026.05.15 Challenge - Coffee Order Parser
+
+My solution -> *[2026_05_15_coffee_order_parser](2026_05_15_coffee_order_parser.py)*
+
+## **_Task condition:_**
+
+Given a string for a coffee order, identify any menu items and return a formatted order.
+
+Use the following menu items and prices:
+
+| Item                | Price |
+| :-----------------: | :---: |
+| `"cold brew"`       | $4.50 |
+| `"oat latte"`       | $5.00 |
+| `"cappuccino"`      | $4.75 |
+| `"espresso"`        | $3.00 |
+| `"vanilla syrup"`   | $0.75 |
+| `"caramel drizzle"` | $0.60 |
+| `"extra shot"`      | $0.50 |
+| `"oat milk"`        | $0.75 |
+| `"cream"`           | $0.75 |
+
+Return a string with the matched items joined by `" + "`, followed by a colon and space (`": "`), and the total price.
+
+For example, given `"I'd like an oat latte with vanilla syrup and an extra shot please.", return "oat latte + vanilla syrup + extra shot: $6.25"`
+
+Items should appear in the order they appear in the menu and the total price should always have two decimal places.
+
+### **_Examples_**
+
+```
+Input: format_coffee_order("I'd like an oat latte with vanilla syrup and an extra shot please.") => Output: "oat latte + vanilla syrup + extra shot: $6.25"
+
+Input: format_coffee_order("Give me a cappuccino with caramel drizzle, vanilla syrup, and some oat milk.") => Output: "cappuccino + vanilla syrup + caramel drizzle + oat milk: $6.85"
+
+Input: format_coffee_order("Can I get a cold brew with some cream and an extra shot.") => Output: "cold brew + extra shot + cream: $5.75"
+
+Input: format_coffee_order("Just an espresso please.") => Output: "espresso: $3.00"
+
+Input: format_coffee_order("I'll take an oat latte with cream and an extra shot, and some vanilla syrup and caramel drizzle.") => Output: "oat latte + vanilla syrup + caramel drizzle + extra shot + cream: $7.60"
+```
+#
+
+<br />
