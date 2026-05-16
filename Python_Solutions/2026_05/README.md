@@ -130,6 +130,34 @@ Input: is_narcissistic(6549) => Output: False
 
 <br />
 
+# 2026.05.06 Challenge - Allergen Friendly Meals
+
+My solution -> *[2026_05_06_allergen_friendly_meals](2026_05_06_allergen_friendly_meals.py)*
+
+## **_Task condition:_**
+
+Given an array of meals and an array of allergens to avoid, return the names of all the meals that contain none of the given allergens.
+
+- Each meal is in the format `[meal, allergens]`, where `meal` is the name of the meal, and `allergens` is an array of the allergens the meal contains. For example, `["pasta", ["wheat", "milk"]]`.
+- Allergens to avoid will be an array of strings.
+
+Return safe meal names in the same order given. If no meal is safe, return an empty array.
+
+### **_Examples_**
+
+```
+Input: get_allergen_friendly_meals([["pasta", ["wheat", "milk"]], ["salad", ["nuts"]]], ["milk"]) => Output: ["salad"]
+
+Input: get_allergen_friendly_meals([["steak", ["soy"]], ["fried rice", []], ["fish tacos", ["fish", "wheat"]], ["chicken parmesan", ["wheat", "milk"]]], ["soy", "fish"]) => Output: ["fried rice", "chicken parmesan"]
+
+Input: get_allergen_friendly_meals([["oatmeal", ["nuts"]], ["pancakes", ["wheat", "milk"]], ["granola", []], ["yogurt", ["milk"]], ["eggs", ["eggs", "milk"]], ["toast", ["wheat"]]], ["eggs", "milk"]) => Output: ["oatmeal", "granola", "toast"]
+
+Input: get_allergen_friendly_meals([["oatmeal", ["nuts"]], ["pancakes", ["wheat", "milk"]], ["granola", []], ["yogurt", ["milk"]], ["eggs", ["eggs", "milk"]], ["toast", ["wheat"]]], ["wheat", "nuts"]) => Output: ["granola", "yogurt", "eggs"]
+```
+#
+
+<br />
+
 # 2026.05.09 Challenge - Transposed Matrix
 
 My solution -> *[2026_05_09_transposed_matrix](2026_05_09_transposed_matrix.py)*
