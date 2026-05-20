@@ -204,6 +204,39 @@ Input: transpose([[True, False, True, False], [False, True, False, True], [True,
 
 <br />
 
+# 2026.05.10 Challenge - ISBN-13 Validator
+
+My solution -> *[2026_05_10_isbn_13_validator](2026_05_10_isbn_13_validator.py)*
+
+## **_Task condition:_**
+
+Given a string, determine if it is a valid `ISBN-13` number.
+
+A valid `ISBN-13`:
+
+- Contains only digits and hyphens
+- Has exactly `13` digits after removing hyphens
+- Passes the following check:
+  1. Multiply each digit by `1` or `3`, alternating (multiply the first digit by `1`, the second by `3`, the third by `1`, and so on).
+  2. The sum of the results must be divisible by `10`.
+
+### **_Examples_**
+
+```
+Input: is_valid_isbn_13("9780306406157") => Output: True
+
+Input: is_valid_isbn_13("97803064061570") => Output: False
+
+Input: is_valid_isbn_13("978-0-13-595705-9") => Output: True
+
+Input: is_valid_isbn_13("978-030-64061A-4") => Output: False
+
+Input: is_valid_isbn_13("9-7-8-0-1-3-4-7-5-7-5-9-9") => Output: True
+```
+#
+
+<br />
+
 # 2026.05.11 Challenge - Oldest Person
 
 My solution -> *[2026_05_11_oldest_person](2026_05_11_oldest_person.py)*
