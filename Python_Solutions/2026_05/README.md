@@ -475,3 +475,30 @@ Input: sleep_debt([8, 9, 10, 9, 10, 7], 7) => Output: 0
 #
 
 <br />
+
+# 2026.05.20 Challenge - String Zipper
+
+My solution -> *[2026_05_20_string_zipper](2026_05_20_string_zipper.py)*
+
+## **_Task condition:_**
+
+Given two strings, return a new string that interleaves their characters one at a time. If one string is longer, append the remaining characters at the end.
+
+Begin with the first character of the first string.
+
+### **_Examples_**
+
+```
+Input: zip_strings("abc", "123") => Output: "a1b2c3"
+
+Input: zip_strings("acegikmoqsuwy", "bdfhjlnprtvxz") => Output: "abcdefghijklmnopqrstuvwxyz"
+
+Input: zip_strings("day", "night") => Output: "dnaiyght"
+
+Input: zip_strings("python", "javascript") => Output: "pjyatvhaosncript"
+
+Input: zip_strings("feCdCm", "reoeap") => Output: "freeCodeCamp"
+```
+#
+
+<br />
