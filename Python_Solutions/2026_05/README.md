@@ -502,3 +502,32 @@ Input: zip_strings("feCdCm", "reoeap") => Output: "freeCodeCamp"
 #
 
 <br />
+
+# 2026.05.21 Challenge - I Before E
+
+My solution -> *[2026_05_21_i_before_e](2026_05_21_i_before_e.py)*
+
+## **_Task condition:_**
+
+Given a word or sentence, return a corrected version where every word follows the `"I before E except after C"` rule.
+
+- If a word contains `"ei"` not preceded by `"c"`, replace it with `"ie"`.
+- If a word contains `"ie"` preceded by `"c"`, replace it with `"ei"`.
+- All other words are left unchanged.
+
+### **_Examples_**
+
+```
+Input: i_before_e("beleive") => Output: "believe"
+
+Input: i_before_e("recieve") => Output: "receive"
+
+Input: i_before_e("we recieved a breif") => Output: "we received a brief"
+
+Input: i_before_e("she beleived the friendly niece could percieve the greif") => Output: "she believed the friendly niece could perceive the grief"
+
+Input: i_before_e("we recieved relief after the theif gave us a breif piece of feirce deceit") => Output: "we received relief after the thief gave us a brief piece of fierce deceit"
+```
+#
+
+<br />
