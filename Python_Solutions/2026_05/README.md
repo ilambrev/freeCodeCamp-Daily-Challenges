@@ -531,3 +531,41 @@ Input: i_before_e("we recieved relief after the theif gave us a breif piece of f
 #
 
 <br />
+
+# 2026.05.22 Challenge - Meeting Time
+
+My solution -> *[2026_05_22_meeting_time](2026_05_22_meeting_time.py)*
+
+## **_Task condition:_**
+
+Given a 3D array representing availability windows for multiple people, return the earliest time where everyone has one hour free. If no such time exists, return `"None"`.
+
+- Each person's availability is an array of `[start, end]` integer pairs in `24-hour` time. For example, `[10, 12]` would mean the person is available from `10 to 12`. Start times range from `0-23`, and end times range from `1-24`.
+
+For example, given:
+
+```
+[
+  [[10, 12], [15, 16]], // person 1
+  [[11, 14], [15, 16]]  // person 2
+]
+```
+
+Return `11`, the start of their first shared free hour.
+
+### **_Examples_**
+
+```
+Input: get_meeting_time([[[10, 12], [15, 16]], [[11, 14], [15, 16]]]) => Output: 11
+
+Input: get_meeting_time([[[9, 10], [12, 15]], [[10, 11], [13, 14]], [[9, 11], [10, 14]]]) => Output: 13
+
+Input: get_meeting_time([[[7, 8], [9, 11], [12, 14], [15, 16]], [[8, 11], [12, 13], [14, 15]]]) => Output: 9
+
+Input: get_meeting_time([[[7, 8], [10, 12], [13, 15]], [[8, 11], [12, 13], [14, 15]], [[6, 7], [8, 9], [12, 13]]]) => Output: None
+
+Input: get_meeting_time([[[1, 3], [4, 6], [8, 10], [20, 23]], [[15, 16], [17, 18], [19, 22], [23, 24]], [[14, 16], [17, 23]], [[2, 4], [5, 6], [18, 19], [21, 22], [23, 24]]]) => Output: 21
+```
+#
+
+<br />
