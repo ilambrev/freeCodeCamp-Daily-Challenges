@@ -936,6 +936,32 @@ Input: odd_or_even_day(86400000) => Output: "even"
 
 <br />
 
+# 2026.01.28 Challenge - Flatten the Array
+
+My solution -> *[2026_01_28_flatten_the_array](2026_01_28_flatten_the_array.py)*
+
+## **_Task condition:_**
+
+Given an array that contains nested arrays, return a new array with all values flattened into a single, one-dimensional array. Retain the original order of the items in the arrays.
+
+### **_Examples_**
+
+```
+Input: flatten([1, [2, 3], 4]) => Output: [1, 2, 3, 4]
+
+Input: flatten([5, [4, [3, 2]], 1]) => Output: [5, 4, 3, 2, 1]
+
+Input: flatten(["A", [[[["B"]]]], "C"]) => Output: ["A", "B", "C"]
+
+Input: flatten([["L", "M", "N"], ["O", ["P", "Q", ["R", ["S", ["T", "U"]]]]], "V", ["W", ["X", ["Y", ["Z"]]]]]) => Output: ["L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"]
+
+Input: flatten([["red", ["blue", ["green", ["yellow", ["purple"]]]]], "orange", ["pink", ["brown"]]]) => Output: ["red","blue","green","yellow","purple","orange","pink","brown"]
+```
+
+#
+
+<br />
+
 # 2026.01.29 Challenge - Letters-Numbers
 
 My solution -> *[2026_01_29_letters_numbers](2026_01_29_letters_numbers.py)*
