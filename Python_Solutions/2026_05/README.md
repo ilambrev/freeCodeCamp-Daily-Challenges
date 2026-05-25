@@ -569,3 +569,36 @@ Input: get_meeting_time([[[1, 3], [4, 6], [8, 10], [20, 23]], [[15, 16], [17, 18
 #
 
 <br />
+
+# 2026.05.25 Challenge - Secret Number
+
+My solution -> *[2026_05_25_secret_number](2026_05_25_secret_number.py)*
+
+## **_Task condition:_**
+
+Given a secret number and a guess, determine if the guess is correct.
+
+Return:
+
+- `"higher"` if the secret number is higher than the guess.
+- `"lower"` if the secret number is lower than the guess.
+- `"you got it!"` if the guess is correct.
+
+### **_Examples_**
+
+```
+Input: guess_number(50, 30) => Output: "higher"
+
+Input: guess_number(85, 99) => Output: "lower"
+
+Input: guess_number(2026, 2026) => Output: "you got it!"
+
+Input: guess_number(92904, 11283) => Output: "higher"
+
+Input: guess_number(230495, 423920) => Output: "lower"
+
+Input: guess_number(120349, 120349) => Output: "you got it!"
+```
+#
+
+<br />
