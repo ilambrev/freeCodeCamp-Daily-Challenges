@@ -1307,3 +1307,34 @@ Input: shift_matrix([[1, 2, 3, 4], [5, 6, 7, 8], [9, 10, 11, 12], [13, 14, 15, 1
 #
 
 <br />
+
+# 2026.02.28 Challenge - Add Punctuation
+
+My solution -> *[2026_02_28_add_punctuation](2026_02_28_add_punctuation.py)*
+
+## **_Task condition:_**
+
+Given a string of sentences with missing periods, add a period (`"."`) in the following places:
+
+- Before each space that comes immediately before an uppercase letter
+- And at the end of the string
+
+Return the resulting string.
+
+### **_Examples_**
+
+```
+Input: add_punctuation("Hello world") => Output: "Hello world."
+
+Input: add_punctuation("Hello world It's nice today") => Output: "Hello world. It's nice today."
+
+Input: add_punctuation("JavaScript is great Sometimes") => Output: "JavaScript is great. Sometimes."
+
+Input: add_punctuation("A b c D e F g h I J k L m n o P Q r S t U v w X Y Z") => Output: "A b c. D e. F g h. I. J k. L m n o. P. Q r. S t. U v w. X. Y. Z."
+
+Input: add_punctuation("Wait.. For it") => Output: "Wait... For it."
+```
+
+#
+
+<br />
