@@ -602,3 +602,28 @@ Input: guess_number(120349, 120349) => Output: "you got it!"
 #
 
 <br />
+
+# 2026.05.26 Challenge - Sum of Differences
+
+My solution -> *[2026_05_26_sum_of_differences](2026_05_26_sum_of_differences.py)*
+
+## **_Task condition:_**
+
+Given an array of numbers, return the sum of the differences between each number and the one that follows it.
+
+For example, given `[1, 3, 4]`, return `3` (2 + 1).
+
+### **_Examples_**
+
+```
+Input: sum_of_differences([1, 3, 4]) => Output: 3
+
+Input: sum_of_differences([5, -3, 3, 9, 10]) => Output: 5
+
+Input: sum_of_differences([9, 6, 15, -20, 33, 14, 25, 16, -7]) => Output: -16
+
+Input: sum_of_differences([50, 102, -46, 82, -49, 29, 71, 902, -237, 111, -61, 75]) => Output: 25
+```
+#
+
+<br />
