@@ -627,3 +627,35 @@ Input: sum_of_differences([50, 102, -46, 82, -49, 29, 71, 902, -237, 111, -61, 7
 #
 
 <br />
+
+# 2026.05.27 Challenge - Pizza Party
+
+My solution -> *[2026_05_27_pizza_party](2026_05_27_pizza_party.py)*
+
+## **_Task condition:_**
+
+Given an array of hours worked today per person, return the number of pizzas to order for a pizza party.
+
+- Divide each person's hours worked by `3` to get their slice count.
+- You can't eat a partial slice, so round each person's slice count up to the nearest whole number.
+- Each person gets a minimum of two slices.
+- Each pizza has `8` slices. Round the total number of pizzas up to the nearest whole pizza.
+
+### **_Examples_**
+
+```
+Input: get_pizzas_to_order([8, 8, 8]) => Output: 2
+
+Input: get_pizzas_to_order([10, 9, 8, 2, 2, 6, 10]) => Output: 3
+
+Input: get_pizzas_to_order([1, 2, 3, 4, 5]) => Output: 2
+
+Input: get_pizzas_to_order([8, 8, 8, 8, 8, 8, 8, 8]) => Output: 3
+
+Input: get_pizzas_to_order([9, 9, 6]) => Output: 1
+
+Input: get_pizzas_to_order([10, 12, 16, 9, 8, 11, 15, 8, 0]) => Output: 5
+```
+#
+
+<br />
