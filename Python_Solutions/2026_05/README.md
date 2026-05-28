@@ -659,3 +659,34 @@ Input: get_pizzas_to_order([10, 12, 16, 9, 8, 11, 15, 8, 0]) => Output: 5
 #
 
 <br />
+
+# 2026.05.28 Challenge - FizzBuzz Count
+
+My solution -> *[2026_05_28_fizz_buzz_count](2026_05_28_fizz_buzz_count.py)*
+
+## **_Task condition:_**
+
+Given a start and end number, count the number of fizz and buzz appearances in the range (inclusive).
+
+- Numbers divisible by `3` count as a `fizz`.
+- Numbers divisible by `5` count as a `buzz`.
+- Numbers divisible by both `3` and `5` count as both a `fizz` and a `buzz`.
+
+Return an object or dictionary with the counts in the format: `{ fizz, buzz }`.
+
+### **_Examples_**
+
+```
+Input: fizz_buzz_count(1, 11) => Output: {"fizz": 3, "buzz": 2}
+
+Input: fizz_buzz_count(14, 41) => Output: {"fizz": 9, "buzz": 6}
+
+Input: fizz_buzz_count(24, 100) => Output: {"fizz": 26, "buzz": 16}
+
+Input: fizz_buzz_count(-635, -14) => Output: {"fizz": 207, "buzz": 125}
+
+Input: fizz_buzz_count(-5432, 6789) => Output: {"fizz": 4074, "buzz": 2444}
+```
+#
+
+<br />
