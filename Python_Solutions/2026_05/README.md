@@ -690,3 +690,34 @@ Input: fizz_buzz_count(-5432, 6789) => Output: {"fizz": 4074, "buzz": 2444}
 #
 
 <br />
+
+# 2026.05.29 Challenge - Wider Aspect Ratio
+
+My solution -> *[2026_05_29_wider_aspect_ratio](2026_05_29_wider_aspect_ratio.py)*
+
+## **_Task condition:_**
+
+Given two strings for different image dimensions, return the aspect ratio of the image with a greater width-to-height ratio.
+
+- The given strings will be in the format `"WxH"`, for example, `"1920x1080"`.
+- The aspect ratio is the ratio of width to height, reduced to the lowest whole numbers. For example, `"1920x1080"` reduces to `"16:9"`.
+- Return a string in format `"W:H"`, for example, `"16:9"`.
+
+### **_Examples_**
+
+```
+Input: get_wider_aspect_ratio("1920x1080", "800x600") => Output: "16:9"
+
+Input: get_wider_aspect_ratio("1080x1350", "2048x1536") => Output: "4:3"
+
+Input: get_wider_aspect_ratio("640x480", "2440x1220") => Output: "2:1"
+
+Input: get_wider_aspect_ratio("360x640", "1080x1920") => Output: "9:16"
+
+Input: get_wider_aspect_ratio("3440x1440", "2048x858") => Output: "43:18"
+
+Input: get_wider_aspect_ratio("12345x61234", "12534x51234") => Output: "2089:8539"
+```
+#
+
+<br />
