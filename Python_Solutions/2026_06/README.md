@@ -72,7 +72,7 @@ Input: is_valid_schema({"username": 5, "posts": 10, "verified": True}) => Output
 
 # 2026.06.03 Challenge - Schema Validator Part 3
 
-My solution -> *[2026_06_03_schema_validator_part_3.py](2026_06_03_schema_validator_part_3.py)*
+My solution -> *[2026_06_03_schema_validator_part_3](2026_06_03_schema_validator_part_3.py)*
 
 ## **_Task condition:_**
 
@@ -116,6 +116,53 @@ Input: is_valid_schema({"username": 8, "posts": 1, "verified": True, "role": "us
 Input: is_valid_schema({"username": "penny", "posts": "10", "verified": True, "role": "staff"}) => Output: False
 
 Input: is_valid_schema({"username": "john", "posts": "1", "verified": "true", "role": "admin"}) => Output: False
+```
+#
+
+<br />
+
+# 2026.06.04 Challenge - Schema Validator Part 4
+
+My solution -> *[2026_06_04_schema_validator_part_4](2026_06_04_schema_validator_part_4.py)*
+
+## **_Task condition:_**
+
+Given an dictionary, determine if it matches the following schema:
+
+```
+Roles = "user" | "creator" | "moderator" | "staff" | "admin"
+
+{
+  username: string,
+  posts: number,
+  verified: boolean,
+  role: Roles,
+  supporter?: boolean
+}
+```
+
+- The pipe (`|`) symbol means `"or"`. `role` must be one of the listed `Roles` values.
+- The question mark (`?`) after `supporter` means that the field is optional, but is the specified type if it exists.
+- Extra keys are allowed
+
+### **_Examples_**
+
+```
+Input: is_valid_schema({"username": "vivian", "posts": 1, "verified": False, "role": "user", "supporter": True}) => Output: True
+
+Input: is_valid_schema({"username": "rudolph", "posts": 15, "verified": True, "role": "creator"}) => Output: True
+
+Input: is_valid_schema({"username": "hernandez", "posts": 35, "verified": True, "role": "moderator", "supporter": False, "followers": 55}) => Output: True
+
+Input: is_valid_schema({"username": "julia", "posts": 50, "verified": True, "role": "admin", "supporter": "true"}) => Output: False
+
+Input: is_valid_schema({"username": "bernard", "posts": 0, "verified": True, "role": "friend", "supporter": True}) => Output: False
+
+Input: is_valid_schema({"username": "felix", "posts": 40, "verified": "yes", "role": "staff", "supporter": False}) => Output: False
+
+Input: is_valid_schema({"username": "jimmy", "posts": True, "verified": False, "role": "creator", "supporter": True}) => Output: False
+
+Input: is_valid_schema({"username": True, "posts": 30, "verified": True, "role": "moderator", "supporter": False}) => Output: False
 ```
 #
 
