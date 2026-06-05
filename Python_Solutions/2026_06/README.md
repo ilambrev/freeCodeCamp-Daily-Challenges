@@ -167,3 +167,56 @@ Input: is_valid_schema({"username": True, "posts": 30, "verified": True, "role":
 #
 
 <br />
+
+# 2026.06.05 Challenge - Schema Validator Part 5
+
+My solution -> *[2026_06_05_schema_validator_part_5](2026_06_05_schema_validator_part_5.py)*
+
+## **_Task condition:_**
+
+Given an dictionary, determine if it matches the following schema:
+
+```
+Roles = "user" | "creator" | "moderator" | "staff" | "admin"
+
+{
+  username: string,
+  posts: number,
+  verified: boolean,
+  role: Roles,
+  supporter?: boolean,
+  badges: string[]
+}
+```
+
+- The pipe (`|`) symbol means `"or"`. `role` must be one of the listed `Roles` values.
+- The question mark (`?`) after `supporter` means that the field is optional, but is the specified type if it exists.
+- The brackets `[]` after `string` means that `badges` should be an array of strings (or empty).
+- Extra keys are allowed
+
+### **_Examples_**
+
+```
+Input: is_valid_schema({"username": "gill", "posts": 12, "verified": False, "role": "creator", "supporter": False, "badges": ["early-adopter", "popular"]}) => Output: True
+
+Input: is_valid_schema({"username": "tonya", "posts": 299, "verified": True, "role": "moderator", "supporter": True, "badges": ["streak-master", "veteran"], "followers": 1233}) => Output: True
+
+Input: is_valid_schema({"username": "zara", "posts": 0, "verified": False, "role": "user", "supporter": False, "badges": []}) => Output: True
+
+Input: is_valid_schema({"username": "nicole", "posts": 65, "verified": True, "role": "admin", "supporter": False, "badges": ["first-post", 18]}) => Output: False
+
+Input: is_valid_schema({"username": "tim", "posts": 25, "verified": True, "role": "staff", "supporter": False}) => Output: False
+
+Input: is_valid_schema({"username": "charlie", "posts": 0, "verified": False, "role": "user", "supporter": "no", "badges": ["first-post", "anniversary"]}) => Output: False
+
+Input: is_valid_schema({"username": "wanda", "posts": 15, "verified": True, "role": "friend", "supporter": True, "badges": ["popular"]}) => Output: False
+
+Input: is_valid_schema({"username": "guy", "posts": 5, "verified": "false", "role": "staff", "supporter": True, "badges": ["helper"]}) => Output: False
+
+Input: is_valid_schema({"username": "carrie", "verified": True, "role": "moderator", "supporter": True, "badges": ["helper", "sharer"]}) => Output: False
+
+Input: is_valid_schema({"username": True, "posts": 75, "verified": True, "role": "creator", "supporter": True, "badges": ["veteran"]}) => Output: False
+```
+#
+
+<br />
