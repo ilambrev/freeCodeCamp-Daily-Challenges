@@ -220,3 +220,30 @@ Input: is_valid_schema({"username": True, "posts": 75, "verified": True, "role":
 #
 
 <br />
+
+# 2026.06.07 Challenge - Schema Validator Part 5
+
+My solution -> *[2026_06_07_last_load](2026_06_07_last_load.py)*
+
+## **_Task condition:_**
+
+Given the number of scoops of laundry detergent you have remaining and an array of how many scoops you used in each of the previous days, return the number of full days of detergent you have remaining.
+
+Calculate your average daily usage from the usage history and assume that amount of usage each day going forward.
+
+### **_Examples_**
+
+```
+Input: last_load_date(10, [2, 2, 2, 2, 2, 2, 2]) => Output: 5
+
+Input: last_load_date(16, [2, 3, 0, 3, 4, 2, 1]) => Output: 7
+
+Input: last_load_date(33, [5, 0, 4, 3, 3, 2]) => Output: 11
+
+Input: last_load_date(50, [2, 0, 2, 9, 12, 0, 2]) => Output: 12
+
+Input: last_load_date(20, [13, 9, 12, 10, 8]) => Output: 1
+```
+#
+
+<br />
