@@ -257,14 +257,16 @@ My solution -> *[2026_06_08_jet_lagged](2026_06_08_jet_lagged.py)*
 Given a departure city, an arrival city, a flight duration in hours, and a direction of travel, return the number of jet lag hours the traveller is experiencing.
 
 The given cities will be from the following list that includes their UTC offset:
-City 	Offset
-"Los Angeles" 	-8
-"New York" 	-5
-"London" 	0
-"Istanbul" 	+3
-"Dubai" 	+4
-"Hong Kong" 	+8
-"Tokyo" 	+9
+
+| City            | Offset |
+| :-------------: | :----: |
+| `"Los Angeles"` | -8     |
+| `"New York"`    | -5     |
+| `"London"`      | 0      |
+| `"Istanbul"`    | +3     |
+| `"Dubai"`       | +4     |
+| `"Hong Kong"`   | +8     |
+| `"Tokyo"`       | +9     |
 
 To calculate jet lag hours:
 
@@ -290,6 +292,45 @@ Input: get_jet_lag_hours("Los Angeles", "Hong Kong", 15, "west") => Output: 17.5
 Input: get_jet_lag_hours("Tokyo", "Dubai", 9, "west") => Output: 5.9
 
 Input: get_jet_lag_hours("New York", "Istanbul", 10, "east") => Output: 9.5
+```
+#
+
+<br />
+
+# 2026.06.09 Challenge - Roommates
+
+My solution -> *[2026_06_09_roommates](2026_06_09_roommates.py)*
+
+## **_Task condition:_**
+
+Given an array of people and their roommate group, return the room assignments for a hotel stay using the following rules:
+
+- Each person has a `name` and a `group` property:
+
+```
+[
+  { "name": "Alice", "group": "A" },
+  { "name": "Bob", "group": "B" },
+  { "name": "Carol", "group": "A" }
+]
+```
+
+- People can only share a room with someone from the same group and are paired in the order they are given.
+- Return an array of strings with names separated by `" and "` for a shared room, and just the name for a solo room. Names must appear in the order they were paired. For the example above, return `["Alice and Carol", "Bob"]`.
+
+
+### **_Examples_**
+
+```
+Input: get_roommates([{ "name": "Alice", "group": "A" }, { "name": "Bob", "group": "B" }, { "name": "Carol", "group": "A" }]) => Output: ["Alice and Carol", "Bob"]
+
+Input: get_roommates([{ "name": "John", "group": "C" }, { "name": "Julia", "group": "C" }, { "name": "Jim", "group": "C" }]) => Output: ["John and Julia", "Jim"]
+
+Input: get_roommates([{ "name": "Adam", "group": "D" }, { "name": "Abraham", "group": "E" }, { "name": "Austin", "group": "E" }, { "name": "Augustus", "group": "D" }, { "name": "Angelica", "group": "D" }, { "name": "Aaron", "group": "E" }]) => Output: ["Adam and Augustus", "Angelica", "Abraham and Austin", "Aaron"]
+
+Input: get_roommates([{ "name": "Frank", "group": "A" }, { "name": "Emitt", "group": "B" }, { "name": "Daria", "group": "F" }, { "name": "Charles", "group": "D" }, { "name": "Bailey", "group": "A" }, { "name": "Albert", "group": "F" }]) => Output: ["Frank and Bailey", "Emitt", "Daria and Albert", "Charles"]
+
+Input: get_roommates([{ "name": "Kevin", "group": "A" }, { "name": "Yuri", "group": "A" }, { "name": "Hugo", "group": "B" }, { "name": "Violet", "group": "A" }, { "name": "Brett", "group": "A" }, { "name": "Wayne", "group": "B" }]) => Output: ["Kevin and Yuri", "Violet and Brett", "Hugo and Wayne"]
 ```
 #
 
