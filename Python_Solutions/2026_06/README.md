@@ -247,3 +247,50 @@ Input: last_load_date(20, [13, 9, 12, 10, 8]) => Output: 1
 #
 
 <br />
+
+# 2026.06.08 Challenge - Jet Lagged
+
+My solution -> *[2026_06_08_jet_lagged](2026_06_08_jet_lagged.py)*
+
+## **_Task condition:_**
+
+Given a departure city, an arrival city, a flight duration in hours, and a direction of travel, return the number of jet lag hours the traveller is experiencing.
+
+The given cities will be from the following list that includes their UTC offset:
+City 	Offset
+"Los Angeles" 	-8
+"New York" 	-5
+"London" 	0
+"Istanbul" 	+3
+"Dubai" 	+4
+"Hong Kong" 	+8
+"Tokyo" 	+9
+
+To calculate jet lag hours:
+
+1. Find the timezone difference in hours between the two cities.
+2. Determine the direction multiplier. If travelling `"east"`, it's `1.5`, otherwise, it's `1.0`.
+3. Get the jet lag hours with the formula: `timezone difference + (flight duration * 0.1) * direction multiplier`
+
+Return the jet lag hours rounded to one decimal place.
+
+### **_Examples_**
+
+```
+Input: get_jet_lag_hours("Istanbul", "Hong Kong", 10, "east") => Output: 6.5
+
+Input: get_jet_lag_hours("London", "New York", 8, "west") => Output: 5.8
+
+Input: get_jet_lag_hours("Hong Kong", "Tokyo", 4, "east") => Output: 1.6
+
+Input: get_jet_lag_hours("Dubai", "London", 7, "west") => Output: 4.7
+
+Input: get_jet_lag_hours("Los Angeles", "Hong Kong", 15, "west") => Output: 17.5
+
+Input: get_jet_lag_hours("Tokyo", "Dubai", 9, "west") => Output: 5.9
+
+Input: get_jet_lag_hours("New York", "Istanbul", 10, "east") => Output: 9.5
+```
+#
+
+<br />
