@@ -318,7 +318,6 @@ Given an array of people and their roommate group, return the room assignments f
 - People can only share a room with someone from the same group and are paired in the order they are given.
 - Return an array of strings with names separated by `" and "` for a shared room, and just the name for a solo room. Names must appear in the order they were paired. For the example above, return `["Alice and Carol", "Bob"]`.
 
-
 ### **_Examples_**
 
 ```
@@ -331,6 +330,35 @@ Input: get_roommates([{ "name": "Adam", "group": "D" }, { "name": "Abraham", "gr
 Input: get_roommates([{ "name": "Frank", "group": "A" }, { "name": "Emitt", "group": "B" }, { "name": "Daria", "group": "F" }, { "name": "Charles", "group": "D" }, { "name": "Bailey", "group": "A" }, { "name": "Albert", "group": "F" }]) => Output: ["Frank and Bailey", "Emitt", "Daria and Albert", "Charles"]
 
 Input: get_roommates([{ "name": "Kevin", "group": "A" }, { "name": "Yuri", "group": "A" }, { "name": "Hugo", "group": "B" }, { "name": "Violet", "group": "A" }, { "name": "Brett", "group": "A" }, { "name": "Wayne", "group": "B" }]) => Output: ["Kevin and Yuri", "Violet and Brett", "Hugo and Wayne"]
+```
+#
+
+<br />
+
+# 2026.06.11 Challenge - Idea Rankings
+
+My solution -> *[2026_06_11_idea_rankings](2026_06_11_idea_rankings.py)*
+
+## **_Task condition:_**
+
+Given a 2D array where each inner array contains (in this order) an idea name, an optimistic estimate, a realistic estimate, and a pessimistic estimate (in days), return an array of the idea names sorted by expected time to completion, shortest first.
+
+Calculate the expected time to completion for each idea using the following formula:
+
+- `expected = ((optimistic + 4 * realistic + pessimistic) / 6) * length of idea name`
+
+### **_Examples_**
+
+```
+Input: analyze_ideas([["Add logging", 2, 5, 15], ["SEO optimization", 4, 8, 20], ["Fix bug", 1, 3, 5]]) => Output: ["Fix bug", "Add logging", "SEO optimization"]
+
+Input: analyze_ideas([["Dark mode", 1, 3, 8], ["Real-time collaboration feature", 6, 12, 20], ["Add tooltip", 1, 2, 4]]) => Output: ["Add tooltip", "Dark mode", "Real-time collaboration feature"]
+
+Input: analyze_ideas([["Update user profile page", 3, 7, 14], ["Add pagination", 2, 5, 10], ["Add tags", 2, 3, 6], ["Fix login bug", 1, 4, 8]]) => Output: ["Add tags", "Fix login bug", "Add pagination", "Update user profile page"]
+
+Input: analyze_ideas([["Migrate database", 14, 25, 40], ["Add chat assistant", 8, 15, 24], ["Redesign onboarding flow", 3, 7, 13], ["Add language support", 6, 11, 18]]) => Output: ["Redesign onboarding flow", "Add language support", "Add chat assistant", "Migrate database"]
+
+Input: analyze_ideas([["Add email notifications", 3, 7, 10], ["Migrate deployment flow", 6, 10, 16], ["Add push notifications", 2, 6, 10], ["Optimize continuous integration", 5, 8, 15], ["Analyze user patterns", 5, 10, 18], ["Create onboarding curriculum", 6, 15, 25]]) => Output: ["Add push notifications", "Add email notifications", "Analyze user patterns", "Migrate deployment flow", "Optimize continuous integration", "Create onboarding curriculum"]
 ```
 #
 
