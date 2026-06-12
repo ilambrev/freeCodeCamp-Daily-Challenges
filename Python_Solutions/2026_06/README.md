@@ -335,6 +335,39 @@ Input: get_roommates([{ "name": "Kevin", "group": "A" }, { "name": "Yuri", "grou
 
 <br />
 
+# 2026.06.10 Challenge - Itinerary Arrangements
+
+My solution -> *[2026_06_10_itinerary_arrangements](2026_06_10_itinerary_arrangements.py)*
+
+## **_Task condition:_**
+
+Given an array of at least two optional stops for a day trip, return the number of valid itinerary arrangements.
+
+The itinerary always includes `"breakfast"`, `"lunch"`, and `"dinner"`, these will not be passed in as arguments. The optional stops can be placed anywhere in the itinerary, subject to the following rules:
+
+- `"breakfast"` is always first, with at least one stop before `"lunch"`.
+- `"lunch"` must appear before `"dinner"`, with at least one stop in between.
+- At most, one optional stop may appear after `"dinner"`.
+
+Return the number of valid arrangements.
+
+### **_Examples_**
+
+```
+Input: get_itinerary_count(["library", "park"]) => Output: 2
+
+Input: get_itinerary_count(["library", "park", "arcade"]) => Output: 18
+
+Input: get_itinerary_count(["library", "park", "arcade", "store"]) => Output: 120
+
+Input: get_itinerary_count(["library", "park", "arcade", "store", "cafe"]) => Output: 840
+
+Input: get_itinerary_count(["library", "park", "arcade", "store", "cafe", "market", "museum"]) => Output: 55440
+```
+#
+
+<br />
+
 # 2026.06.11 Challenge - Idea Rankings
 
 My solution -> *[2026_06_11_idea_rankings](2026_06_11_idea_rankings.py)*
