@@ -363,3 +363,28 @@ Input: analyze_ideas([["Add email notifications", 3, 7, 10], ["Migrate deploymen
 #
 
 <br />
+
+# 2026.06.12 Challenge - HTML Content Extractor
+
+My solution -> *[2026_06_12_html_content_extractor](2026_06_12_html_content_extractor.py)*
+
+## **_Task condition:_**
+
+Given a string of HTML, return the plain text content with all tags removed.
+
+### **_Examples_**
+
+```
+Input: extract_content('<p>hello world</p>') => Output: "hello world"
+
+Input: extract_content('<p>hello <span>world</span></p>') => Output: "hello world"
+
+Input: extract_content('<a href="example.com">Click me</a>') => Output: "Click me"
+
+Input: extract_content('<p><button onClick="learnToCode()">Learn</button> to <code>code<code> <br/>for <strong>free</strong> <br/>on <a href="https://freecodecamp.org/" target="_blank"><span class="highlight">freecodecamp</span>.org</a>') => Output: "Learn to code for free on freecodecamp.org"
+
+Input: extract_content('<div class="container"><h1 id="title">Welcome to <strong>My</strong> Website.</h1><p>This is a <a href="https://example.com" target="_blank">link</a> to something <em>really</em> <span class="highlight">important</span>.</p><ul><li>Item <strong>one</strong></li><li>Item <em>two</em></li><li>Item three</li></ul><img src="pic.jpg" alt="A picture"/><p class="footer">Contact us at <a href="mailto:hello@example.com">hello@example.com</a> for <span>more <strong>info</strong></span>.</p></div>') => Output: "Welcome to My Website.This is a link to something really important.Item oneItem twoItem threeContact us at hello@example.com for more info."
+```
+#
+
+<br />
