@@ -421,3 +421,41 @@ Input: extract_content('<div class="container"><h1 id="title">Welcome to <strong
 #
 
 <br />
+
+# 2026.06.13 Challenge - Zoning Regulations
+
+My solution -> *[2026_06_13_zoning_regulations](2026_06_13_zoning_regulations.py)*
+
+## **_Task condition:_**
+
+Given a 2D grid (array of arrays) representing a city's building layout, return the coordinates of all buildings that are violating zoning rules.
+
+Each cell in the grid contains one of the labels from the table below. A building is in violation if any of its (up to) `4` neighbors, horizontal or vertical, are a type it cannot be adjacent to.
+
+| Label               | Type          | Cannot be adjacent to |
+| :-----------------: | :-----------: | :-------------------: |
+| `"i"`               | industrial    | `"R"`, `"I"`          |
+| `"A"`               | Agricultural  | `"C"`                 |
+| `"R"`               | Residential   | `"i"`, `"C"`          |
+| `"I"`               | Institutional | `"i"`                 |
+| `"C"`               | Commercial    | `"R"`, `"A"`          |
+| `""` (empty string) | undeveloped   | no restrictions       |
+
+Return the coordinates of all violating cells as an array of `[row, col]` pairs, in any order. If no violations exist, return an empty array.
+
+### **_Examples_**
+
+```
+Input: get_zone_violations([["R", "C"], ["", "C"]]) => Output: [[0, 0], [0, 1]]
+
+Input: get_zone_violations([["", "i"], ["", "R"], ["R", "I"]]) => Output: [[0, 1], [1, 1]]
+
+Input: get_zone_violations([["A", "i", "C"], ["A", "", "C"], ["R", "R", "I"]]) => Output: []
+
+Input: get_zone_violations([["R", "R", "C", "R", "R"], ["R", "I", "C", "", "A"], ["R", "R", "", "i", "A"]]) => Output: [[0, 1], [0, 2], [0, 3]]
+
+Input: get_zone_violations([["R", "A", "A", "", "i", "i"], ["R", "I", "", "C", "i", "i"], ["R", "", "C", "C", "A", "A"], ["R", "R", "C", "I", "R", "R"]]) => Output: [[2, 3], [2, 4], [3, 1], [3, 2]]
+```
+#
+
+<br />
