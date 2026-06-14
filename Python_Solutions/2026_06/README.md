@@ -459,3 +459,37 @@ Input: get_zone_violations([["R", "A", "A", "", "i", "i"], ["R", "I", "", "C", "
 #
 
 <br />
+
+# 2026.06.14 Challenge - Credit Card Validator
+
+My solution -> *[2026_06_14_credit_card_validator](2026_06_14_credit_card_validator.py)*
+
+## **_Task condition:_**
+
+Given a string of digits for a credit card number, determine if it's a valid card number using the following method:
+
+- Starting from the second-to-last digit, double every other digit moving left.
+- If doubling a digit results in a number greater than `9`, subtract `9`.
+- Sum all the digits (doubled and undoubled).
+- If the total is divisible by `10`, the number is valid.
+
+### **_Examples_**
+
+```
+Input: is_valid_card("4532015112830366") => Output: True
+
+Input: is_valid_card("5425233430109903") => Output: True
+
+Input: is_valid_card("371449635398431") => Output: True
+
+Input: is_valid_card("6011111111111117") => Output: True
+
+Input: is_valid_card("4532015112830367") => Output: False
+
+Input: is_valid_card("1234567890123456") => Output: False
+
+Input: is_valid_card("4532015112830368") => Output: False
+```
+#
+
+<br />
