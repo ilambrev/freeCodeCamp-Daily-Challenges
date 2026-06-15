@@ -221,6 +221,63 @@ Input: is_valid_schema({"username": True, "posts": 75, "verified": True, "role":
 
 <br />
 
+# 2026.06.06 Challenge - Schema Validator Part 6
+
+My solution -> *[2026_06_06_schema_validator_part_6](2026_06_06_schema_validator_part_6.py)*
+
+## **_Task condition:_**
+
+Given an dictionary, determine if it matches the following schema:
+
+```
+Roles = "user" | "creator" | "moderator" | "staff" | "admin"
+
+UserProfile = {
+  username: string,
+  posts: number,
+  verified: boolean,
+  role: Roles,
+  supporter?: boolean,
+  badges: string[]
+}
+
+{
+  users: UserProfile[]
+}
+```
+
+- The pipe (`|`) symbol means `"or"`. `role` must be one of the listed `Roles` values.
+- The question mark (`?`) after `supporter` means that the field is optional, but is the specified type if it exists.
+- `UserProfile[]` denotes an array of `UserProfile` objects. An empty array is valid.
+- Extra keys are allowed
+
+### **_Examples_**
+
+```
+Input: is_valid_schema({"users": [{"username": "ron", "posts": 14, "verified": True, "role": "creator", "badges": ["early-adopter"]}, {"username": "cher", "posts": 25, "verified": True, "role": "moderator", "supporter": True, "followers": 20, "badges": ["helper"]}]}) => Output: True
+
+Input: is_valid_schema({"users": []}) => Output: True
+
+Input: is_valid_schema({"users": {"username": "anne", "posts": 0, "verified": False, "role": "user", "supporter": False, "badges": []}}) => Output: False
+
+Input: is_valid_schema({"users": [{"username": "tony", "posts": 10, "verified": True, "role": "creator", "supporter": True, "badges": ["liked", 6]}]}) => Output: False
+
+Input: is_valid_schema({"users": [{"username": "ursula", "posts": 3, "verified": False, "role": "user", "supporter": "false", "badges": ["comeback"]}]}) => Output: False
+
+Input: is_valid_schema({"users": [{"username": "benny", "posts": 55, "verified": True, "role": "superstar", "supporter": True, "badges": ["veteran"]}]}) => Output: False
+
+Input: is_valid_schema({"users": [{"username": "chase", "posts": 1, "verified": "yes", "role": "staff", "supporter": False, "badges": ["superstar"]}]}) => Output: False
+
+Input: is_valid_schema({"users": [{"username": "carla", "posts": "10", "verified": False, "role": "user", "supporter": False, "badges": ["newbie"]}]}) => Output: False
+
+Input: is_valid_schema({"users": [{"posts": 4, "verified": False, "role": "admin", "supporter": False, "badges": ["superuser", "veteran"]}]}) => Output: False
+
+Input: is_valid_schema({"users": [{"username": "harold", "posts": 80, "verified": True, "role": "creator", "supporter": True, "badges": ["liked", "hero"]}, {"username": "kim", "posts": 11, "verified": False, "role": "admin", "supporter": True, "badges": ["first"]}, {}]}) => Output: False
+```
+#
+
+<br />
+
 # 2026.06.07 Challenge - Last Load
 
 My solution -> *[2026_06_07_last_load](2026_06_07_last_load.py)*
