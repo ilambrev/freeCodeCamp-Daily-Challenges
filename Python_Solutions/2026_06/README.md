@@ -662,3 +662,45 @@ Input: cast("wishlfihwslwifihl") => Output: 101
 #
 
 <br />
+
+# 2026.06.18 Challenge - Streaming Cost
+
+My solution -> *[2026_06_18_streaming_cost](2026_06_18_streaming_cost.py)*
+
+## **_Task condition:_**
+
+Given an array representing movies in the cart of your streaming service, and a string for your subscription tier, return the total cost of the movies.
+
+Each item in the cart is an object with a `"format"` (`"HD"` or `"4K"`) and a `"type"` (`"rent"` or `"buy"`). Their costs are:
+
+|        | `"rent"` | `"buy"` |
+| :----: | :------: | :-----: |
+| `"HD"` | $3.99    | $12.99  |
+| `"4K"` | $5.99    | $19.99  |
+
+Apply the following subscription tier discounts:
+
+- `"none"`: full price
+- `"basic"`: 10% off
+- `"premium"`: 25% off
+
+Return the total cost rounded to two decimal places in the format `"$D.CC"`.
+
+### **_Examples_**
+
+```
+Input: get_streaming_bill([{ "format": "HD", "type": "rent" }], "none") => Output: "$3.99"
+
+Input: get_streaming_bill([{ "format": "HD", "type": "rent" }, { "format": "HD", "type": "buy" }], "premium") => Output: "$12.73"
+
+Input: get_streaming_bill([{ "format": "HD", "type": "rent" }, { "format": "HD", "type": "rent" }, { "format": "HD", "type": "buy" }], "basic") => Output: "$18.87"
+
+Input: get_streaming_bill([{ "format": "4K", "type": "buy" }, { "format": "4K", "type": "buy" }], "premium") => Output: "$29.98"
+
+Input: get_streaming_bill([{ "format": "HD", "type": "rent" }, { "format": "4K", "type": "rent" }, { "format": "HD", "type": "buy" }, { "format": "4K", "type": "buy" }], "none") => Output: "$42.96"
+
+Input: get_streaming_bill([{ "format": "HD", "type": "rent" }, { "format": "4K", "type": "rent" }, { "format": "HD", "type": "buy" }, { "format": "4K", "type": "buy" }, { "format": "HD", "type": "buy" }], "basic") => Output: "$50.36"
+```
+#
+
+<br />
