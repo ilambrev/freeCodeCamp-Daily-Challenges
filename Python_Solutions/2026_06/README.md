@@ -747,6 +747,39 @@ Input: get_rental_cost("2026-06-18T08:00:00Z", "2027-06-18T14:00:00Z", 7) => Out
 
 <br />
 
+# 2026.06.20 Challenge - Prime Factorization
+
+My solution -> *[2026_06_20_prime_factorization](2026_06_20_prime_factorization.py)*
+
+## **_Task condition:_**
+
+Given an integer greater than `1`, return its prime factorization as an array of numbers in ascending order.
+
+A prime factorization is the set of prime numbers that multiply together to produce the given integer. Each number has exactly one set. For example, the prime factorization of `20` is `[2, 2, 5]` because `2 * 2 * 5 = 20`.
+
+If the given integer is itself prime, return it in a single-element array.
+
+### **_Examples_**
+
+```
+Input: prime_factorization(20) => Output: [2, 2, 5]
+
+Input: prime_factorization(17) => Output: [17]
+
+Input: prime_factorization(15) => Output: [3, 5]
+
+Input: prime_factorization(35) => Output: [5, 7]
+
+Input: prime_factorization(999) => Output: [3, 3, 3, 37]
+
+Input: prime_factorization(360) => Output: [2, 2, 2, 3, 3, 5]
+
+Input: prime_factorization(510510) => Output: [2, 3, 5, 7, 11, 13, 17]
+```
+#
+
+<br />
+
 # 2026.06.21 Challenge - Summer Solstice
 
 My solution -> *[2026_06_21_summer_solstice](2026_06_21_summer_solstice.py)*
