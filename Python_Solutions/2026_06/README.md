@@ -819,3 +819,41 @@ Input: get_daytime_hours(-50) => Output: "🌑🌑🌑🌑🌑🌑🌑🌑🌑�
 #
 
 <br />
+
+# 2026.06.22 Challenge - 1337 Speak
+
+My solution -> *[2026_06_22_1337_speak](2026_06_22_1337_speak.py)*
+
+## **_Task condition:_**
+
+Given a lowercase string, return it translated into leet speak by replacing the letters below with their leet substitutions:
+
+| Letter | Leet |
+| :----: | :--: |
+| `a`    | `4`  |
+| `e`    | `3`  |
+| `g`    | `9`  |
+| `i`    | `1`  |
+| `l`    | `1`  |
+| `o`    | `0`  |
+| `s`    | `5`  |
+| `t`    | `7`  |
+
+- Characters with no substitution are left unchanged.
+
+### **_Examples_**
+
+```
+Input: make_leet("cool") => Output: "c001"
+
+Input: make_leet("leet") => Output: "1337"
+
+Input: make_leet("hacker") => Output: "h4ck3r"
+
+Input: make_leet("satellite") => Output: "547311173"
+
+Input: make_leet("abcdefghijklmnopqrstuvwxyz") => Output: "4bcd3f9h1jk1mn0pqr57uvwxyz"
+```
+#
+
+<br />
