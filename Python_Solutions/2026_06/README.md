@@ -857,3 +857,30 @@ Input: make_leet("abcdefghijklmnopqrstuvwxyz") => Output: "4bcd3f9h1jk1mn0pqr57u
 #
 
 <br />
+
+# 2026.06.23 Challenge - BMI Calculator
+
+My solution -> *[2026_06_23_bmi_calculator](2026_06_23_bmi_calculator.py)*
+
+## **_Task condition:_**
+
+Given a `weight` in `pounds` and a `height` in `inches`, return the `BMI (Body Mass Index)` rounded to one decimal place.
+
+To get BMI: divide the weight by the height squared, then multiply the result by `703`.
+
+### **_Examples_**
+
+```
+Input: calculate_bmi(180, 70) => Output: 25.8
+
+Input: calculate_bmi(140, 64) => Output: 24.0
+
+Input: calculate_bmi(160, 76) => Output: 19.5
+
+Input: calculate_bmi(200, 60) => Output: 39.1
+
+Input: calculate_bmi(150, 68) => Output: 22.8
+```
+#
+
+<br />
