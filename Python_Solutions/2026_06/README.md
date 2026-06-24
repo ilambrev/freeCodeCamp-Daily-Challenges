@@ -884,3 +884,32 @@ Input: calculate_bmi(150, 68) => Output: 22.8
 #
 
 <br />
+
+# 2026.06.24 Challenge - DNA Mutations
+
+My solution -> *[2026_06_24_dna_mutations](2026_06_24_dna_mutations.py)*
+
+## **_Task condition:_**
+
+Given two `DNA` strands of equal length, return an array of indexes where the strands differ (`mutations`).
+
+- `DNA` strands are strings made up of the characters `"A"`, `"T"`, `"C"`, and `"G"`
+- Return the indexes in ascending order
+- If there are no mutations, return an empty array
+
+### **_Examples_**
+
+```
+Input: detect_mutations("ATCG", "ATGG") => Output: [2]
+
+Input: detect_mutations("ATGCGTACGTTAGC", "ATGCATACGATTGC") => Output: [4, 9, 11]
+
+Input: detect_mutations("GATCTAGCTAGGCTAGCTAG", "GATCTAGCTAGGCTAGCTAG") => Output: []
+
+Input: detect_mutations("TCAGATCATGGCTAGCTACGATCAGCTAGCATGCATATCGACTG", "TCAGATCATGGCTAGAGCTGATCAGCTAGCATGCATATCGACTG") => Output: [15, 16, 17, 18]
+
+Input: detect_mutations("ACGTCAGTACGCACATGACCATTGACATA", "AACGTCAGTACGCACATGACCATTGACAT") => Output: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 20, 21, 23, 24, 25, 26, 27, 28]
+```
+#
+
+<br />
