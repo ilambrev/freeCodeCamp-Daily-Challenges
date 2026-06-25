@@ -913,3 +913,49 @@ Input: detect_mutations("ACGTCAGTACGCACATGACCATTGACATA", "AACGTCAGTACGCACATGACCA
 #
 
 <br />
+
+# 2026.06.25 Challenge - Frontmatter Parser
+
+My solution -> *[2026_06_25_frontmatter_parser](2026_06_25_frontmatter_parser.py)*
+
+## **_Task condition:_**
+
+Given a string representing a frontmatter block, parse it and return a dictionary with the keys and values.
+
+Frontmatter is wrapped in `---` delimiters and contains `key: value` pairs within them, one per line. For example:
+
+```
+---
+title: My Post
+draft: false
+views: 100
+---
+```
+
+Should return:
+
+```
+{
+  title: "My Post",
+  draft: false,
+  views: 100
+}
+```
+
+- Numbers, Booleans, and Strings should all be returned as their respective type.
+- The given string will have new lines separated with the newline character (`"\n"`). The above example would be given as: `"---\ntitle: My Post\ndraft: false\nviews: 100\n---"`.
+
+### **_Examples_**
+
+```
+Input: parse_frontmatter("---\ntitle: My Post\ndraft: false\nviews: 100\n---") => Output: { title: "My Post", draft: False, views: 100 }
+
+Input: parse_frontmatter("---\nid: 6a174db57256a112f932195c\ntitle: My Book\nlocale: en\nwordCount: 10000\npublished: false\n---") => Output: { id: "6a174db57256a112f932195c", title: "My Book", locale: "en", wordCount: 10000, published: False }
+
+Input: parse_frontmatter("---\nversion: 1.0.0\nurl: https://example.com\nprivate: true\n---") => Output: { version: "1.0.0", url: "https://example.com", private: True }
+
+Input: parse_frontmatter("---\nrating: 4.5\nprice: 9.99\n---") => Output: { rating: 4.5, price: 9.99 }
+```
+#
+
+<br />
