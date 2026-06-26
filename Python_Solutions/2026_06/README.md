@@ -959,3 +959,41 @@ Input: parse_frontmatter("---\nrating: 4.5\nprice: 9.99\n---") => Output: { rati
 #
 
 <br />
+
+# 2026.06.26 Challenge - Blood Bank
+
+My solution -> *[2026_06_26_blood_bank](2026_06_26_blood_bank.py)*
+
+## **_Task condition:_**
+
+Given an array of the inventory at a blood bank and an array of patient blood type requests, return a string in the format `"X of Y patients served"`. Where `X` is the maximum number of patients that can receive blood from the bank's inventory, and `Y` is the total number of patients.
+
+Each entry in both arrays is one of the following blood types: `"AB"`, `"A"`, `"B"`, or `"O"`.
+
+Compatibility rules:
+
+- `"AB"` can receive from any blood type.
+- `"A"` can receive from `"A"` and `"O"`.
+- `"B"` can receive from `"B"` and `"O"`.
+- `"O"` can only receive from `"O"`.
+
+Duplicate entries in the given arrays represent quantity.
+
+### **_Examples_**
+
+```
+Input: triage_blood(["O", "A", "B", "AB"], ["O", "A", "B", "AB"]) => Output: "4 of 4 patients served"
+
+Input: triage_blood(["A", "A", "B", "B", "AB"], ["O", "A", "B", "B", "B"]) => Output: "3 of 5 patients served"
+
+Input: triage_blood(["O", "A", "B", "AB"], ["AB", "AB", "AB", "AB", "AB"]) => Output: "4 of 5 patients served"
+
+Input: triage_blood(["O", "O", "O", "O", "O"], ["O", "A", "B", "AB"]) => Output: "4 of 4 patients served"
+
+Input: triage_blood(["A", "O", "B", "AB", "B", "AB", "O", "A", "A"], ["O", "A", "B", "AB", "A", "B", "A", "A", "B", "A", "B"]) => Output: "8 of 11 patients served"
+
+Input: triage_blood(["O", "B", "AB", "AB", "O", "A", "A", "AB", "O", "B", "B", "AB", "A", "B", "AB"], ["O", "A", "B", "B", "A", "B", "AB", "A", "B", "A", "O", "AB", "AB", "O"]) => Output: "13 of 14 patients served"
+```
+#
+
+<br />
