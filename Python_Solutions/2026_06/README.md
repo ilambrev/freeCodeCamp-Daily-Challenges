@@ -1039,3 +1039,34 @@ Input: get_mood("electronic", 135) => Output: "hype"
 #
 
 <br />
+
+# 2026.06.30 Challenge - Duplicate Character Count
+
+My solution -> *[2026_06_30_duplicate_character_count](2026_06_30_duplicate_character_count.py)*
+
+## **_Task condition:_**
+
+Given two strings, return a count of characters from the second string that can be found in the first.
+
+- Duplicate characters in the second string are counted separately.
+
+### **_Examples_**
+
+```
+Input: duplicate_character_count("aloha", "hei") => Output: 1
+
+Input: duplicate_character_count("jambo", "bonjour") => Output: 4
+
+Input: duplicate_character_count("hello", "hola") => Output: 3
+
+Input: duplicate_character_count("ola", "hej") => Output: 0
+
+Input: duplicate_character_count("ciao", "konnichiwa") => Output: 5
+
+Input: duplicate_character_count("merhaba", "xin chao") => Output: 2
+
+Input: duplicate_character_count("hello world", "hello to everyone around the world") => Output: 26
+```
+#
+
+<br />
