@@ -63,3 +63,30 @@ Input: get_max_profit([121.45, 126.82, 122.91, 124.65, 128.83, 128.83, 127.33], 
 #
 
 <br />
+
+# 2026.07.03 Challenge - Database Migration
+
+My solution -> *[2026_07_03_database_migration](2026_07_03_database_migration.py)*
+
+## **_Task condition:_**
+
+Given two database objects, return the second object with any missing properties from the first filled in.
+
+- Fields that already exist in the record should not be overwritten.
+
+### **_Examples_**
+
+```
+Input: migrate_record({ "username": "", "posts": 0 }, { "verified": True }) => Output: { "username": "", "posts": 0, "verified": True }
+
+Input: migrate_record({ "username": "", "posts": 0 }, { "username": "camper", "posts": 5 }) => Output: { "username": "camper", "posts": 5 }
+
+Input: migrate_record({ "username": "", "posts": 0, "verified": False }, { "username": "camper" }) => Output: { "username": "camper", "posts": 0, "verified": False }
+
+Input: migrate_record({ "username": "", "posts": 0 }, { "username": "camper", "role": "admin" }) => Output: { "username": "camper", "role": "admin", "posts": 0 }
+
+Input: migrate_record({ "username": "", "email": "", "posts": 0, "verified": False, "role": "user", "banned": False }, { "username": "camper", "email": "camper@freecodecamp.org", "role": "admin" }) => Output: { "username": "camper", "email": "camper@freecodecamp.org", "role": "admin", "posts": 0, "verified": False, "banned": False }
+```
+#
+
+<br />
