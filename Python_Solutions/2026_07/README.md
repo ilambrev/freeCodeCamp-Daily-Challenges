@@ -90,3 +90,35 @@ Input: migrate_record({ "username": "", "email": "", "posts": 0, "verified": Fal
 #
 
 <br />
+
+# 2026.07.04 Challenge - Kaprekar's Routine
+
+My solution -> *[2026_07_04_kaprekars_routine](2026_07_04_kaprekars_routine.py)*
+
+## **_Task condition:_**
+
+Given a `4-digit` number, return the number of times you need to apply Kaprekar's routine until reaching `6174`.
+
+Kaprekar's routine works as follows:
+
+- Arrange the digits in descending order to form the largest number
+- Arrange the digits in ascending order to form the smallest number (pad with leading zeros if necessary)
+- Subtract the smaller from the larger
+- Repeat with the new number
+
+### **_Examples_**
+
+```
+Input: kaprekar(1234) => Output: 3
+
+Input: kaprekar(2025) => Output: 6
+
+Input: kaprekar(7173) => Output: 4
+
+Input: kaprekar(3164) => Output: 7
+
+Input: kaprekar(8082) => Output: 2
+```
+#
+
+<br />
