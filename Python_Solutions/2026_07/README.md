@@ -122,3 +122,28 @@ Input: kaprekar(8082) => Output: 2
 #
 
 <br />
+
+# 2026.07.06 Challenge - lowercase words
+
+My solution -> *[2026_07_06_lowercase_words](2026_07_06_lowercase_words.py)*
+
+## **_Task condition:_**
+
+Given a string, return only the words that are entirely lowercase, in their original order and with a space between each word.
+
+### **_Examples_**
+
+```
+Input: get_lowercase_words("hello GOOD world") => Output: "hello world"
+
+Input: get_lowercase_words("these are all lowercase") => Output: "these are all lowercase"
+
+Input: get_lowercase_words("less is NoT more") => Output: "less is more"
+
+Input: get_lowercase_words("DonT eat pizza every OTHER day") => Output: "eat pizza every day"
+
+Input: get_lowercase_words("the Super quick AND snEaky brown fox Leapt anD jumped over aNd AROUND the lazy SloW dog") => Output: "the quick brown fox jumped over the lazy dog"
+```
+#
+
+<br />
