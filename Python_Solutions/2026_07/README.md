@@ -147,3 +147,28 @@ Input: get_lowercase_words("the Super quick AND snEaky brown fox Leapt anD jumpe
 #
 
 <br />
+
+# 2026.07.07 Challenge - Nearest Multiple
+
+My solution -> *[2026_07_07_nearest_multiple](2026_07_07_nearest_multiple.py)*
+
+## **_Task condition:_**
+
+Given two integers, round the first to the nearest multiple of the second.
+
+### **_Examples_**
+
+```
+Input: round_to_nearest_multiple(5, 3) => Output: 6
+
+Input: round_to_nearest_multiple(17, 4) => Output: 16
+
+Input: round_to_nearest_multiple(43, 5) => Output: 45
+
+Input: round_to_nearest_multiple(38, 11) => Output: 33
+
+Input: round_to_nearest_multiple(93, 12) => Output: 96
+```
+#
+
+<br />
