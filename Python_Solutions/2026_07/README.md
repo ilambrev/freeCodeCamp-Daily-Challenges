@@ -172,3 +172,34 @@ Input: round_to_nearest_multiple(93, 12) => Output: 96
 #
 
 <br />
+
+# 2026.07.08 Challenge - Issue Triage
+
+My solution -> *[2026_07_08_issue_triage](2026_07_08_issue_triage.py)*
+
+## **_Task condition:_**
+
+Given a number of milliseconds since the last post on an issue, and the last message posted on the issue, determine what you should do with the issue according to these rules:
+
+- If the last message is `less than 7 days` ago, return `"leave it"`
+- If the last message is `7 or more days` ago and its content contains `"bump"` (case-insensitive), return `"close it"`
+- Otherwise, return `"bump it"`
+
+### **_Examples_**
+
+```
+Input: triage_issue(86400000, "Lets fix it") => Output: "leave it"
+
+Input: triage_issue(1209600000, "still waiting") => Output: "bump it"
+
+Input: triage_issue(864000000, "bump") => Output: "close it"
+
+Input: triage_issue(604800000, "Do we still want this?") => Output: "bump it"
+
+Input: triage_issue(604800000, "Bumping this") => Output: "close it"
+
+Input: triage_issue(345600000, "I'll make a PR") => Output: "leave it"
+```
+#
+
+<br />
