@@ -203,3 +203,51 @@ Input: triage_issue(345600000, "I'll make a PR") => Output: "leave it"
 #
 
 <br />
+
+# 2026.07.09 Challenge - Issue Triage 2
+
+My solution -> *[2026_07_09_issue_triage_2](2026_07_09_issue_triage_2.py)*
+
+## **_Task condition:_**
+
+Given an issue title and an array of current labels, return an updated array of labels based on the following rules:
+
+If the issue doesn't have any labels, add:
+
+- `"bug"` and `"needs triage"` if the title contains `"error"` or `"bug"`
+- `"enhancement"` and `"discussing"` if the title contains `"feature"` or `"add"`
+
+Otherwise, if the given labels contain:
+
+- `"needs triage"` and the title contains `"simple"` or `"easy"`, remove `"needs triage"` and add `"good first issue"`
+- `"discussing"` and the title contains `"planned"` or `"next"`, remove `"discussing"` and add `"on the roadmap"`
+- Otherwise, if `"needs triage"` or `"discussing"` is present, remove it and add `"help wanted"`
+
+If the title contains:
+
+- `"security"`, add a `"critical"` label
+
+### **_Examples_**
+
+```
+Input: triage_issue("app crashes with error", []) => Output: ["bug", "needs triage"]
+
+Input: triage_issue("app crashes with error", ["bug", "needs triage"]) => Output: ["bug", "help wanted"]
+
+Input: triage_issue("add dark mode", []) => Output: ["enhancement", "discussing"]
+
+Input: triage_issue("add dark mode", ["enhancement", "discussing"]) => Output: ["enhancement", "help wanted"]
+
+Input: triage_issue("xss security bug", []) => Output: ["bug", "needs triage", "critical"]
+
+Input: triage_issue("security vulnerability in auth", []) => Output: ["critical"]
+
+Input: triage_issue("easy a11y fix", ["bug", "needs triage"]) => Output: ["bug", "good first issue"]
+
+Input: triage_issue("planned api migration", ["enhancement", "discussing"]) => Output: ["enhancement", "on the roadmap"]
+
+Input: triage_issue("improve security", ["enhancement", "discussing"]) => Output: ["enhancement", "help wanted", "critical"]
+```
+#
+
+<br />
