@@ -251,3 +251,44 @@ Input: triage_issue("improve security", ["enhancement", "discussing"]) => Output
 #
 
 <br />
+
+# 2026.07.12 Challenge - Horoscope Match
+
+My solution -> *[2026_07_12_horoscope_match](2026_07_12_horoscope_match.py)*
+
+## **_Task condition:_**
+
+Given two star sign strings, return their compatibility percentage.
+
+The signs are arranged in a wheel of `12` positions in this order: `"Aries"`, `"Taurus"`, `"Gemini"`, `"Cancer"`, `"Leo"`, `"Virgo"`, `"Libra"`, `"Scorpio"`, `"Sagittarius"`, `"Capricorn"`, `"Aquarius"`, `"Pisces"`, wrapping back to `"Aries"` after `"Pisces"`. Find the shortest distance between the two signs and return the compatibility:
+
+| Distance | Compatibility |
+| :------: | :-----------: |
+| 0        | `"100%"`      |
+| 1        | `"40%"`       |
+| 2        | `"80%"`       |
+| 3        | `"30%"`       |
+| 4        | `"90%"`       |
+| 5        | `"20%"`       |
+| 6        | `"50%"`       |
+
+### **_Examples_**
+
+```
+Input: horoscope_match("Libra", "Sagittarius") => Output: "80%"
+
+Input: horoscope_match("Gemini", "Scorpio") => Output: "20%"
+
+Input: horoscope_match("Pisces", "Aries") => Output: "40%"
+
+Input: horoscope_match("Capricorn", "Cancer") => Output: "50%"
+
+Input: horoscope_match("Aquarius", "Aquarius") => Output: "100%"
+
+Input: horoscope_match("Virgo", "Taurus") => Output: "90%"
+
+Input: horoscope_match("Leo", "Scorpio") => Output: "30%"
+```
+#
+
+<br />
