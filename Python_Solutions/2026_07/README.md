@@ -292,3 +292,32 @@ Input: horoscope_match("Leo", "Scorpio") => Output: "30%"
 #
 
 <br />
+
+# 2026.07.13 Challenge - Tally Counter
+
+My solution -> *[2026_07_13_tally_counter](2026_07_13_tally_counter.py)*
+
+## **_Task condition:_**
+
+Given a string of tally marks, return the total count represented.
+
+- Each pipe `"|"` represents one count.
+- Every fifth mark is represented as a forward slash `"/"`, completing a group of five (`"||||/"`).
+- Groups are separated by a space.
+
+### **_Examples_**
+
+```
+Input: get_tally_count("||||") => Output: 4
+
+Input: get_tally_count("||||/") => Output: 5
+
+Input: get_tally_count("||||/ |||") => Output: 8
+
+Input: get_tally_count("||||/ ||||/ ||||/ ||") => Output: 17
+
+Input: get_tally_count("||||/ ||||/ ||||/ ||||/ ||||/ ||||/ ||||/ ||||/ |") => Output: 41
+```
+#
+
+<br />
