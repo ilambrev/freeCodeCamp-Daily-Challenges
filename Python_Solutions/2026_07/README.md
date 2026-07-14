@@ -321,3 +321,42 @@ Input: get_tally_count("||||/ ||||/ ||||/ ||||/ ||||/ ||||/ ||||/ ||||/ |") => O
 #
 
 <br />
+
+# 2026.07.14 Challenge - Pet Age Calculator
+
+My solution -> *[2026_07_14_pet_age_calculator](2026_07_14_pet_age_calculator.py)*
+
+## **_Task condition:_**
+
+Given a pet type and age in human years, return the equivalent age in pet years using the following conversion table:
+
+| Pet           | Multiplier |
+| :-----------: | :--------: |
+| `"dog"`       | 7          |
+|`"cat"`        | 6          |
+|`"rabbit"`     | 8          |
+|`"hamster"`    | 30         |
+|`"guinea pig"` | 12         |
+|`"goldfish"`   | 6          |
+|`"bird"`       | 5          |
+
+### **_Examples_**
+
+```
+Input: pet_years("dog", 5) => Output: 35
+
+Input: pet_years("cat", 9) => Output: 54
+
+Input: pet_years("rabbit", 3) => Output: 24
+
+Input: pet_years("hamster", 4) => Output: 120
+
+Input: pet_years("guinea pig", 5) => Output: 60
+
+Input: pet_years("goldfish", 2) => Output: 12
+
+Input: pet_years("bird", 1) => Output: 5
+```
+#
+
+<br />
