@@ -360,3 +360,30 @@ Input: pet_years("bird", 1) => Output: 5
 #
 
 <br />
+
+# 2026.07.15 Challenge - Array Chunks
+
+My solution -> *[2026_07_15_array_chunks](2026_07_15_array_chunks.py)*
+
+## **_Task condition:_**
+
+Given an array and a chunk size, return the array split into sub-arrays of that size.
+
+- The last chunk may be smaller if the array doesn't divide evenly.
+
+### **_Examples_**
+
+```
+Input: chunk_array([1, 2, 3, 4, 5, 6], 3) => Output: [[1, 2, 3], [4, 5, 6]]
+
+Input: chunk_array([1, "two", 3, "four", 5, "six", 7, "eight"], 2) => Output: [[1, "two"], [3, "four"], [5, "six"], [7, "eight"]]
+
+Input: chunk_array([1, 2, 3, 4, 5], 3) => Output: [[1, 2, 3], [4, 5]]
+
+Input: chunk_array(["a", "b", "c", "d", "e"], 1) => Output: [["a"], ["b"], ["c"], ["d"], ["e"]]
+
+Input: chunk_array([1, 2, 3], 5) => Output: [[1, 2, 3]]
+```
+#
+
+<br />
