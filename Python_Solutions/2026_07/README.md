@@ -387,3 +387,34 @@ Input: chunk_array([1, 2, 3], 5) => Output: [[1, 2, 3]]
 #
 
 <br />
+
+# 2026.07.16 Challenge - Pig Latin Converter
+
+My solution -> *[2026_07_16_pig_latin_converter](2026_07_16_pig_latin_converter.py)*
+
+## **_Task condition:_**
+
+Given a string, convert it to Pig Latin using the following rules:
+
+- If a word begins with a vowel (`"a"`, `"e"`, `"i"`, `"o"`, or `"u"`), add `"way"` to the end. For example, `"universe"` converts to `"universeway"`.
+- If a word begins with one or more consonants, move them to the end and add `"ay"`. For example, `"hello"` converts to `"ellohay"`.
+- Preserve the case of the first letter. For example, `"Hello"` converts to `"Ellohay"`.
+
+### **_Examples_**
+
+```
+Input: pig_latin("universe") => Output: "universeway"
+
+Input: pig_latin("hello") => Output: "ellohay"
+
+Input: pig_latin("hello universe") => Output: "ellohay universeway"
+
+Input: pig_latin("Hello universe") => Output: "Ellohay universeway"
+
+Input: pig_latin("Pig Latin is fun") => Output: "Igpay Atinlay isway unfay"
+
+Input: pig_latin("The quick brown fox jumped over the lazy dog") => Output: "Ethay uickqay ownbray oxfay umpedjay overway ethay azylay ogday"
+```
+#
+
+<br />
