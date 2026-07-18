@@ -418,3 +418,34 @@ Input: pig_latin("The quick brown fox jumped over the lazy dog") => Output: "Eth
 #
 
 <br />
+
+# 2026.07.18 Challenge - Dice Odds
+
+My solution -> *[2026_07_18_dice_odds](2026_07_18_dice_odds.py)*
+
+## **_Task condition:_**
+
+Given a number of six-sided dice to roll and a target sum, return the odds of rolling that sum as a string in the format `"1 in X"`.
+
+- The number of dice will be between `1` and `6`.
+- The target sum is always achievable with the given number of dice.
+- Round `"X"` to the nearest whole number.
+
+### **_Examples_**
+
+```
+Input: get_odds(1, 5) => Output: "1 in 6"
+
+Input: get_odds(2, 4) => Output: "1 in 12"
+
+Input: get_odds(3, 10) => Output: "1 in 8"
+
+Input: get_odds(4, 7) => Output: "1 in 65"
+
+Input: get_odds(5, 26) => Output: "1 in 111"
+
+Input: get_odds(6, 35) => Output: "1 in 7776"
+```
+#
+
+<br />
