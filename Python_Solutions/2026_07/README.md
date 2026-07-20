@@ -449,3 +449,33 @@ Input: get_odds(6, 35) => Output: "1 in 7776"
 #
 
 <br />
+
+# 2026.07.20 Challenge - Golden Ratio
+
+My solution -> *[2026_07_20_golden_ratio](2026_07_20_golden_ratio.py)*
+
+## **_Task condition:_**
+
+Given two numbers, determine if their ratio approximates the golden ratio.
+
+- Use a golden ratio of `1.618`
+- Allow a tolerance of `0.01`
+
+### **_Examples_**
+
+```
+Input: is_golden_ratio(21, 34) => Output: True
+
+Input: is_golden_ratio(15, 20) => Output: False
+
+Input: is_golden_ratio(8, 13) => Output: True
+
+Input: is_golden_ratio(10, 16) => Output: False
+
+Input: is_golden_ratio(1618, 1000) => Output: True
+
+Input: is_golden_ratio(88, 55) => Output: False
+```
+#
+
+<br />
