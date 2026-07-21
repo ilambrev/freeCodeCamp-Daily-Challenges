@@ -479,3 +479,32 @@ Input: is_golden_ratio(88, 55) => Output: False
 #
 
 <br />
+
+# 2026.07.21 Challenge - Word Blender
+
+My solution -> *[2026_07_21_word_blender](2026_07_21_word_blender.py)*
+
+## **_Task condition:_**
+
+Given two words, return a new word by combining the first half of the first word with the second half of the second word.
+
+- For odd-length words, the first half is the shorter half.
+
+### **_Examples_**
+
+```
+Input: blend_words("turtle", "toucan") => Output: "turcan"
+
+Input: blend_words("chipmunk", "flamingo") => Output: "chipingo"
+
+Input: blend_words("falcon", "pelican") => Output: "falican"
+
+Input: blend_words("hyena", "iguana") => Output: "hyana"
+
+Input: blend_words("scorpion", "gorilla") => Output: "scorilla"
+
+Input: blend_words("platypus", "wolverine") => Output: "platerine"
+```
+#
+
+<br />
