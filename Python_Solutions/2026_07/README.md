@@ -508,3 +508,37 @@ Input: blend_words("platypus", "wolverine") => Output: "platerine"
 #
 
 <br />
+
+# 2026.07.22 Challenge - Piggy Bank
+
+My solution -> *[2026_07_22_piggy_bank](2026_07_22_piggy_bank.py)*
+
+## **_Task condition:_**
+
+Given an object representing a piggy bank, return the total value as a string formatted as `"$D.CC"`.
+
+The object may contain any of the following:
+
+| Coin       | Value |
+| :--------: | :---: | 
+| `pennies`  | $0.01 |
+| `nickels`  | $0.05 |
+| `dimes`    | $0.10 |
+| `quarters` | $0.25 |
+
+### **_Examples_**
+
+```
+Input: piggy_bank({"pennies": 3, "nickels": 5, "dimes": 2, "quarters": 6}) => Output: "$1.98"
+
+Input: piggy_bank({"pennies": 1, "nickels": 1, "dimes": 1, "quarters": 1}) => Output: "$0.41"
+
+Input: piggy_bank({"nickels": 8, "dimes": 6, "quarters": 5}) => Output: "$2.25"
+
+Input: piggy_bank({}) => Output: "$0.00"
+
+Input: piggy_bank({"pennies": 146, "nickels": 11, "dimes": 0, "quarters": 19}) => Output: "$6.76"
+```
+#
+
+<br />
