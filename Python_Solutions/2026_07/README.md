@@ -542,3 +542,35 @@ Input: piggy_bank({"pennies": 146, "nickels": 11, "dimes": 0, "quarters": 19}) =
 #
 
 <br />
+
+# 2026.07.23 Challenge - Game Theory
+
+My solution -> *[2026_07_23_game_theory](2026_07_23_game_theory.py)*
+
+## **_Task condition:_**
+
+Given two equal length strings representing two players' strategies for a game, return the scores as an array `[player1, player2]`.
+
+- The given strings will only contain one of two letters: `"C"` (cooperate) or `"D"` (defect).
+
+- Each character represents one round, scored as follows:
+    - If both players cooperate, each scores `3`.
+    - If both players defect, each scores `1`.
+    - If one player defects and the other cooperates, the defector scores `5` and the cooperator scores `0`.
+
+### **_Examples_**
+
+```
+Input: play_game("CCCC", "CCCC") => Output: [12, 12]
+
+Input: play_game("DDDD", "DDDD") => Output: [4, 4]
+
+Input: play_game("CCDD", "CDDD") => Output: [5, 10]
+
+Input: play_game("CCCDCDCCCDDC", "CCDDCDCDDCCD") => Output: [24, 34]
+
+Input: play_game("DDCCDDDDCDDCDDDCDD", "CCDCCCDCCCDCCCCDCC") => Output: [66, 21]
+```
+#
+
+<br />
