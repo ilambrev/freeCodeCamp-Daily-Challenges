@@ -603,3 +603,32 @@ Input: get_loan_schedule(50000, 5.2, 1650) => Output: [50000, 48567, 47127, 4568
 #
 
 <br />
+
+# 2026.07.25 Challenge - Cell Signal
+
+My solution -> *[2026_07_25_cell_signal](2026_07_25_cell_signal.py)*
+
+## **_Task condition:_**
+
+Given a grid containing three cell tower readings, determine the location of the phone.
+
+- Each cell in the grid is either `0` (no tower) or a positive integer representing the number of cells to the phone, measured in a straight line: horizontal, vertical, or diagonal.
+- Return the `[row, col]` of the cell that is the correct number of cells from all three towers.
+- There is always exactly one solution.
+
+### **_Examples_**
+
+```
+Input: find_signal([[0, 0, 1], [0, 1, 0], [0, 0, 1]]) => Output: [1, 2]
+
+Input: find_signal([[0, 2, 0], [1, 0, 0], [0, 0, 1]]) => Output: [2, 1]
+
+Input: find_signal([[0, 0, 2, 0], [0, 0, 0, 0], [2, 0, 0, 0], [0, 0, 0, 1]]) => Output: [2, 2]
+
+Input: find_signal([[0, 3, 0, 0, 0], [0, 0, 0, 0, 2], [0, 0, 0, 0, 0], [4, 0, 0, 0, 0], [0, 0, 0, 0, 0]]) => Output: [3, 4]
+
+Input: find_signal([[3, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0], [0, 2, 0, 0, 0, 2]]) => Output: [3, 3]
+```
+#
+
+<br />
