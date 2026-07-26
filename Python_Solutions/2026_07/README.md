@@ -632,3 +632,33 @@ Input: find_signal([[3, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0], 
 #
 
 <br />
+
+# 2026.07.26 Challenge - Cell Signal
+
+My solution -> *[2026_07_26_letter_distance](2026_07_26_letter_distance.py)*
+
+## **_Task condition:_**
+
+Given two strings of equal length, return the sum of the shortest distances between each pair of characters.
+
+- The input will only contain lowercase letters
+- The alphabet is treated as a circle, so the distance between `a` and `z` is `1`.
+
+### **_Examples_**
+
+```
+Input: letter_distance("abc", "bcd") => Output: 3
+
+Input: letter_distance("abc", "xyz") => Output: 9
+
+Input: letter_distance("encrypt", "decrypt") => Output: 10
+
+Input: letter_distance("algorithm", "codeblock") => Output: 43
+
+Input: letter_distance("lobster", "penguin") => Output: 47
+
+Input: letter_distance("alligator", "crocodile") => Output: 55
+```
+#
+
+<br />
