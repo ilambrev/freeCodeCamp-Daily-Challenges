@@ -633,7 +633,7 @@ Input: find_signal([[3, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0], 
 
 <br />
 
-# 2026.07.26 Challenge - Cell Signal
+# 2026.07.26 Challenge - Letter Distance
 
 My solution -> *[2026_07_26_letter_distance](2026_07_26_letter_distance.py)*
 
