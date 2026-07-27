@@ -662,3 +662,32 @@ Input: letter_distance("alligator", "crocodile") => Output: 55
 #
 
 <br />
+
+# 2026.07.27 Challenge - Pronic Number
+
+My solution -> *[2026_07_27_pronic_number](2026_07_27_pronic_number.py)*
+
+## **_Task condition:_**
+
+Given a number, determine whether it is a pronic number.
+
+A pronic number is the product of two consecutive integers. For example, `6` is pronic because `2 * 3 = 6`.
+
+### **_Examples_**
+
+```
+Input: is_pronic(6) => Output: True
+
+Input: is_pronic(15) => Output: False
+
+Input: is_pronic(12) => Output: True
+
+Input: is_pronic(132) => Output: True
+
+Input: is_pronic(80) => Output: False
+
+Input: is_pronic(0) => Output: True
+```
+#
+
+<br />
