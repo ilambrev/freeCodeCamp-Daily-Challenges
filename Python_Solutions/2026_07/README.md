@@ -691,3 +691,36 @@ Input: is_pronic(0) => Output: True
 #
 
 <br />
+
+# 2026.07.28 Challenge - Contrast Rating 1
+
+My solution -> *[2026_07_28_contrast_rating_1](2026_07_28_contrast_rating_1.py)*
+
+## **_Task condition:_**
+
+Given a contrast ratio and a boolean indicating whether the text is large, return the WCAG rating using the following table:
+
+| Rating   | Normal Text | Large Text |
+| :------: | :---------: | :--------: |
+| `"AAA"`  | 7.0+        | 4.5+       |
+| `"AA"`   | 4.5+        | 3.0+       |
+| `"Fail"` | below 4.5   | below 3.0  |
+
+### **_Examples_**
+
+```
+Input: get_contrast_rating("7.5", False) => Output: "AAA"
+
+Input: get_contrast_rating("4.8", False) => Output: "AA"
+
+Input: get_contrast_rating("4.2", False) => Output: "Fail"
+
+Input: get_contrast_rating("4.5", True) => Output: "AAA"
+
+Input: get_contrast_rating("3.0", True) => Output: "AA"
+
+Input: get_contrast_rating("2.7", False) => Output: "Fail"
+```
+#
+
+<br />
