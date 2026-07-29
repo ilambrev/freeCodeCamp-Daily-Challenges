@@ -450,6 +450,34 @@ Input: get_odds(6, 35) => Output: "1 in 7776"
 
 <br />
 
+# 2026.07.19 Challenge - Elevator Stops
+
+My solution -> *[2026_07_19_elevator_stops](2026_07_19_elevator_stops.py)*
+
+## **_Task condition:_**
+
+Given a number for the current floor of an elevator and an array of requested floors, return an array of the order the elevator should visit them to minimize number of floors traveled.
+
+- If tied, go up first
+- Floors with a request must be visited when the elevator first passes them
+
+### **_Examples_**
+
+```
+Input: elevator_stops(5, [2, 8, 3, 9]) => Output: [3, 2, 8, 9]
+
+Input: elevator_stops(6, [2, 10, 8, 3, 1, 9]) => Output: [8, 9, 10, 3, 2, 1]
+
+Input: elevator_stops(1, [4, 8, 3, 6, 9]) => Output: [3, 4, 6, 8, 9]
+
+Input: elevator_stops(12, [6, 10, 7, 3, 1, 4]) => Output: [10, 7, 6, 4, 3, 1]
+
+Input: elevator_stops(11, [2, 8, 23, 5, 12, 10, 6, 9, 19]) => Output: [10, 9, 8, 6, 5, 2, 12, 19, 23]
+```
+#
+
+<br />
+
 # 2026.07.20 Challenge - Golden Ratio
 
 My solution -> *[2026_07_20_golden_ratio](2026_07_20_golden_ratio.py)*
