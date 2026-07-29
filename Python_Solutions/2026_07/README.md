@@ -724,3 +724,40 @@ Input: get_contrast_rating("2.7", False) => Output: "Fail"
 #
 
 <br />
+
+# 2026.07.29 Challenge - Contrast Rating 2
+
+My solution -> *[2026_07_29_contrast_rating_2](2026_07_29_contrast_rating_2.py)*
+
+## **_Task condition:_**
+
+Given two relative luminance values and a boolean indicating whether the text is large, return the WCAG contrast rating using the following method:
+
+Calculate the contrast ratio by adding 0.05 to each luminance value, then dividing the lighter one by the darker one. The lighter one will always be the first argument.
+
+Return the rating based on the contrast ratio using the following table:
+
+| Rating   | Normal Text | Large Text |
+| :------: | :---------: | :--------: |
+| `"AAA"`  | 7.0+        | 4.5+       |
+| `"AA"`   | 4.5+        | 3.0+       |
+| `"Fail"` | below 4.5   | below 3.0  |
+
+### **_Examples_**
+
+```
+Input: get_contrast_rating(1.0, 0.0, False) => Output: "AAA"
+
+Input: get_contrast_rating(0.9015, 0.1364, False) => Output: "AA"
+
+Input: get_contrast_rating(0.8965, 0.1628, False) => Output: "Fail"
+
+Input: get_contrast_rating(0.7469, 0.0957, True) => Output: "AAA"
+
+Input: get_contrast_rating(0.7489, 0.2018, True) => Output: "AA"
+
+Input: get_contrast_rating(0.6571, 0.1974, True) => Output: "Fail"
+```
+#
+
+<br />
