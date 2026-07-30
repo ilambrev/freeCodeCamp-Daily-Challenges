@@ -2,16 +2,16 @@ def get_contrast_rating(l1, l2, is_large_text):
     ratio = (l1 + 0.05) / (l2 + 0.05)
 
     if is_large_text:
-        if ratio >= 4.5 and ratio < 7.0:
+        if ratio >= 4.5:
             return "AAA"
-        elif ratio >= 3.0 and ratio < 4.5:
+        elif ratio >= 3.0:
             return "AA"
         elif ratio < 3.0:
             return "Fail"
     else:
         if ratio >= 7.0:
             return "AAA"
-        elif ratio >= 4.5 and ratio < 7.0:
+        elif ratio >= 4.5:
             return "AA"
         elif ratio < 4.5:
             return "Fail"
