@@ -2,16 +2,16 @@ def get_contrast_rating(ratio, is_large_text):
     ratio_as_number = float(ratio)
 
     if is_large_text:
-        if ratio_as_number >= 4.5 and ratio_as_number < 7.0:
+        if ratio_as_number >= 4.5:
             return "AAA"
-        elif ratio_as_number >= 3.0 and ratio_as_number < 4.5:
+        elif ratio_as_number >= 3.0:
             return "AA"
         elif ratio_as_number < 3.0:
             return "Fail"
     else:
         if ratio_as_number >= 7.0:
             return "AAA"
-        elif ratio_as_number >= 4.5 and ratio_as_number < 7.0:
+        elif ratio_as_number >= 4.5:
             return "AA"
         elif ratio_as_number < 4.5:
             return "Fail"
