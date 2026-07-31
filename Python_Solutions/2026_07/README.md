@@ -834,3 +834,47 @@ Input: get_contrast_rating([125, 210, 195], [105, 130, 90], True) => Output: "Fa
 #
 
 <br />
+
+# 2026.07.31 Challenge - Contrast Rating 3
+
+My solution -> *[2026_07_31_morse_code](2026_07_31_morse_code.py)*
+
+## **_Task condition:_**
+
+Given a Morse code string, return the decoded message using the following table:
+
+| Code   | Letter | Code   | Letter |
+| :----: | :----: | :----: | :----: |
+| `.-`   | `A`    | `-.`   | `N`    |
+| `-...` | `B`    | `---`  | `O`    |
+| `-.-.` | `C`    | `.--.` | `P`    |
+| `-..`  | `D`    | `--.-` | `Q`    |
+| `.`    | `E`    | `.-.`  | `R`    |
+| `..-.` | `F`    | `...`  | `S`    |
+| `--.`  | `G`    | `-`    | `T`    |
+| `....` | `H`    | `..-`  | `U`    |
+| `..`   | `I`    | `...-` | `V`    |
+| `.---` | `J`    | `.--`  | `W`    |
+| `-.-`  | `K`    | `-..-` | `X`    |
+| `.-..` | `L`    | `-.--` | `Y`    |
+| `--`   | `M`    | `--..` | `Z`    |
+
+- Letters are separated by a single space
+- Words are separated by three spaces
+
+### **_Examples_**
+
+```
+Input: decode_morse("--..") => Output: "Z"
+
+Input: decode_morse("... --- ...") => Output: "SOS"
+
+Input: decode_morse("..-. .-. . . -.-. --- -.. . -.-. .- -- .--.") => Output: "FREECODECAMP"
+
+Input: decode_morse(".... . .-.. .-.. ---   .-- --- .-. .-.. -..") => Output: "HELLO WORLD"
+
+Input: decode_morse("- .... .   --.- ..- .. -.-. -.-   -... .-. --- .-- -.   ..-. --- -..-   .--- ..- -- .--. . -..   --- ...- . .-.   - .... .   .-.. .- --.. -.--   -.. --- --.") => Output: "THE QUICK BROWN FOX JUMPED OVER THE LAZY DOG"
+```
+#
+
+<br />
