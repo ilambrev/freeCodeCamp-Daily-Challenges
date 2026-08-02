@@ -15,16 +15,14 @@ def get_food_chain(pairs):
         preys.add(prey)
 
     predator = [p for p in predators if p not in preys][0]
-    chain = []
+    chain = [predator]
 
-    for i in range(len(pairs)):
-        chain.append(predator)
+    while True:
         index = find_predator_index(predator)
         if index == -1:
             break
         predator = pairs[index][1]
-
-    chain.append(predator)
+        chain.append(predator)
 
     return chain
 
