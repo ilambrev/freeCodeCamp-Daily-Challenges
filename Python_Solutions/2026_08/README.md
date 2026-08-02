@@ -24,3 +24,31 @@ Input: solve_magic_square([[26, 41, 14], [47, 35, 0], [32, 29, 44]]) => Output: 
 #
 
 <br />
+
+# 2026.08.02 Challenge - Food Chain
+
+My solution -> *[2026_08_02_food_chain](2026_08_02_food_chain.py)*
+
+## **_Task condition:_**
+
+Given an array of `[predator, prey]` pairs, return the food chain from the apex predator down to the bottom.
+
+- The apex predator is the animal that is never prey to another animal.
+- Return the chain as an array of strings.
+
+### **_Examples_**
+
+```
+Input: get_food_chain([["cat", "mouse"]]) => Output: ["cat", "mouse"]
+
+Input: get_food_chain([["wolf", "deer"], ["deer", "grass"]]) => Output: ["wolf", "deer", "grass"]
+
+Input: get_food_chain([["hawk", "snake"], ["snake", "frog"], ["frog", "fly"]]) => Output: ["hawk", "snake", "frog", "fly"]
+
+Input: get_food_chain([["rabbit", "grass"], ["fox", "rabbit"], ["eagle", "fox"]]) => Output: ["eagle", "fox", "rabbit", "grass"]
+
+Input: get_food_chain([["seal", "salmon"], ["herring", "shrimp"], ["orca", "seal"], ["shrimp", "plankton"], ["salmon", "herring"]]) => Output: ["orca", "seal", "salmon", "herring", "shrimp", "plankton"]
+```
+#
+
+<br />
