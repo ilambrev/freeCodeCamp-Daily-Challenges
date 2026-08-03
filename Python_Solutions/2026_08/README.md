@@ -52,3 +52,45 @@ Input: get_food_chain([["seal", "salmon"], ["herring", "shrimp"], ["orca", "seal
 #
 
 <br />
+
+# 2026.08.03 Challenge - Emoji Translator
+
+My solution -> *[2026_08_03_emoji_translator](2026_08_03_emoji_translator.py)*
+
+## **_Task condition:_**
+
+Given a string of emojis, return the phrase using the following table:
+
+|Emoji | Word      |
+| :--: | :-------: |
+| 👶   | `"baby"`  |
+| 🐱   | `"cat"`   |
+| 🐕   | `"dog"`   |
+| 🐟   | `"fish"`  |
+| 🥵   | `"hot"`   |
+| 🧊   | `"ice"`   |
+| 🪨   | `"rock"`  |
+| 🦈   | `"shark"` |
+| 🍲   | `"soup"`  |
+| ⭐   | `"star"`  |
+
+Return the words separated by spaces.
+
+### **_Examples_**
+
+```
+Input: get_emoji_phrase("🪨⭐") => Output: "rock star"
+
+Input: get_emoji_phrase("🥵🐕") => Output: "hot dog"
+
+Input: get_emoji_phrase("👶🦈") => Output: "baby shark"
+
+Input: get_emoji_phrase("⭐🐟") => Output: "star fish"
+
+Input: get_emoji_phrase("🧊🧊👶") => Output: "ice ice baby"
+
+Input: get_emoji_phrase("🐱🐟🍲") => Output: "cat fish soup"
+```
+#
+
+<br />
