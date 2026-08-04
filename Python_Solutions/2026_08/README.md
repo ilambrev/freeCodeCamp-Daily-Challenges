@@ -94,3 +94,30 @@ Input: get_emoji_phrase("🐱🐟🍲") => Output: "cat fish soup"
 #
 
 <br />
+
+# 2026.08.04 Challenge - Golf Handicap Calculator
+
+My solution -> *[2026_08_04_golf_handicap_calculator](2026_08_04_golf_handicap_calculator.py)*
+
+## **_Task condition:_**
+
+Given an array of golf scores and a corresponding array of course par values, return the golfer's handicap index using the following method:
+
+- Calculate the differential for each round by subtracting the par from the score, then return the average of all differentials rounded to one decimal place.
+
+### **_Examples_**
+
+```
+Input: calculate_handicap([72, 72, 72], [72, 72, 72]) => Output: 0
+
+Input: calculate_handicap([80, 76, 78, 78], [72, 72, 72, 72]) => Output: 6
+
+Input: calculate_handicap([42, 45, 46, 44], [36, 36, 36, 36]) => Output: 8.3
+
+Input: calculate_handicap([85, 80, 76, 79, 82], [72, 72, 72, 71, 71]) => Output: 8.8
+
+Input: calculate_handicap([41, 50, 48, 52, 46, 49], [35, 37, 35, 37, 35, 37]) => Output: 11.7
+```
+#
+
+<br />
