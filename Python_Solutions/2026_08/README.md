@@ -121,3 +121,37 @@ Input: calculate_handicap([41, 50, 48, 52, 46, 49], [35, 37, 35, 37, 35, 37]) =>
 #
 
 <br />
+
+# 2026.08.05 Challenge - Spoken Duration
+
+My solution -> *[2026_08_05_spoken_duration](2026_08_05_spoken_duration.py)*
+
+## **_Task condition:_**
+
+Given a number of seconds, return the duration in spoken English.
+
+- Break the duration into hours, minutes, and seconds.
+- Skip any zero values.
+- Use singular or plural as appropriate (`"1 hour"`, `"2 hours"`).
+- If present, join the last two units with `"and"`, and the second and third to last units with a comma (`"1 hour, 2 minutes and 3 seconds"`).
+
+### **_Examples_**
+
+```
+Input: get_spoken_duration(3723) => Output: "1 hour, 2 minutes and 3 seconds"
+
+Input: get_spoken_duration(7295) => Output: "2 hours, 1 minute and 35 seconds"
+
+Input: get_spoken_duration(8521) => Output: "2 hours, 22 minutes and 1 second"
+
+Input: get_spoken_duration(435) => Output: "7 minutes and 15 seconds"
+
+Input: get_spoken_duration(14455) => Output: "4 hours and 55 seconds"
+
+Input: get_spoken_duration(72000) => Output: "20 hours"
+
+Input: get_spoken_duration(1) => Output: "1 second"
+```
+#
+
+<br />
