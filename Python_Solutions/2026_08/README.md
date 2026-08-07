@@ -155,3 +155,50 @@ Input: get_spoken_duration(1) => Output: "1 second"
 #
 
 <br />
+
+# 2026.08.06 Challenge - Spoken Time
+
+My solution -> *[2026_08_06_spoken_time](2026_08_06_spoken_time.py)*
+
+## **_Task condition:_**
+
+Given the angles for the hour and minute hands of an analog clock in degrees (`clockwise from 12`), return the time in spoken English.
+
+Convert the minute hand angle to minutes (`360° = 60 minutes`), then use the following rules:
+
+| Minutes              | Spoken                                     |
+| :------------------: | :----------------------------------------: |
+| 0                    | "Y o'clock"                                |
+| 15                   | "quarter past Y"                           |
+| 1–29 (excluding 15)  | "X minutes past Y"                         |
+| 30                   | "half past Y"                              |
+| 45                   | "quarter to Z"                             |
+| 31–59 (excluding 45) | "X minutes to Z" (where X is 60 - minutes) |
+
+Where `Y` is the current hour and `Z` is the next hour, both derived from the hour hand angle (`360° = 12 hours`).
+
+### **_Examples_**
+
+```
+Input: get_spoken_time(90, 0) => Output: "3 o'clock"
+
+Input: get_spoken_time(160, 120) => Output: "20 minutes past 5"
+
+Input: get_spoken_time(255, 180) => Output: "half past 8"
+
+Input: get_spoken_time(67.5, 92) => Output: "quarter past 2"
+
+Input: get_spoken_time(200, 240) => Output: "20 minutes to 7"
+
+Input: get_spoken_time(322.5, 273) => Output: "quarter to 11"
+
+Input: get_spoken_time(117.5, 335) => Output: "5 minutes to 4"
+```
+
+**_NOTES:_**
+
+- Hand angles may not land exactly on a number, consider rounding them somehow.
+
+#
+
+<br />
