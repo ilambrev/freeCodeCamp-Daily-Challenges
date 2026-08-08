@@ -202,3 +202,34 @@ Input: get_spoken_time(117.5, 335) => Output: "5 minutes to 4"
 #
 
 <br />
+
+# 2026.08.07 Challenge - Nonogram Validator
+
+My solution -> *[2026_08_07_nonogram_validator](2026_08_07_nonogram_validator.py)*
+
+## **_Task condition:_**
+
+Given an array of clue numbers and an array of cells, determine whether the cells satisfy the nonogram clue.
+
+- The clue is an array of numbers representing the lengths of consecutive filled cells, in order. For example, a clue of `[3, 2]` means there should be `3` consecutive filled cells followed by `2` consecutive filled cells, separated by at least one empty cell.
+- The row is an array of `1s` (`filled`) and `0s` (`empty`).
+
+### **_Examples_**
+
+```
+Input: is_valid_nonogram([3, 2], [1, 1, 1, 0, 1, 1]) => Output: True
+
+Input: is_valid_nonogram([3, 2], [0, 1, 1, 1, 1, 1]) => Output: False
+
+Input: is_valid_nonogram([1, 1, 1, 1], [1, 0, 1, 0, 1, 0, 1, 0, 1]) => Output: False
+
+Input: is_valid_nonogram([1, 1, 1, 1], [0, 1, 0, 1, 0, 0, 0, 1, 0, 1, 0]) => Output: True
+
+Input: is_valid_nonogram([3, 2, 3], [0, 0, 1, 1, 1, 0, 0, 1, 1, 0, 0, 1, 1, 1, 0, 0]) => Output: True
+
+Input: is_valid_nonogram([3, 2, 3], [0, 0, 0, 1, 0, 0, 1, 0, 0, 0]) => Output: False
+```
+
+#
+
+<br />
